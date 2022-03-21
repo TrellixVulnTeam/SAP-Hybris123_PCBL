@@ -1,0 +1,95 @@
+{
+    "extends": ["tslint:recommended", "tslint-eslint-rules", "tslint-plugin-prettier"],
+    "rulesDirectory": ["./tslint/rules/generated", "tslint-plugin-prettier"],
+    "rules": {
+        "space-before-function-paren": [
+            true,
+            {
+                "anonymous": "always",
+                "named": "never",
+                "asyncArrow": "always"
+            }
+        ],
+        "prettier": true,
+        "no-unused-expression": false,
+        "no-bitwise": false,
+        "js-deprecation": {
+            "options": [2005, 0],
+            "severity": "warning"
+        },
+        "no-duplicate-imports": true,
+        "ordered-imports": [
+            true,
+            {
+                "import-sources-order": "any",
+                "named-imports-order": "lowercase-first"
+            }
+        ],
+        "no-duplicate-variable": true,
+        "no-var-keyword": true,
+        "semicolon": [true, "always", "ignore-bound-class-methods"],
+        "no-inner-declarations": [true, "function"],
+        "eofline": false,
+        "indent": [false],
+        "quotemark": [false],
+        "max-line-length": [false],
+        "no-empty-interface": false,
+        "object-literal-sort-keys": [false],
+        "object-literal-key-quotes": [true, "as-needed"],
+        "member-access": [false, "check-accessor"],
+        "trailing-comma": false,
+        "no-trailing-whitespace": [false],
+        "only-arrow-functions": [false],
+        "forin": true,
+        "no-consecutive-blank-lines": false,
+        "no-console": [true, "warn", "error", "info", "dir"],
+        "no-angle-bracket-type-assertion": true,
+        "interface-name": [false],
+        "no-namespace": false,
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-pascal-case",
+            "allow-leading-underscore",
+            "allow-trailing-underscore"
+        ],
+        "array-type": [true, "array"]
+    },
+    "jsRules": {
+        "space-before-function-paren": [
+            true,
+            {
+                "anonymous": "always",
+                "named": "never",
+                "asyncArrow": "always"
+            }
+        ],
+        "trailing-comma": false,
+        "eofline": false,
+        "js-deprecation": {
+            "options": [1905, 0],
+            "severity": "warning"
+        },
+        "forin": false,
+        "quotemark": [false],
+        "max-line-length": [false],
+        "object-literal-sort-keys": false,
+        "no-trailing-whitespace": false,
+        "no-consecutive-blank-lines": [false],
+        "jsdoc-format": false,
+        "no-empty": false,
+        "no-string-throw": false,
+        "no-shadowed-variable": false,
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-pascal-case",
+            "allow-leading-underscore",
+            "allow-trailing-underscore"
+        ],
+        "no-bitwise": false,
+        "radix": false
+    }
+}

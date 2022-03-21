@@ -1,0 +1,33 @@
+@import '../../media';
+
+.se-file-selector {
+    $block: &;
+    @include se-flex-row;
+
+    display: inline-flex;
+
+    &--disabled {
+        .se-file-selector__btn {
+            &:focus,
+            &:hover {
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    &__btn {
+        @include se-media-action-btn;
+
+        #{$block}--disabled & {
+            &:focus,
+            &:hover {
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    &__label {
+        @include se-text-ellipsis;
+        color: fd-color('action', 1);
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "commonjs",
+        "lib": ["esnext", "DOM"],
+        "outDir": "./dist",
+        "strict": true,
+        "skipLibCheck": true,
+        "types": ["node"],
+        "declaration": false,
+        "importHelpers": true,
+        "noImplicitThis": false
+    },
+    "include": ["src/**/*"]
+}

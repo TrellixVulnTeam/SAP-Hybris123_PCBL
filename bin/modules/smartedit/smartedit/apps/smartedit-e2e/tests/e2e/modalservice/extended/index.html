@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--3rd prty libs-->
+        <script src="../../../../node_modules/ckeditor4/ckeditor.js"></script>
+        <script src="../../base/smarteditcontainer/vendor.js"></script>
+
+        <!--libs-->
+        <script src="../../base/smarteditcontainer/base-container-app.js"></script>
+        <script src="../../base/smarteditcontainer/outer-app.js"></script>
+
+        <!--mocks-->
+        <script src="outer-mocks.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+    <body custom-app="app" data-ng-controller="defaultController">
+        <button id="modalWithTitle" class="btn btn-primary" data-ng-click="openModalWithTitle()">
+            open modal with title
+        </button>
+        <br />
+        <button
+            id="modalWithTitleAndButtons"
+            class="btn btn-primary"
+            data-ng-click="openModalWithTitleAndButtons()"
+        >
+            open modal with title and buttons
+        </button>
+        <br />
+        <button
+            id="modalWithDisabledButton"
+            class="btn btn-primary"
+            data-ng-click="openModalWithDisabledButton()"
+        >
+            open modal with disabled buttobn
+        </button>
+        <br />
+    </body>
+</html>

@@ -1,0 +1,82 @@
+import { EventEmitter, OnInit, Type } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { Observable } from 'rxjs';
+import { FundamentalModalManagerService } from 'smarteditcommons';
+import { PersonalizationsmarteditRestService } from "../service/PersonalizationsmarteditRestService";
+import { PersonalizationsmarteditMessageHandler } from "personalizationcommons";
+import { PersonalizationsmarteditContextService } from "../service/PersonalizationsmarteditContextServiceOuter";
+import { ISlotRestrictionsService } from 'cmscommons';
+export declare class PersonalizationsmarteditContextMenuAddEditActionComponent implements OnInit {
+    private modalManager;
+    private translateService;
+    private personalizationsmarteditRestService;
+    private personalizationsmarteditMessageHandler;
+    private personalizationsmarteditContextService;
+    private PERSONALIZATION_COMBINED_VIEW_CSS_MAPPING;
+    private MODAL_BUTTON_ACTIONS;
+    private MODAL_BUTTON_STYLES;
+    private slotRestrictionsService;
+    private editorModalService;
+    catalogFilter: any;
+    catalogVersionFilter: any;
+    letterIndicatorForElement: string;
+    colorIndicatorForElement: string;
+    slotId: string;
+    actionId: string;
+    components: any[];
+    componentUuid: any;
+    defaultComponentId: any;
+    editEnabled: boolean;
+    slotCatalog: any;
+    componentCatalog: any;
+    selectedCustomizationCode: string;
+    selectedVariationCode: string;
+    componentType: string;
+    actions: any[];
+    actionSelected: string;
+    idComponentSelected: string;
+    newComponentTypes: any[];
+    selectedCustomization: any;
+    selectedVariation: any;
+    newComponentSelected: string;
+    componentSelected: any;
+    actionCreated: EventEmitter<void>;
+    actionFetchStrategy: {
+        fetchAll: any;
+    };
+    componentsFetchStrategy: {
+        fetchPage: any;
+        fetchEntity: any;
+    };
+    componentTypesFetchStrategy: {
+        fetchAll: any;
+    };
+    itemComponent: Type<any>;
+    modalButtons: ({
+        id: string;
+        label: string;
+        style: any;
+        action: any;
+        disabledFn?: undefined;
+        callback?: undefined;
+    } | {
+        id: string;
+        label: string;
+        action: any;
+        disabledFn: () => boolean;
+        callback: () => Observable<any>;
+        style?: undefined;
+    })[];
+    constructor(modalManager: FundamentalModalManagerService, translateService: TranslateService, personalizationsmarteditRestService: PersonalizationsmarteditRestService, personalizationsmarteditMessageHandler: PersonalizationsmarteditMessageHandler, personalizationsmarteditContextService: PersonalizationsmarteditContextService, PERSONALIZATION_COMBINED_VIEW_CSS_MAPPING: any, MODAL_BUTTON_ACTIONS: any, MODAL_BUTTON_STYLES: any, slotRestrictionsService: ISlotRestrictionsService, editorModalService: any);
+    get modalData(): Observable<any>;
+    ngOnInit(): void;
+    initNewComponentTypes: () => Promise<any>;
+    getAndSetComponentById: (componentUuid: any) => void;
+    getAndSetColorAndLetter: () => void;
+    componentSelectedEvent: (item: any) => void;
+    newComponentTypeSelectedEvent: (item: any) => void;
+    editAction: (customizationId: any, variationId: any, actionId: any, componentId: any, componentCatalog: any, filter: any) => void;
+    addActionToContainer: (componentId: any, catalogId: any, containerSourceId: any, customizationId: any, variationId: any, filter: any) => void;
+    catalogVersionFilterChange: (value: any) => void;
+    private init;
+}

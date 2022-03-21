@@ -1,0 +1,51 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved
+# -----------------------------------------------------------------------
+
+"#% impex.setValidationMode(""import_relaxed"");"
+
+
+$lang=hi
+$solrIndexedType=solrIndexedType(identifier)[unique=true,default='BackofficeProduct'];
+$typeCode=type(code)[default='Product'];
+$active=active[allownull=true,default=true];
+
+UPDATE SolrIndexedProperty;name[unique=true];$solrIndexedType;backofficeDisplayName[lang=$lang];
+"#%beforeEach:
+import de.hybris.platform.core.Registry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.apache.commons.lang3.StringUtils;
+import de.hybris.platform.util.Config;
+
+Logger LOGGER = LoggerFactory.getLogger(""ImpExImportReader"");
+extensionNames = Registry.getCurrentTenant().getTenantSpecificExtensionNames();
+if(!extensionNames.contains(""backofficesolrsearch""))
+{
+    LOGGER.info(""backofficeDisplayName [{}] was skipped because the extension [{}] is not be initialized now"", line.get(3), ""backofficesolrsearch"");
+    line.clear();
+}
+"
+;pcmCoreAttributesCoverageGroup;;कोर विशेषताएं;
+;pcmMarketingAttributesCoverageGroup;;विपणन विशेषताएं;
+
+INSERT_UPDATE AsFacet;uid[unique=true];name[lang=$lang];
+;b80fb32b-a9f7-4095-f1b0-f9296c98bd5e;कोर विशेषताएं;
+;2cf550a1-7749-0624-d8a8-c1fd37ad37b7;विपणन विशेषताएं;
+
+INSERT_UPDATE NotNullConstraint;id[unique=true];$typeCode;$active;message[lang=$lang];
+;ProductNameNotNullForAllLocalesConstraint;;;विशेषता "पहचाकर्ता" में सभी भाषाओं के लिए मान होना चाहिए.;
+
+INSERT_UPDATE SizeConstraint;id[unique=true];$typeCode;$active;message[lang=$lang];
+;ProductEurope1PricesSizeConstraint;;;विशेषता "मूल्य" कम से कम 1 तत्व पर शामिल होना चाहिए.;
+;ProductSupercategoriesSizeConstraint;;;"""सुपरश्रेणी"" विशेषता में कम से कम 1 तत्व होना चाहिए.";
+;ProductGalleryImagesSizeConstraint;;;विशेषता “गैलरी छवियां" कम से कम एक तत्व शामिल होना चाहिए.;
+;ProductReferencesSizeConstraint;;;विशेषता "उत्पाद संदर्भ" कम से कम 1 तत्व पर शामिल होना चाहिए.;
+
+INSERT_UPDATE NotEmptyConstraint;id[unique=true];$typeCode;$active;message[lang=$lang];
+;ProductCodeNotEmptyConstraint;;;विशेषता "आर्टीकल संख्या" खाली नहीं होना चाहिए.;
+;ProductDescriptionNotEmptyConstraint;;;विशेषता "वर्णन" खाली नहीं होना चाहिए.;
+;ProductEanNotEmptyConstraint;;;विशेषता "EAN" खाली नहीं होना चाहिए.;
+
+INSERT_UPDATE HybrisEnumValueCodeConstraint;id[unique=true];$typeCode;$active;message[lang=$lang];
+;ProductApprovedHybrisEnumValueCodeConstraint;;;“स्वीकृति" के लिए विशेषता मूल्य "स्वीकृत" होना चाहिए.;

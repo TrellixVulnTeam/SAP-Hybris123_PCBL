@@ -1,0 +1,10 @@
+<div data-page-sensitive>
+    <se-synchronization-panel
+        [item-id]="$ctrl.slotId"
+        [get-sync-status]="$ctrl.getSyncStatus"
+        [perform-sync]="$ctrl.performSync"
+        [select-all-label]="$ctrl.SYNCHRONIZATION_SLOTS_SELECT_ALL_COMPONENTS_LABEL"
+        (get-api)="$ctrl.getApi($event)"
+    >
+    </se-synchronization-panel>
+</div>

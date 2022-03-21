@@ -1,0 +1,58 @@
+/// <reference types="angular" />
+/// <reference types="jquery" />
+import { ElementRef, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { Payload } from '@smart/utils';
+import { IUriContext } from '../../services';
+import './genericEditor.scss';
+import { GenericEditorState } from '../genericEditor/models';
+import { ContentManager } from './components/ContentManager';
+import { GenericEditorFactoryService } from './GenericEditorFactoryService';
+import { GenericEditorAPI, GenericEditorOnSubmitResponse, GenericEditorStructure, IGenericEditor } from './types';
+export declare class GenericEditorComponent implements OnChanges {
+    private elementRef;
+    private genericEditorFactoryService;
+    private yjQuery;
+    id: string;
+    smarteditComponentId: string;
+    smarteditComponentType: string;
+    structureApi: string;
+    structure: GenericEditorStructure;
+    contentApi: string;
+    content: Payload;
+    uriContext: Promise<IUriContext>;
+    submit: () => void;
+    reset: () => void;
+    isDirty: () => void;
+    isValid: () => void;
+    updateCallback: (pristine: Payload, results: Payload) => void;
+    customOnSubmit: (newContent: Payload) => Promise<GenericEditorOnSubmitResponse>;
+    editorStackId: string;
+    modalHeaderTitle: string;
+    getApi: EventEmitter<GenericEditorAPI>;
+    submitChange: EventEmitter<() => void>;
+    resetChange: EventEmitter<() => void>;
+    isValidChange: EventEmitter<() => void>;
+    isDirtyChange: EventEmitter<() => void>;
+    set nativeForm(element: ElementRef);
+    contentManager: ContentManager<GenericEditorOnSubmitResponse>;
+    editor: IGenericEditor;
+    componentForm: FormGroup;
+    private showResetButton;
+    private showSubmitButton;
+    private formInitialized$;
+    private formSet$;
+    constructor(elementRef: ElementRef<HTMLElement>, genericEditorFactoryService: GenericEditorFactoryService, yjQuery: JQueryStatic);
+    ngOnChanges(changes: SimpleChanges): void;
+    ngOnInit(): void;
+    ngOnDestroy(): void;
+    ngAfterViewInit(): void;
+    setFormState(state: GenericEditorState): void;
+    showCommands(): boolean;
+    showCancel(): boolean;
+    showSubmit(): boolean;
+    isSubmitDisabled: () => boolean;
+    _reset(): Promise<void>;
+    private _isValid;
+    private _isDirty;
+}

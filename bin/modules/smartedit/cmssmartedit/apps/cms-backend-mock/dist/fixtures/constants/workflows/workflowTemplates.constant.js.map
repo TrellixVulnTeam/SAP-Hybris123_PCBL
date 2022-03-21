@@ -1,0 +1,1 @@
+{"version":3,"file":"workflowTemplates.constant.js","sourceRoot":"","sources":["../../../../fixtures/constants/workflows/workflowTemplates.constant.ts"],"names":[],"mappings":";;;AAKa,QAAA,iBAAiB,GAAwB;IAClD;QACI,IAAI,EAAE,cAAc;QACpB,IAAI,EAAE,EAAE,EAAE,EAAE,eAAe,EAAE;KAChC;IACD;QACI,IAAI,EAAE,iBAAiB;QACvB,IAAI,EAAE,EAAE,EAAE,EAAE,+BAA+B,EAAE;KAChD;CACJ,CAAC"}

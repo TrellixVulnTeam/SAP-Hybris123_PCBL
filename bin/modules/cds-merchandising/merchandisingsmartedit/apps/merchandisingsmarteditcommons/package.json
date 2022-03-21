@@ -1,0 +1,62 @@
+{
+  "name": "merchandisingsmarteditcommons",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "description": "merchandisingsmartedit Commons library",
+  "scripts": {
+    "build": "se-packagr",
+    "test": "se-test",
+    "test:dev": "se-test --browser"
+  },
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "devDependencies": {
+    "@smartedit/packagr": "0.0.1",
+    "smartedit-build": "0.0.1",
+    "@types/angular": "1.7.3",
+    "@types/angular-animate": "1.5.10",
+    "@types/angular-route": "1.7.1",
+    "@types/angular-sanitize": "1.7.0",
+    "@types/angular-translate": "2.16.2",
+    "@types/crypto-js": "3.1.43",
+    "@types/jquery": "3.3.38",
+    "@types/node": "14.11.2",
+    "@types/scriptjs": "0.0.2",
+    "@types/webpack-env": "1.15.2",
+    "reflect-metadata": "0.1.13",
+    "typescript": "3.9.3"
+  },
+  "dependencies": {
+    "smarteditcommons": "0.0.1",
+    "@angular/cdk": "8.2.3",
+    "@angular/common": "8.2.14",
+    "@angular/compiler": "8.2.14",
+    "@angular/core": "8.2.14",
+    "@angular/elements": "8.2.14",
+    "@angular/forms": "8.2.14",
+    "@angular/platform-browser": "8.2.14",
+    "@angular/platform-browser-dynamic": "8.2.14",
+    "@angular/router": "8.2.14",
+    "@angular/upgrade": "8.2.14",
+    "@fundamental-ngx/core": "0.13.2",
+    "@ngx-translate/core": "11.0.1",
+    "@ngx-translate/http-loader": "4.0.0",
+    "@webcomponents/webcomponentsjs": "2.4.3",
+    "angular": "1.8.0",
+    "angular-route": "1.8.0",
+    "angular-sanitize": "1.8.0",
+    "angular-translate": "2.18.3",
+    "core-js": "2.6.5",
+    "crypto-js": "4.0.0",
+    "intersection-observer": "0.7.0",
+    "jquery": "3.5.1",
+    "rxjs": "6.5.4",
+    "scriptjs": "2.5.9",
+    "tslib": "1.10.0",
+    "lodash": "4.17.21"
+  }
+}

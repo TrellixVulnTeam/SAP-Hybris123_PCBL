@@ -1,0 +1,5904 @@
+.se-input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+input.se-input-group__input-area {
+  border: none !important;
+  box-shadow: 0 0 0 1px #d9d9d9 !important;
+}
+input.se-input-group__input-area:focus {
+  box-shadow: 0 0 0 2px #1973cc !important;
+}
+
+.se-input-group__addon {
+  position: absolute;
+  color: #51555a;
+  right: 0;
+  top: 0;
+  height: 36px;
+  width: 36px;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1428571429rem;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.se-input-group__clear-btn {
+  color: #0a6ed1;
+}.se-pagination .fd-pagination__link[aria-selected=true] {
+  color: #7f90a4;
+}
+.se-pagination .fd-pagination__link {
+  transform: none;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+.se-pagination .fd-pagination__link--previous:before, .se-pagination .fd-pagination__link--next:before {
+  font-weight: 900;
+  font-size: 7px;
+}.se-language-selector,
+.su-language-selector {
+  height: 260px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.fd-menu__item.se-language-selector__element, .fd-menu__item.se-language-selector__element--selected,
+.fd-menu__item.se-language-selector__element--selected:hover {
+  padding: 8px 16px;
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.fd-menu__item.se-language-selector__element--selected,
+.fd-menu__item.se-language-selector__element--selected:hover {
+  background-color: rgba(10, 110, 209, 0.07);
+  color: #32363a;
+}
+
+.yToolbarActions__dropdown-element {
+  color: #32363a;
+}.collapsible-container__content {
+  overflow: hidden;
+  display: block;
+  transition: max-height 0.4s ease;
+  width: 100%;
+  background-color: #fff;
+}
+.collapsible-container__header {
+  max-width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.collapsible-container__header__title {
+  text-align: left;
+  background: transparent;
+  border: 0;
+  outline: none;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  text-decoration: none;
+  user-select: none;
+}
+.collapsible-container__header__title:hover {
+  text-decoration: none;
+}
+.collapsible-container__header__button {
+  flex: 0;
+  transition: all 0.4s ease;
+  font-size: 20px;
+}
+.collapsible-container__header__button--expanded {
+  transform: rotate(180deg);
+}
+.collapsible-container__header--icon-right .collapsible-container__header__title {
+  order: 1;
+}
+.collapsible-container__header--icon-right .collapsible-container__header__button {
+  order: 2;
+}
+.collapsible-container__header--icon-left .collapsible-container__header__title {
+  order: 2;
+}
+.collapsible-container__header--icon-left .collapsible-container__header__button {
+  order: 1;
+}
+
+:host(.se-collapsible-container--noshadow) .collapsible-container__content.panel {
+  box-shadow: none;
+}.modal-dialog.modal-lg,
+.fd-modal.modal-lg {
+  width: 650px;
+}
+
+.modal-dialog.modal-md,
+.fd-modal.modal-md {
+  width: 600px;
+}
+
+.fd-modal.modal-stretched .fd-modal__body {
+  min-height: 400px;
+}
+
+#y-modal-dialog.fd-modal {
+  max-width: 100%;
+}
+#y-modal-dialog.fd-modal .se-generic-editor__body {
+  padding: 0;
+}
+
+.modal-dialog-window--normalized {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-dialog-window--normalized .modal-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+
+.fd-modal .fd-modal__body {
+  padding: 20px;
+}
+
+.fd-modal__body .se-generic-editor__body {
+  padding: 0;
+}
+
+.fd-modal__title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.fd-modal__header {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  height: 53px;
+}
+.fd-modal__header:first-child {
+  font-size: 1.1428571429rem;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #32363a;
+}
+
+.se-modal__header--no-title,
+.fd-modal__header--no-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.se-modal-close,
+.fd-modal__close {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.se-modal-close::before,
+.fd-modal__close::before {
+  margin: 0 !important;
+}
+
+.fd-modal__body {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 70vh;
+  position: initial;
+}
+.fd-modal__body .se-generic-editor__body {
+  padding: 0;
+}
+
+.fd-modal__footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid #d9d9d9;
+  height: 69px;
+}
+.fd-modal__footer button {
+  text-transform: capitalize;
+  margin-left: 12px;
+}
+
+.se-wait-spinner-dialog .modal-dialog.modal-lg {
+  width: initial;
+  text-align: center;
+}
+.se-wait-spinner-dialog .fd-modal__content {
+  background: transparent;
+}
+
+.se-confirmation-dialog {
+  top: 30px;
+  width: 600px;
+}
+
+.su-login-dialog-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #edeff0;
+}
+.su-login-dialog-container .fd-modal__content {
+  background-color: transparent;
+}
+.su-login-dialog-container .su-login-dialog {
+  padding-top: 120px;
+  width: 100%;
+  height: 100%;
+}.se-y-help-wrapper {
+  cursor: pointer;
+}
+
+.se-y-help-icon {
+  color: #0a6ed1;
+  display: block;
+  margin: 1px;
+}
+
+.se-help .se-popover {
+  width: 200px;
+}.se-slider-panel-wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+}
+
+.se-slider-panel-container {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  background-color: white;
+  border-radius: 4px;
+  width: 650px;
+}
+
+.se-slider-panel__header {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  height: 53px;
+}
+.se-slider-panel__header:first-child {
+  font-size: 1.1428571429rem;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #32363a;
+}
+
+.se-slider-panel__body {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 70vh;
+  height: 70vh;
+  min-height: 500px;
+  flex: 1 1 auto;
+}
+
+.se-slider-panel__footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid #d9d9d9;
+  height: 69px;
+}
+.se-slider-panel__footer button {
+  text-transform: capitalize;
+  margin-left: 12px;
+}
+
+.slide-in {
+  animation: slide-in 0.4s forwards;
+  -webkit-animation: slide-in 0.4s forwards;
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slide-in {
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+:host-context(.fd-modal-container).sliderpanel--animated {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  display: flex;
+}
+
+:host-context(.fd-modal-container).sliderpanel--animated .se-slider-panel-wrapper {
+  top: auto;
+}
+
+:host-context(.fd-modal-container).sliderpanel--animated .se-slider-panel-wrapper .se-slider-panel__body {
+  max-height: calc(100vh - 128px);
+  min-height: auto;
+}.se-modal-wizard-template {
+  min-height: 480px;
+  width: 600px;
+  max-width: 80vw;
+}
+
+.se-modal-wizard__steps-container,
+.se-modal-wizard__step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.se-modal-wizard__steps-container {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.se-modal-wizard__content {
+  display: none;
+}
+.se-modal-wizard__content--visible {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: block;
+}
+
+.se-modal-wizard-step__action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 1.1428571429rem;
+  line-height: 1.25;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+.se-modal-wizard-step__action[disabled] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+.se-modal-wizard-step__action--disabled[disabled] {
+  color: rgba(10, 110, 209, 0.4);
+  cursor: not-allowed;
+}
+.se-modal-wizard-step__action--enabled {
+  cursor: pointer;
+  color: #0a6ed1;
+}
+.se-modal-wizard-step__action--current {
+  cursor: default;
+  color: #0a6ed1;
+}
+.se-modal-wizard-step__action--current::before {
+  border-bottom: 3px solid #0a6ed1;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-radius: 12px;
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  height: 0;
+  left: 0;
+  width: 100%;
+}
+
+.se-modal-wizard__step-icon-next {
+  color: #6a6d70;
+  margin-bottom: 10px;
+  padding: 0 16px;
+}
+.se-modal-wizard__step-icon-next--enabled {
+  color: #0a6ed1;
+}
+.se-modal-wizard__step-icon-next--disabled {
+  color: rgba(10, 110, 209, 0.4);
+}.se-select:not(.se-select--paged) .se-select-list-container {
+  overflow-y: auto;
+  max-height: 200px;
+}
+.se-select .select-container.has-warning .selected-container,
+.se-select .select-container.has-warning .fd-select-button-custom,
+.se-select .select-container.has-warning .fd-select-button-custom:hover {
+  border-color: #e9730c;
+}
+.se-select .select-container.has-error .selected-container,
+.se-select .select-container.has-error .fd-select-button-custom,
+.se-select .select-container.has-error .fd-select-button-custom:hover {
+  border-color: #bb0000;
+}
+.se-select--single .selected-item {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.se-select[aria-disabled=true] fd-popover, .se-select.is-disabled fd-popover, .se-select:disabled fd-popover {
+  pointer-events: none;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.65;
+}
+.se-select[aria-disabled=true] .selected-item__remove-button, .se-select.is-disabled .selected-item__remove-button, .se-select:disabled .selected-item__remove-button {
+  color: var(--fd-color-text-3);
+}
+.se-select .fd-popover-custom {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.se-select .fd-popover-custom .fd-select-button-custom {
+  text-align: unset;
+}
+.se-select .fd-popover-custom .fd-select-button-custom:hover {
+  border-color: inherit;
+}
+.se-select .fd-popover-custom .fd-select-button-custom:focus {
+  box-shadow: none;
+}
+.se-select .fd-popover-custom .fd-select-button-custom.toggle-button::after {
+  margin-left: 0;
+}
+.se-select .fd-popover-custom .fd-popover-container-custom {
+  width: 100% !important;
+  border-top: 0;
+}
+.se-select .fd-popover-custom .fd-menu {
+  padding: 0;
+}
+.se-select .glyphicon-search {
+  align-self: center;
+  margin-right: 5px;
+}
+.se-select .sap-icon--sys-cancel {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--sapContent_IconColor);
+  padding-right: 12px;
+}
+.se-select .se-multi-select .selected-container {
+  border-radius: 0.125rem;
+  border: 1px solid var(--sapUiFieldBorderColor, #89919a);
+  background: #fff;
+}
+.se-select .se-multi-select .selected-list {
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--sapUiFieldBorderColor, #89919a);
+}
+.se-select .se-multi-select .selected-list__item {
+  display: grid;
+  grid-template-columns: 16fr 1fr;
+  padding: 8px 16px;
+  align-items: center;
+  min-height: 36px;
+}/*!
+.fd-button+( (--compact), (--emphasized, --light), (--standard, --positive, --medium, --negative))+( (.is-disabled | [aria-disabled=true]) | (.is-selected | [aria-selected=true] | (.is-pressed | [aria-pressed=true]))
+*/
+.fd-button, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary, [class*=fd-button--], a[class*=fd-button--] {
+  --fd-button-color: var(--fd-color-action-1);
+  --fd-button-border-color: var(--fd-color-action-1);
+  --fd-button-background-color: var(--fd-color-background-2);
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-smoothing: antialiased;
+  /* stylelint-disable-line property-no-unknown */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  height: 36px;
+  height: var(--fd-forms-height);
+  max-height: 36px;
+  max-height: var(--fd-forms-height);
+  min-width: 36px;
+  min-width: var(--fd-forms-height);
+  font-size: 1rem;
+  line-height: 1.4285714286;
+  font-weight: 400;
+  line-height: 34px;
+  line-height: var(--fd-button-line-height);
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  color: #0a6ed1;
+  color: var(--fd-button-color);
+  border-color: #0a6ed1;
+  border-color: var(--fd-button-border-color);
+  background-color: white;
+  background-color: var(--fd-button-background-color);
+  transition: all 0.125s ease-in;
+}
+.fd-button::before, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary::before, [class*=fd-button--]::before, a[class*=fd-button--]::before {
+  font-size: 1.1428571429rem;
+  line-height: 1;
+}
+.fd-button::after, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary::after, [class*=fd-button--]::after, a[class*=fd-button--]::after {
+  font-size: 1.1428571429rem;
+  line-height: 1;
+}
+.fd-button::before, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary::before, [class*=fd-button--]::before, a[class*=fd-button--]::before {
+  margin-right: 8px;
+  vertical-align: text-bottom;
+}
+[dir=rtl] .fd-button::before, [dir=rtl] .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary::before, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [dir=rtl] .btn-primary::before, .fd-button[dir=rtl]::before, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [dir=rtl].btn-primary::before, [dir=rtl] [class*=fd-button--]::before, [class*=fd-button--][dir=rtl]::before, [dir=rtl] a[class*=fd-button--]::before, a[class*=fd-button--][dir=rtl]::before {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+.fd-button::after, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary::after, [class*=fd-button--]::after, a[class*=fd-button--]::after {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+[dir=rtl] .fd-button::after, [dir=rtl] .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary::after, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [dir=rtl] .btn-primary::after, .fd-button[dir=rtl]::after, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [dir=rtl].btn-primary::after, [dir=rtl] [class*=fd-button--]::after, [class*=fd-button--][dir=rtl]::after, [dir=rtl] a[class*=fd-button--]::after, a[class*=fd-button--][dir=rtl]::after {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+.fd-button:empty, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:empty, [class*=fd-button--]:empty, a[class*=fd-button--]:empty {
+  padding: 0;
+}
+.fd-button:empty::before, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:empty::before, .fd-button:empty::after, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:empty::after, [class*=fd-button--]:empty::before, [class*=fd-button--]:empty::after, a[class*=fd-button--]:empty::before, a[class*=fd-button--]:empty::after {
+  margin-right: 0;
+  margin-left: 0;
+}
+.fd-button:focus, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:focus, .fd-button.is-focus, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .is-focus.btn-primary, [class*=fd-button--]:focus, [class*=fd-button--].is-focus, a[class*=fd-button--]:focus, a[class*=fd-button--].is-focus {
+  box-shadow: 0 0 0 1px #085caf;
+  box-shadow: 0 0 0 1px var(--fd-color-action-focus);
+}
+.fd-button:hover, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover,
+.fd-button .is-hover,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover, [class*=fd-button--]:hover,
+[class*=fd-button--] .is-hover, a[class*=fd-button--]:hover,
+a[class*=fd-button--] .is-hover {
+  --fd-button-background-color: var(--fd-color-action-hover);
+  --fd-button-color: var(--fd-color-action-2);
+  color: white;
+  background-color: #085caf;
+}
+.fd-button:hover[aria-disabled=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover[aria-disabled=true], .fd-button:hover.is-disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover.is-disabled, .fd-button:hover:disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover:disabled,
+.fd-button .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover[aria-disabled=true],
+.fd-button .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover.is-disabled,
+.fd-button .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover:disabled, [class*=fd-button--]:hover[aria-disabled=true], [class*=fd-button--]:hover.is-disabled, [class*=fd-button--]:hover:disabled,
+[class*=fd-button--] .is-hover[aria-disabled=true],
+[class*=fd-button--] .is-hover.is-disabled,
+[class*=fd-button--] .is-hover:disabled, a[class*=fd-button--]:hover[aria-disabled=true], a[class*=fd-button--]:hover.is-disabled, a[class*=fd-button--]:hover:disabled,
+a[class*=fd-button--] .is-hover[aria-disabled=true],
+a[class*=fd-button--] .is-hover.is-disabled,
+a[class*=fd-button--] .is-hover:disabled {
+  --fd-button-background-color: var(--fd-color-background-2);
+  --fd-button-color: var(--fd-color-action-1);
+  color: #0a6ed1;
+  background-color: white;
+}
+.fd-button:active, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:active, .fd-button.is-active, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .is-active.btn-primary, .fd-button[aria-selected=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [aria-selected=true].btn-primary, .fd-button.is-selected, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .is-selected.btn-primary, .fd-button[aria-pressed=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [aria-pressed=true].btn-primary, .fd-button.is-pressed, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .is-pressed.btn-primary, [class*=fd-button--]:active, [class*=fd-button--].is-active, [class*=fd-button--][aria-selected=true], [class*=fd-button--].is-selected, [class*=fd-button--][aria-pressed=true], [class*=fd-button--].is-pressed, a[class*=fd-button--]:active, a[class*=fd-button--].is-active, a[class*=fd-button--][aria-selected=true], a[class*=fd-button--].is-selected, a[class*=fd-button--][aria-pressed=true], a[class*=fd-button--].is-pressed {
+  --fd-button-background-color: var(--fd-color-action-selected);
+  --fd-button-color: var(--fd-color-action-2);
+  color: white;
+  background-color: #0254a7;
+}
+.fd-button[aria-disabled=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [aria-disabled=true].btn-primary, .fd-button.is-disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .is-disabled.btn-primary, .fd-button:disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:disabled, [class*=fd-button--][aria-disabled=true], [class*=fd-button--].is-disabled, [class*=fd-button--]:disabled, a[class*=fd-button--][aria-disabled=true], a[class*=fd-button--].is-disabled, a[class*=fd-button--]:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.fd-button--compact,
+a.fd-button--compact {
+  height: 36px;
+  height: var(--fd-forms-height-compact);
+  max-height: 36px;
+  max-height: var(--fd-forms-height-compact);
+  min-width: 36px;
+  min-width: var(--fd-forms-height-compact);
+  line-height: 26px;
+  line-height: var(--fd-button-line-height-compact);
+}
+.fd-for-touch .fd-button--compact,
+.fd-for-touch a.fd-button--compact {
+  height: 36px;
+  height: var(--fd-forms-height);
+  min-width: 36px;
+  min-width: var(--fd-forms-height);
+  line-height: 34px;
+  line-height: var(--fd-button-line-height);
+}
+
+.fd-for-compact .fd-button--compact,
+.fd-for-compact a.fd-button--compact {
+  height: 28px;
+  height: var(--fd-forms-height-compact);
+  min-width: 28px;
+  min-width: var(--fd-forms-height-compact);
+  line-height: 26px;
+  line-height: var(--fd-button-line-height-compact);
+}
+
+@media (min-width: 600px) {
+  .fd-button--compact,
+a.fd-button--compact {
+    height: 28px;
+    height: var(--fd-forms-height-compact);
+    min-width: 28px;
+    min-width: var(--fd-forms-height-compact);
+    line-height: 26px;
+    line-height: var(--fd-button-line-height-compact);
+  }
+}
+.fd-button--emphasized, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary,
+a.fd-button--emphasized {
+  font-weight: 700;
+  --fd-button-color: var(--fd-color-action-2);
+  --fd-button-border-color: var(--fd-color-action-1);
+  --fd-button-background-color: var(--fd-color-action-1);
+  color: white;
+  border-color: #0a6ed1;
+  background-color: #0a6ed1;
+}
+.fd-button--emphasized:hover, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover,
+.fd-button--emphasized .is-hover,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover,
+a.fd-button--emphasized:hover,
+a.fd-button--emphasized .is-hover {
+  --fd-button-background-color: var(--fd-color-action-hover);
+  --fd-button-color: var(--fd-color-action-2);
+  color: white;
+  background-color: #085caf;
+}
+.fd-button--emphasized:hover[aria-disabled=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover[aria-disabled=true], .fd-button--emphasized:hover.is-disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover.is-disabled, .fd-button--emphasized:hover:disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover:disabled,
+.fd-button--emphasized .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover[aria-disabled=true],
+.fd-button--emphasized .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover.is-disabled,
+.fd-button--emphasized .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover:disabled,
+a.fd-button--emphasized:hover[aria-disabled=true],
+a.fd-button--emphasized:hover.is-disabled,
+a.fd-button--emphasized:hover:disabled,
+a.fd-button--emphasized .is-hover[aria-disabled=true],
+a.fd-button--emphasized .is-hover.is-disabled,
+a.fd-button--emphasized .is-hover:disabled {
+  --fd-button-background-color: var(--fd-color-action-1);
+  --fd-button-color: var(--fd-color-action-2);
+  color: white;
+  background-color: #0a6ed1;
+}
+.fd-button--emphasized.fd-button--standard, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary, .fd-button-group .fd-button--emphasized[class*=fd-button--],
+.fd-button-group .fd-button--emphasized.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary, .fd-button--emphasized.fd-button--positive, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary, .fd-button--emphasized.fd-button--negative, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary, .fd-button--emphasized.fd-button--medium, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary,
+a.fd-button--emphasized.fd-button--standard,
+a.fd-button--emphasized.fd-button--positive,
+a.fd-button--emphasized.fd-button--negative,
+a.fd-button--emphasized.fd-button--medium {
+  --fd-button-color: var(--fd-color-action-2);
+  color: white;
+}
+.fd-button--emphasized.fd-button--standard:hover[aria-disabled=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary:hover[aria-disabled=true], .fd-button-group .fd-button--emphasized[class*=fd-button--]:hover[aria-disabled=true], .fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [class*=fd-button--].btn-primary:hover[aria-disabled=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group [class*=fd-button--].btn-primary:hover[aria-disabled=true],
+.fd-button-group .fd-button--emphasized.fd-button:hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button.btn-primary:hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button.btn-primary:hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--emphasized.btn-primary:hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--emphasized.btn-primary:hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:hover[aria-disabled=true], .fd-button--emphasized.fd-button--standard:hover.is-disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary:hover.is-disabled, .fd-button-group .fd-button--emphasized[class*=fd-button--]:hover.is-disabled, .fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [class*=fd-button--].btn-primary:hover.is-disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group [class*=fd-button--].btn-primary:hover.is-disabled,
+.fd-button-group .fd-button--emphasized.fd-button:hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button.btn-primary:hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button.btn-primary:hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--emphasized.btn-primary:hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--emphasized.btn-primary:hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:hover.is-disabled, .fd-button--emphasized.fd-button--standard:hover:disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary:hover:disabled, .fd-button-group .fd-button--emphasized[class*=fd-button--]:hover:disabled, .fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [class*=fd-button--].btn-primary:hover:disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group [class*=fd-button--].btn-primary:hover:disabled,
+.fd-button-group .fd-button--emphasized.fd-button:hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button.btn-primary:hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button.btn-primary:hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--emphasized.btn-primary:hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--emphasized.btn-primary:hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:hover:disabled,
+.fd-button--emphasized.fd-button--standard .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary .is-hover[aria-disabled=true],
+.fd-button-group .fd-button--emphasized[class*=fd-button--] .is-hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [class*=fd-button--].btn-primary .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group [class*=fd-button--].btn-primary .is-hover[aria-disabled=true],
+.fd-button-group .fd-button--emphasized.fd-button .is-hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button.btn-primary .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button.btn-primary .is-hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--emphasized.btn-primary .is-hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--emphasized.btn-primary .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary .is-hover[aria-disabled=true],
+.fd-button--emphasized.fd-button--standard .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary .is-hover.is-disabled,
+.fd-button-group .fd-button--emphasized[class*=fd-button--] .is-hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [class*=fd-button--].btn-primary .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group [class*=fd-button--].btn-primary .is-hover.is-disabled,
+.fd-button-group .fd-button--emphasized.fd-button .is-hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button.btn-primary .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button.btn-primary .is-hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--emphasized.btn-primary .is-hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--emphasized.btn-primary .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary .is-hover.is-disabled,
+.fd-button--emphasized.fd-button--standard .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary .is-hover:disabled,
+.fd-button-group .fd-button--emphasized[class*=fd-button--] .is-hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [class*=fd-button--].btn-primary .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group [class*=fd-button--].btn-primary .is-hover:disabled,
+.fd-button-group .fd-button--emphasized.fd-button .is-hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button.btn-primary .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button.btn-primary .is-hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--emphasized.btn-primary .is-hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--emphasized.btn-primary .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary .is-hover:disabled, .fd-button--emphasized.fd-button--positive:hover[aria-disabled=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary:hover[aria-disabled=true], .fd-button--emphasized.fd-button--positive:hover.is-disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary:hover.is-disabled, .fd-button--emphasized.fd-button--positive:hover:disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary:hover:disabled,
+.fd-button--emphasized.fd-button--positive .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary .is-hover[aria-disabled=true],
+.fd-button--emphasized.fd-button--positive .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary .is-hover.is-disabled,
+.fd-button--emphasized.fd-button--positive .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary .is-hover:disabled, .fd-button--emphasized.fd-button--negative:hover[aria-disabled=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary:hover[aria-disabled=true], .fd-button--emphasized.fd-button--negative:hover.is-disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary:hover.is-disabled, .fd-button--emphasized.fd-button--negative:hover:disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary:hover:disabled,
+.fd-button--emphasized.fd-button--negative .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary .is-hover[aria-disabled=true],
+.fd-button--emphasized.fd-button--negative .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary .is-hover.is-disabled,
+.fd-button--emphasized.fd-button--negative .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary .is-hover:disabled, .fd-button--emphasized.fd-button--medium:hover[aria-disabled=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary:hover[aria-disabled=true], .fd-button--emphasized.fd-button--medium:hover.is-disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary:hover.is-disabled, .fd-button--emphasized.fd-button--medium:hover:disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary:hover:disabled,
+.fd-button--emphasized.fd-button--medium .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary .is-hover[aria-disabled=true],
+.fd-button--emphasized.fd-button--medium .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary .is-hover.is-disabled,
+.fd-button--emphasized.fd-button--medium .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary .is-hover:disabled,
+a.fd-button--emphasized.fd-button--standard:hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--standard.btn-primary:hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--standard:hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--standard.btn-primary:hover.is-disabled,
+a.fd-button--emphasized.fd-button--standard:hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--standard.btn-primary:hover:disabled,
+a.fd-button--emphasized.fd-button--standard .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--standard.btn-primary .is-hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--standard .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--standard.btn-primary .is-hover.is-disabled,
+a.fd-button--emphasized.fd-button--standard .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--standard.btn-primary .is-hover:disabled,
+a.fd-button--emphasized.fd-button--positive:hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--positive.btn-primary:hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--positive:hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--positive.btn-primary:hover.is-disabled,
+a.fd-button--emphasized.fd-button--positive:hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--positive.btn-primary:hover:disabled,
+a.fd-button--emphasized.fd-button--positive .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--positive.btn-primary .is-hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--positive .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--positive.btn-primary .is-hover.is-disabled,
+a.fd-button--emphasized.fd-button--positive .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--positive.btn-primary .is-hover:disabled,
+a.fd-button--emphasized.fd-button--negative:hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--negative.btn-primary:hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--negative:hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--negative.btn-primary:hover.is-disabled,
+a.fd-button--emphasized.fd-button--negative:hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--negative.btn-primary:hover:disabled,
+a.fd-button--emphasized.fd-button--negative .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--negative.btn-primary .is-hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--negative .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--negative.btn-primary .is-hover.is-disabled,
+a.fd-button--emphasized.fd-button--negative .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--negative.btn-primary .is-hover:disabled,
+a.fd-button--emphasized.fd-button--medium:hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--medium.btn-primary:hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--medium:hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--medium.btn-primary:hover.is-disabled,
+a.fd-button--emphasized.fd-button--medium:hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--medium.btn-primary:hover:disabled,
+a.fd-button--emphasized.fd-button--medium .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--medium.btn-primary .is-hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--medium .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--medium.btn-primary .is-hover.is-disabled,
+a.fd-button--emphasized.fd-button--medium .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.fd-button--medium.btn-primary .is-hover:disabled {
+  --fd-button-color: var(--fd-color-action-2);
+  color: white;
+}
+.fd-button--emphasized.fd-button--standard, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary, .fd-button-group .fd-button--emphasized[class*=fd-button--],
+.fd-button-group .fd-button--emphasized.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary,
+a.fd-button--emphasized.fd-button--standard {
+  --fd-button-border-color: var(--fd-color-status-4);
+  --fd-button-background-color: var(--fd-color-status-4);
+  border-color: #6a6d70;
+  background-color: #6a6d70;
+}
+.fd-button--emphasized.fd-button--standard:hover[aria-disabled=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary:hover[aria-disabled=true], .fd-button-group .fd-button--emphasized[class*=fd-button--]:hover[aria-disabled=true],
+.fd-button-group .fd-button--emphasized.fd-button:hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:hover[aria-disabled=true], .fd-button--emphasized.fd-button--standard:hover.is-disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary:hover.is-disabled, .fd-button-group .fd-button--emphasized[class*=fd-button--]:hover.is-disabled,
+.fd-button-group .fd-button--emphasized.fd-button:hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:hover.is-disabled, .fd-button--emphasized.fd-button--standard:hover:disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary:hover:disabled, .fd-button-group .fd-button--emphasized[class*=fd-button--]:hover:disabled,
+.fd-button-group .fd-button--emphasized.fd-button:hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:hover:disabled,
+.fd-button--emphasized.fd-button--standard .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary .is-hover[aria-disabled=true],
+.fd-button-group .fd-button--emphasized[class*=fd-button--] .is-hover[aria-disabled=true],
+.fd-button-group .fd-button--emphasized.fd-button .is-hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary .is-hover[aria-disabled=true],
+.fd-button--emphasized.fd-button--standard .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary .is-hover.is-disabled,
+.fd-button-group .fd-button--emphasized[class*=fd-button--] .is-hover.is-disabled,
+.fd-button-group .fd-button--emphasized.fd-button .is-hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary .is-hover.is-disabled,
+.fd-button--emphasized.fd-button--standard .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--standard.btn-primary .is-hover:disabled,
+.fd-button-group .fd-button--emphasized[class*=fd-button--] .is-hover:disabled,
+.fd-button-group .fd-button--emphasized.fd-button .is-hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary .is-hover:disabled,
+a.fd-button--emphasized.fd-button--standard:hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--standard:hover.is-disabled,
+a.fd-button--emphasized.fd-button--standard:hover:disabled,
+a.fd-button--emphasized.fd-button--standard .is-hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--standard .is-hover.is-disabled,
+a.fd-button--emphasized.fd-button--standard .is-hover:disabled {
+  --fd-button-background-color: var(--fd-color-status-4);
+  background-color: #6a6d70;
+}
+.fd-button--emphasized.fd-button--negative, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary,
+a.fd-button--emphasized.fd-button--negative {
+  --fd-button-border-color: var(--fd-color-status-3);
+  --fd-button-background-color: var(--fd-color-status-3);
+  border-color: #bb0000;
+  background-color: #bb0000;
+}
+.fd-button--emphasized.fd-button--negative:hover[aria-disabled=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary:hover[aria-disabled=true], .fd-button--emphasized.fd-button--negative:hover.is-disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary:hover.is-disabled, .fd-button--emphasized.fd-button--negative:hover:disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary:hover:disabled,
+.fd-button--emphasized.fd-button--negative .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary .is-hover[aria-disabled=true],
+.fd-button--emphasized.fd-button--negative .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary .is-hover.is-disabled,
+.fd-button--emphasized.fd-button--negative .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--negative.btn-primary .is-hover:disabled,
+a.fd-button--emphasized.fd-button--negative:hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--negative:hover.is-disabled,
+a.fd-button--emphasized.fd-button--negative:hover:disabled,
+a.fd-button--emphasized.fd-button--negative .is-hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--negative .is-hover.is-disabled,
+a.fd-button--emphasized.fd-button--negative .is-hover:disabled {
+  --fd-button-background-color: var(--fd-color-status-3);
+  background-color: #bb0000;
+}
+.fd-button--emphasized.fd-button--medium, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary,
+a.fd-button--emphasized.fd-button--medium {
+  --fd-button-border-color: var(--fd-color-status-2);
+  --fd-button-background-color: var(--fd-color-status-2);
+  border-color: #e9730c;
+  background-color: #e9730c;
+}
+.fd-button--emphasized.fd-button--medium:hover[aria-disabled=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary:hover[aria-disabled=true], .fd-button--emphasized.fd-button--medium:hover.is-disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary:hover.is-disabled, .fd-button--emphasized.fd-button--medium:hover:disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary:hover:disabled,
+.fd-button--emphasized.fd-button--medium .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary .is-hover[aria-disabled=true],
+.fd-button--emphasized.fd-button--medium .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary .is-hover.is-disabled,
+.fd-button--emphasized.fd-button--medium .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--medium.btn-primary .is-hover:disabled,
+a.fd-button--emphasized.fd-button--medium:hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--medium:hover.is-disabled,
+a.fd-button--emphasized.fd-button--medium:hover:disabled,
+a.fd-button--emphasized.fd-button--medium .is-hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--medium .is-hover.is-disabled,
+a.fd-button--emphasized.fd-button--medium .is-hover:disabled {
+  --fd-button-background-color: var(--fd-color-status-2);
+  background-color: #e9730c;
+}
+.fd-button--emphasized.fd-button--positive, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary,
+a.fd-button--emphasized.fd-button--positive {
+  --fd-button-border-color: var(--fd-color-status-1);
+  --fd-button-background-color: var(--fd-color-status-1);
+  border-color: #0a7e3e;
+  background-color: #0a7e3e;
+}
+.fd-button--emphasized.fd-button--positive:hover[aria-disabled=true], .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary:hover[aria-disabled=true], .fd-button--emphasized.fd-button--positive:hover.is-disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary:hover.is-disabled, .fd-button--emphasized.fd-button--positive:hover:disabled, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary:hover:disabled,
+.fd-button--emphasized.fd-button--positive .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary .is-hover[aria-disabled=true],
+.fd-button--emphasized.fd-button--positive .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary .is-hover.is-disabled,
+.fd-button--emphasized.fd-button--positive .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--positive.btn-primary .is-hover:disabled,
+a.fd-button--emphasized.fd-button--positive:hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--positive:hover.is-disabled,
+a.fd-button--emphasized.fd-button--positive:hover:disabled,
+a.fd-button--emphasized.fd-button--positive .is-hover[aria-disabled=true],
+a.fd-button--emphasized.fd-button--positive .is-hover.is-disabled,
+a.fd-button--emphasized.fd-button--positive .is-hover:disabled {
+  --fd-button-background-color: var(--fd-color-status-1);
+  background-color: #0a7e3e;
+}
+.fd-button--light,
+a.fd-button--light {
+  --fd-button-border-color: transparent;
+  --fd-button-background-color: transparent;
+  border-color: transparent;
+  background-color: transparent;
+}
+.fd-button--light:hover,
+.fd-button--light .is-hover,
+a.fd-button--light:hover,
+a.fd-button--light .is-hover {
+  --fd-button-background-color: var(--fd-color-neutral-1);
+  --fd-button-color: var(--fd-color-action-1);
+  color: #0a6ed1;
+  background-color: #fafafa;
+}
+.fd-button--light:hover[aria-disabled=true], .fd-button--light:hover.is-disabled, .fd-button--light:hover:disabled,
+.fd-button--light .is-hover[aria-disabled=true],
+.fd-button--light .is-hover.is-disabled,
+.fd-button--light .is-hover:disabled,
+a.fd-button--light:hover[aria-disabled=true],
+a.fd-button--light:hover.is-disabled,
+a.fd-button--light:hover:disabled,
+a.fd-button--light .is-hover[aria-disabled=true],
+a.fd-button--light .is-hover.is-disabled,
+a.fd-button--light .is-hover:disabled {
+  --fd-button-background-color: transparent;
+  --fd-button-color: var(--fd-color-action-1);
+  color: #0a6ed1;
+  background-color: transparent;
+}
+.fd-button--light:active, .fd-button--light.is-active, .fd-button--light[aria-selected=true], .fd-button--light.is-selected, .fd-button--light[aria-pressed=true], .fd-button--light.is-pressed,
+a.fd-button--light:active,
+a.fd-button--light.is-active,
+a.fd-button--light[aria-selected=true],
+a.fd-button--light.is-selected,
+a.fd-button--light[aria-pressed=true],
+a.fd-button--light.is-pressed {
+  --fd-button-background-color: var(--fd-color-action-selected);
+  --fd-button-color: var(--fd-color-action-2);
+  color: white;
+  background-color: #0254a7;
+}
+.fd-button--light.fd-button--standard, .fd-button-group .fd-button--light[class*=fd-button--],
+.fd-button-group .fd-button--light.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary, .fd-button--light.fd-button--positive, .fd-button--light.fd-button--negative, .fd-button--light.fd-button--medium,
+a.fd-button--light.fd-button--standard,
+a.fd-button--light.fd-button--positive,
+a.fd-button--light.fd-button--negative,
+a.fd-button--light.fd-button--medium {
+  --fd-button-border-color: transparent;
+  --fd-button-background-color: transparent;
+  border-color: transparent;
+  background-color: transparent;
+}
+.fd-button--light.fd-button--standard:hover, .fd-button-group .fd-button--light[class*=fd-button--]:hover,
+.fd-button-group .fd-button--light.fd-button:hover,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary:hover,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary:hover,
+.fd-button--light.fd-button--standard .is-hover,
+.fd-button-group .fd-button--light[class*=fd-button--] .is-hover,
+.fd-button-group .fd-button--light.fd-button .is-hover,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary .is-hover,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary .is-hover, .fd-button--light.fd-button--positive:hover,
+.fd-button--light.fd-button--positive .is-hover, .fd-button--light.fd-button--negative:hover,
+.fd-button--light.fd-button--negative .is-hover, .fd-button--light.fd-button--medium:hover,
+.fd-button--light.fd-button--medium .is-hover,
+a.fd-button--light.fd-button--standard:hover,
+a.fd-button--light.fd-button--standard .is-hover,
+a.fd-button--light.fd-button--positive:hover,
+a.fd-button--light.fd-button--positive .is-hover,
+a.fd-button--light.fd-button--negative:hover,
+a.fd-button--light.fd-button--negative .is-hover,
+a.fd-button--light.fd-button--medium:hover,
+a.fd-button--light.fd-button--medium .is-hover {
+  --fd-button-background-color: var(--fd-color-neutral-1);
+  background-color: #fafafa;
+}
+.fd-button--light.fd-button--standard:hover[aria-disabled=true], .fd-button-group .fd-button--light[class*=fd-button--]:hover[aria-disabled=true],
+.fd-button-group .fd-button--light.fd-button:hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary:hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary:hover[aria-disabled=true], .fd-button--light.fd-button--standard:hover.is-disabled, .fd-button-group .fd-button--light[class*=fd-button--]:hover.is-disabled,
+.fd-button-group .fd-button--light.fd-button:hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary:hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary:hover.is-disabled, .fd-button--light.fd-button--standard:hover:disabled, .fd-button-group .fd-button--light[class*=fd-button--]:hover:disabled,
+.fd-button-group .fd-button--light.fd-button:hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary:hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary:hover:disabled,
+.fd-button--light.fd-button--standard .is-hover[aria-disabled=true],
+.fd-button-group .fd-button--light[class*=fd-button--] .is-hover[aria-disabled=true],
+.fd-button-group .fd-button--light.fd-button .is-hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary .is-hover[aria-disabled=true],
+.fd-button--light.fd-button--standard .is-hover.is-disabled,
+.fd-button-group .fd-button--light[class*=fd-button--] .is-hover.is-disabled,
+.fd-button-group .fd-button--light.fd-button .is-hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary .is-hover.is-disabled,
+.fd-button--light.fd-button--standard .is-hover:disabled,
+.fd-button-group .fd-button--light[class*=fd-button--] .is-hover:disabled,
+.fd-button-group .fd-button--light.fd-button .is-hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary .is-hover:disabled, .fd-button--light.fd-button--positive:hover[aria-disabled=true], .fd-button--light.fd-button--positive:hover.is-disabled, .fd-button--light.fd-button--positive:hover:disabled,
+.fd-button--light.fd-button--positive .is-hover[aria-disabled=true],
+.fd-button--light.fd-button--positive .is-hover.is-disabled,
+.fd-button--light.fd-button--positive .is-hover:disabled, .fd-button--light.fd-button--negative:hover[aria-disabled=true], .fd-button--light.fd-button--negative:hover.is-disabled, .fd-button--light.fd-button--negative:hover:disabled,
+.fd-button--light.fd-button--negative .is-hover[aria-disabled=true],
+.fd-button--light.fd-button--negative .is-hover.is-disabled,
+.fd-button--light.fd-button--negative .is-hover:disabled, .fd-button--light.fd-button--medium:hover[aria-disabled=true], .fd-button--light.fd-button--medium:hover.is-disabled, .fd-button--light.fd-button--medium:hover:disabled,
+.fd-button--light.fd-button--medium .is-hover[aria-disabled=true],
+.fd-button--light.fd-button--medium .is-hover.is-disabled,
+.fd-button--light.fd-button--medium .is-hover:disabled,
+a.fd-button--light.fd-button--standard:hover[aria-disabled=true],
+a.fd-button--light.fd-button--standard:hover.is-disabled,
+a.fd-button--light.fd-button--standard:hover:disabled,
+a.fd-button--light.fd-button--standard .is-hover[aria-disabled=true],
+a.fd-button--light.fd-button--standard .is-hover.is-disabled,
+a.fd-button--light.fd-button--standard .is-hover:disabled,
+a.fd-button--light.fd-button--positive:hover[aria-disabled=true],
+a.fd-button--light.fd-button--positive:hover.is-disabled,
+a.fd-button--light.fd-button--positive:hover:disabled,
+a.fd-button--light.fd-button--positive .is-hover[aria-disabled=true],
+a.fd-button--light.fd-button--positive .is-hover.is-disabled,
+a.fd-button--light.fd-button--positive .is-hover:disabled,
+a.fd-button--light.fd-button--negative:hover[aria-disabled=true],
+a.fd-button--light.fd-button--negative:hover.is-disabled,
+a.fd-button--light.fd-button--negative:hover:disabled,
+a.fd-button--light.fd-button--negative .is-hover[aria-disabled=true],
+a.fd-button--light.fd-button--negative .is-hover.is-disabled,
+a.fd-button--light.fd-button--negative .is-hover:disabled,
+a.fd-button--light.fd-button--medium:hover[aria-disabled=true],
+a.fd-button--light.fd-button--medium:hover.is-disabled,
+a.fd-button--light.fd-button--medium:hover:disabled,
+a.fd-button--light.fd-button--medium .is-hover[aria-disabled=true],
+a.fd-button--light.fd-button--medium .is-hover.is-disabled,
+a.fd-button--light.fd-button--medium .is-hover:disabled {
+  --fd-button-background-color: transparent;
+  background-color: transparent;
+}
+.fd-button--light.fd-button--standard, .fd-button-group .fd-button--light[class*=fd-button--],
+.fd-button-group .fd-button--light.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary,
+a.fd-button--light.fd-button--standard {
+  --fd-button-color: var(--fd-color-status-4);
+}
+.fd-button--light.fd-button--standard:hover, .fd-button-group .fd-button--light[class*=fd-button--]:hover,
+.fd-button-group .fd-button--light.fd-button:hover,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary:hover,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary:hover,
+.fd-button--light.fd-button--standard .is-hover,
+.fd-button-group .fd-button--light[class*=fd-button--] .is-hover,
+.fd-button-group .fd-button--light.fd-button .is-hover,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary .is-hover,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary .is-hover,
+a.fd-button--light.fd-button--standard:hover,
+a.fd-button--light.fd-button--standard .is-hover {
+  --fd-button-color: var(--fd-color-status-4);
+  color: #6a6d70;
+}
+.fd-button--light.fd-button--standard:hover[aria-disabled=true], .fd-button-group .fd-button--light[class*=fd-button--]:hover[aria-disabled=true],
+.fd-button-group .fd-button--light.fd-button:hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary:hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary:hover[aria-disabled=true], .fd-button--light.fd-button--standard:hover.is-disabled, .fd-button-group .fd-button--light[class*=fd-button--]:hover.is-disabled,
+.fd-button-group .fd-button--light.fd-button:hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary:hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary:hover.is-disabled, .fd-button--light.fd-button--standard:hover:disabled, .fd-button-group .fd-button--light[class*=fd-button--]:hover:disabled,
+.fd-button-group .fd-button--light.fd-button:hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary:hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary:hover:disabled,
+.fd-button--light.fd-button--standard .is-hover[aria-disabled=true],
+.fd-button-group .fd-button--light[class*=fd-button--] .is-hover[aria-disabled=true],
+.fd-button-group .fd-button--light.fd-button .is-hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary .is-hover[aria-disabled=true],
+.fd-button--light.fd-button--standard .is-hover.is-disabled,
+.fd-button-group .fd-button--light[class*=fd-button--] .is-hover.is-disabled,
+.fd-button-group .fd-button--light.fd-button .is-hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary .is-hover.is-disabled,
+.fd-button--light.fd-button--standard .is-hover:disabled,
+.fd-button-group .fd-button--light[class*=fd-button--] .is-hover:disabled,
+.fd-button-group .fd-button--light.fd-button .is-hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary .is-hover:disabled,
+a.fd-button--light.fd-button--standard:hover[aria-disabled=true],
+a.fd-button--light.fd-button--standard:hover.is-disabled,
+a.fd-button--light.fd-button--standard:hover:disabled,
+a.fd-button--light.fd-button--standard .is-hover[aria-disabled=true],
+a.fd-button--light.fd-button--standard .is-hover.is-disabled,
+a.fd-button--light.fd-button--standard .is-hover:disabled {
+  --fd-button-color: var(--fd-color-status-4);
+}
+.fd-button--light.fd-button--standard:active, .fd-button-group .fd-button--light[class*=fd-button--]:active,
+.fd-button-group .fd-button--light.fd-button:active,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.btn-primary:active,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.btn-primary:active, .fd-button--light.fd-button--standard.is-active, .fd-button-group .fd-button--light.is-active[class*=fd-button--],
+.fd-button-group .fd-button--light.is-active.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.is-active.btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.is-active.btn-primary, .fd-button--light.fd-button--standard[aria-selected=true], .fd-button-group .fd-button--light[aria-selected=true][class*=fd-button--],
+.fd-button-group .fd-button--light[aria-selected=true].fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light[aria-selected=true].btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light[aria-selected=true].btn-primary, .fd-button--light.fd-button--standard.is-selected, .fd-button-group .fd-button--light.is-selected[class*=fd-button--],
+.fd-button-group .fd-button--light.is-selected.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.is-selected.btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.is-selected.btn-primary, .fd-button--light.fd-button--standard[aria-pressed=true], .fd-button-group .fd-button--light[aria-pressed=true][class*=fd-button--],
+.fd-button-group .fd-button--light[aria-pressed=true].fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light[aria-pressed=true].btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light[aria-pressed=true].btn-primary, .fd-button--light.fd-button--standard.is-pressed, .fd-button-group .fd-button--light.is-pressed[class*=fd-button--],
+.fd-button-group .fd-button--light.is-pressed.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button--light.is-pressed.btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .fd-button--light.is-pressed.btn-primary,
+a.fd-button--light.fd-button--standard:active,
+a.fd-button--light.fd-button--standard.is-active,
+a.fd-button--light.fd-button--standard[aria-selected=true],
+a.fd-button--light.fd-button--standard.is-selected,
+a.fd-button--light.fd-button--standard[aria-pressed=true],
+a.fd-button--light.fd-button--standard.is-pressed {
+  --fd-button-background-color: var(--fd-color-status-4);
+  --fd-button-color: var(--fd-color-action-2);
+  color: white;
+  background-color: #6a6d70;
+}
+.fd-button--light.fd-button--negative,
+a.fd-button--light.fd-button--negative {
+  --fd-button-color: var(--fd-color-status-3);
+}
+.fd-button--light.fd-button--negative:hover,
+.fd-button--light.fd-button--negative .is-hover,
+a.fd-button--light.fd-button--negative:hover,
+a.fd-button--light.fd-button--negative .is-hover {
+  --fd-button-color: var(--fd-color-status-3);
+  color: #bb0000;
+}
+.fd-button--light.fd-button--negative:hover[aria-disabled=true], .fd-button--light.fd-button--negative:hover.is-disabled, .fd-button--light.fd-button--negative:hover:disabled,
+.fd-button--light.fd-button--negative .is-hover[aria-disabled=true],
+.fd-button--light.fd-button--negative .is-hover.is-disabled,
+.fd-button--light.fd-button--negative .is-hover:disabled,
+a.fd-button--light.fd-button--negative:hover[aria-disabled=true],
+a.fd-button--light.fd-button--negative:hover.is-disabled,
+a.fd-button--light.fd-button--negative:hover:disabled,
+a.fd-button--light.fd-button--negative .is-hover[aria-disabled=true],
+a.fd-button--light.fd-button--negative .is-hover.is-disabled,
+a.fd-button--light.fd-button--negative .is-hover:disabled {
+  --fd-button-color: var(--fd-color-status-3);
+}
+.fd-button--light.fd-button--negative:active, .fd-button--light.fd-button--negative.is-active, .fd-button--light.fd-button--negative[aria-selected=true], .fd-button--light.fd-button--negative.is-selected, .fd-button--light.fd-button--negative[aria-pressed=true], .fd-button--light.fd-button--negative.is-pressed,
+a.fd-button--light.fd-button--negative:active,
+a.fd-button--light.fd-button--negative.is-active,
+a.fd-button--light.fd-button--negative[aria-selected=true],
+a.fd-button--light.fd-button--negative.is-selected,
+a.fd-button--light.fd-button--negative[aria-pressed=true],
+a.fd-button--light.fd-button--negative.is-pressed {
+  --fd-button-background-color: var(--fd-color-status-3);
+  --fd-button-color: var(--fd-color-action-2);
+  color: white;
+  background-color: #bb0000;
+}
+.fd-button--light.fd-button--positive,
+a.fd-button--light.fd-button--positive {
+  --fd-button-color: var(--fd-color-status-1);
+}
+.fd-button--light.fd-button--positive:hover,
+.fd-button--light.fd-button--positive .is-hover,
+a.fd-button--light.fd-button--positive:hover,
+a.fd-button--light.fd-button--positive .is-hover {
+  --fd-button-color: var(--fd-color-status-1);
+  color: #0a7e3e;
+}
+.fd-button--light.fd-button--positive:hover[aria-disabled=true], .fd-button--light.fd-button--positive:hover.is-disabled, .fd-button--light.fd-button--positive:hover:disabled,
+.fd-button--light.fd-button--positive .is-hover[aria-disabled=true],
+.fd-button--light.fd-button--positive .is-hover.is-disabled,
+.fd-button--light.fd-button--positive .is-hover:disabled,
+a.fd-button--light.fd-button--positive:hover[aria-disabled=true],
+a.fd-button--light.fd-button--positive:hover.is-disabled,
+a.fd-button--light.fd-button--positive:hover:disabled,
+a.fd-button--light.fd-button--positive .is-hover[aria-disabled=true],
+a.fd-button--light.fd-button--positive .is-hover.is-disabled,
+a.fd-button--light.fd-button--positive .is-hover:disabled {
+  --fd-button-color: var(--fd-color-status-1);
+}
+.fd-button--light.fd-button--positive:active, .fd-button--light.fd-button--positive.is-active, .fd-button--light.fd-button--positive[aria-selected=true], .fd-button--light.fd-button--positive.is-selected, .fd-button--light.fd-button--positive[aria-pressed=true], .fd-button--light.fd-button--positive.is-pressed,
+a.fd-button--light.fd-button--positive:active,
+a.fd-button--light.fd-button--positive.is-active,
+a.fd-button--light.fd-button--positive[aria-selected=true],
+a.fd-button--light.fd-button--positive.is-selected,
+a.fd-button--light.fd-button--positive[aria-pressed=true],
+a.fd-button--light.fd-button--positive.is-pressed {
+  --fd-button-background-color: var(--fd-color-status-1);
+  --fd-button-color: var(--fd-color-action-2);
+  color: white;
+  background-color: #0a7e3e;
+}
+.fd-button--light.fd-button--medium,
+a.fd-button--light.fd-button--medium {
+  --fd-button-color: var(--fd-color-status-2);
+}
+.fd-button--light.fd-button--medium:hover,
+.fd-button--light.fd-button--medium .is-hover,
+a.fd-button--light.fd-button--medium:hover,
+a.fd-button--light.fd-button--medium .is-hover {
+  --fd-button-color: var(--fd-color-status-2);
+  color: #e9730c;
+}
+.fd-button--light.fd-button--medium:hover[aria-disabled=true], .fd-button--light.fd-button--medium:hover.is-disabled, .fd-button--light.fd-button--medium:hover:disabled,
+.fd-button--light.fd-button--medium .is-hover[aria-disabled=true],
+.fd-button--light.fd-button--medium .is-hover.is-disabled,
+.fd-button--light.fd-button--medium .is-hover:disabled,
+a.fd-button--light.fd-button--medium:hover[aria-disabled=true],
+a.fd-button--light.fd-button--medium:hover.is-disabled,
+a.fd-button--light.fd-button--medium:hover:disabled,
+a.fd-button--light.fd-button--medium .is-hover[aria-disabled=true],
+a.fd-button--light.fd-button--medium .is-hover.is-disabled,
+a.fd-button--light.fd-button--medium .is-hover:disabled {
+  --fd-button-color: var(--fd-color-status-2);
+}
+.fd-button--light.fd-button--medium:active, .fd-button--light.fd-button--medium.is-active, .fd-button--light.fd-button--medium[aria-selected=true], .fd-button--light.fd-button--medium.is-selected, .fd-button--light.fd-button--medium[aria-pressed=true], .fd-button--light.fd-button--medium.is-pressed,
+a.fd-button--light.fd-button--medium:active,
+a.fd-button--light.fd-button--medium.is-active,
+a.fd-button--light.fd-button--medium[aria-selected=true],
+a.fd-button--light.fd-button--medium.is-selected,
+a.fd-button--light.fd-button--medium[aria-pressed=true],
+a.fd-button--light.fd-button--medium.is-pressed {
+  --fd-button-background-color: var(--fd-color-status-2);
+  --fd-button-color: var(--fd-color-action-2);
+  color: white;
+  background-color: #e9730c;
+}
+.fd-button--standard, .fd-button-group [class*=fd-button--],
+.fd-button-group .fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary, .fd-button--positive, .fd-button--negative, .fd-button--medium,
+a.fd-button--standard,
+a.fd-button--positive,
+a.fd-button--negative,
+a.fd-button--medium {
+  --fd-button-background-color: var(--fd-color-background-2);
+}
+.fd-button--standard:hover, .fd-button-group [class*=fd-button--]:hover,
+.fd-button-group .fd-button:hover,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:hover,
+.fd-button--standard .is-hover,
+.fd-button-group [class*=fd-button--] .is-hover,
+.fd-button-group .fd-button .is-hover,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary .is-hover, .fd-button--positive:hover,
+.fd-button--positive .is-hover, .fd-button--negative:hover,
+.fd-button--negative .is-hover, .fd-button--medium:hover,
+.fd-button--medium .is-hover,
+a.fd-button--standard:hover,
+a.fd-button--standard .is-hover,
+a.fd-button--positive:hover,
+a.fd-button--positive .is-hover,
+a.fd-button--negative:hover,
+a.fd-button--negative .is-hover,
+a.fd-button--medium:hover,
+a.fd-button--medium .is-hover {
+  --fd-button-color: var(--fd-color-action-2);
+}
+.fd-button--standard:active, .fd-button-group [class*=fd-button--]:active,
+.fd-button-group .fd-button:active,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:active,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:active, .fd-button--standard.is-active, .fd-button-group .is-active[class*=fd-button--],
+.fd-button-group .is-active.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .is-active.btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .is-active.btn-primary, .fd-button--standard[aria-selected=true], .fd-button-group [aria-selected=true][class*=fd-button--],
+.fd-button-group [aria-selected=true].fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [aria-selected=true].btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group [aria-selected=true].btn-primary, .fd-button--standard.is-selected, .fd-button-group .is-selected[class*=fd-button--],
+.fd-button-group .is-selected.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .is-selected.btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .is-selected.btn-primary, .fd-button--standard[aria-pressed=true], .fd-button-group [aria-pressed=true][class*=fd-button--],
+.fd-button-group [aria-pressed=true].fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [aria-pressed=true].btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group [aria-pressed=true].btn-primary, .fd-button--standard.is-pressed, .fd-button-group .is-pressed[class*=fd-button--],
+.fd-button-group .is-pressed.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .is-pressed.btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .is-pressed.btn-primary, .fd-button--positive:active, .fd-button--positive.is-active, .fd-button--positive[aria-selected=true], .fd-button--positive.is-selected, .fd-button--positive[aria-pressed=true], .fd-button--positive.is-pressed, .fd-button--negative:active, .fd-button--negative.is-active, .fd-button--negative[aria-selected=true], .fd-button--negative.is-selected, .fd-button--negative[aria-pressed=true], .fd-button--negative.is-pressed, .fd-button--medium:active, .fd-button--medium.is-active, .fd-button--medium[aria-selected=true], .fd-button--medium.is-selected, .fd-button--medium[aria-pressed=true], .fd-button--medium.is-pressed,
+a.fd-button--standard:active,
+a.fd-button--standard.is-active,
+a.fd-button--standard[aria-selected=true],
+a.fd-button--standard.is-selected,
+a.fd-button--standard[aria-pressed=true],
+a.fd-button--standard.is-pressed,
+a.fd-button--positive:active,
+a.fd-button--positive.is-active,
+a.fd-button--positive[aria-selected=true],
+a.fd-button--positive.is-selected,
+a.fd-button--positive[aria-pressed=true],
+a.fd-button--positive.is-pressed,
+a.fd-button--negative:active,
+a.fd-button--negative.is-active,
+a.fd-button--negative[aria-selected=true],
+a.fd-button--negative.is-selected,
+a.fd-button--negative[aria-pressed=true],
+a.fd-button--negative.is-pressed,
+a.fd-button--medium:active,
+a.fd-button--medium.is-active,
+a.fd-button--medium[aria-selected=true],
+a.fd-button--medium.is-selected,
+a.fd-button--medium[aria-pressed=true],
+a.fd-button--medium.is-pressed {
+  --fd-button-color: var(--fd-color-action-2);
+}
+.fd-button--standard, .fd-button-group [class*=fd-button--],
+.fd-button-group .fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary,
+a.fd-button--standard {
+  --fd-button-color: var(--fd-color-status-4);
+  --fd-button-border-color: var(--fd-color-status-4);
+  color: #6a6d70;
+  border-color: #6a6d70;
+}
+.fd-button--standard:focus, .fd-button-group [class*=fd-button--]:focus,
+.fd-button-group .fd-button:focus,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:focus,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:focus, .fd-button--standard.is-focus, .fd-button-group .is-focus[class*=fd-button--],
+.fd-button-group .is-focus.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .is-focus.btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .is-focus.btn-primary,
+a.fd-button--standard:focus,
+a.fd-button--standard.is-focus {
+  box-shadow: 0 0 0 1px #6a6d70;
+  box-shadow: 0 0 0 1px var(--fd-color-status-4);
+}
+.fd-button--standard:hover, .fd-button-group [class*=fd-button--]:hover,
+.fd-button-group .fd-button:hover,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:hover,
+.fd-button--standard .is-hover,
+.fd-button-group [class*=fd-button--] .is-hover,
+.fd-button-group .fd-button .is-hover,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary .is-hover,
+a.fd-button--standard:hover,
+a.fd-button--standard .is-hover {
+  --fd-button-color: var(--fd-color-action-2);
+  --fd-button-background-color: var(--fd-color-status-4);
+  color: white;
+  background-color: #6a6d70;
+}
+.fd-button--standard:hover[aria-disabled=true], .fd-button-group [class*=fd-button--]:hover[aria-disabled=true],
+.fd-button-group .fd-button:hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:hover[aria-disabled=true], .fd-button--standard:hover.is-disabled, .fd-button-group [class*=fd-button--]:hover.is-disabled,
+.fd-button-group .fd-button:hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:hover.is-disabled, .fd-button--standard:hover:disabled, .fd-button-group [class*=fd-button--]:hover:disabled,
+.fd-button-group .fd-button:hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:hover:disabled,
+.fd-button--standard .is-hover[aria-disabled=true],
+.fd-button-group [class*=fd-button--] .is-hover[aria-disabled=true],
+.fd-button-group .fd-button .is-hover[aria-disabled=true],
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover[aria-disabled=true],
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary .is-hover[aria-disabled=true],
+.fd-button--standard .is-hover.is-disabled,
+.fd-button-group [class*=fd-button--] .is-hover.is-disabled,
+.fd-button-group .fd-button .is-hover.is-disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover.is-disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary .is-hover.is-disabled,
+.fd-button--standard .is-hover:disabled,
+.fd-button-group [class*=fd-button--] .is-hover:disabled,
+.fd-button-group .fd-button .is-hover:disabled,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary .is-hover:disabled,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary .is-hover:disabled,
+a.fd-button--standard:hover[aria-disabled=true],
+a.fd-button--standard:hover.is-disabled,
+a.fd-button--standard:hover:disabled,
+a.fd-button--standard .is-hover[aria-disabled=true],
+a.fd-button--standard .is-hover.is-disabled,
+a.fd-button--standard .is-hover:disabled {
+  --fd-button-color: var(--fd-color-status-4);
+  color: #6a6d70;
+}
+.fd-button--standard:active, .fd-button-group [class*=fd-button--]:active,
+.fd-button-group .fd-button:active,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary:active,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .btn-primary:active, .fd-button--standard.is-active, .fd-button-group .is-active[class*=fd-button--],
+.fd-button-group .is-active.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .is-active.btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .is-active.btn-primary, .fd-button--standard[aria-selected=true], .fd-button-group [aria-selected=true][class*=fd-button--],
+.fd-button-group [aria-selected=true].fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [aria-selected=true].btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group [aria-selected=true].btn-primary, .fd-button--standard.is-selected, .fd-button-group .is-selected[class*=fd-button--],
+.fd-button-group .is-selected.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .is-selected.btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .is-selected.btn-primary, .fd-button--standard[aria-pressed=true], .fd-button-group [aria-pressed=true][class*=fd-button--],
+.fd-button-group [aria-pressed=true].fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right [aria-pressed=true].btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group [aria-pressed=true].btn-primary, .fd-button--standard.is-pressed, .fd-button-group .is-pressed[class*=fd-button--],
+.fd-button-group .is-pressed.fd-button,
+.fd-button-group .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .is-pressed.btn-primary,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .fd-button-group .is-pressed.btn-primary,
+a.fd-button--standard:active,
+a.fd-button--standard.is-active,
+a.fd-button--standard[aria-selected=true],
+a.fd-button--standard.is-selected,
+a.fd-button--standard[aria-pressed=true],
+a.fd-button--standard.is-pressed {
+  --fd-button-background-color: var(--fd-color-status-4);
+  background-color: #6a6d70;
+  color: white;
+}
+.fd-button--positive,
+a.fd-button--positive {
+  --fd-button-color: var(--fd-color-status-1);
+  --fd-button-border-color: var(--fd-color-status-1);
+  color: #0a7e3e;
+  border-color: #0a7e3e;
+}
+.fd-button--positive:focus, .fd-button--positive.is-focus,
+a.fd-button--positive:focus,
+a.fd-button--positive.is-focus {
+  box-shadow: 0 0 0 1px #0a7e3e;
+  box-shadow: 0 0 0 1px var(--fd-color-status-1);
+}
+.fd-button--positive:hover,
+.fd-button--positive .is-hover,
+a.fd-button--positive:hover,
+a.fd-button--positive .is-hover {
+  --fd-button-background-color: var(--fd-color-status-1);
+  background-color: #0a7e3e;
+}
+.fd-button--positive:hover[aria-disabled=true], .fd-button--positive:hover.is-disabled, .fd-button--positive:hover:disabled,
+.fd-button--positive .is-hover[aria-disabled=true],
+.fd-button--positive .is-hover.is-disabled,
+.fd-button--positive .is-hover:disabled,
+a.fd-button--positive:hover[aria-disabled=true],
+a.fd-button--positive:hover.is-disabled,
+a.fd-button--positive:hover:disabled,
+a.fd-button--positive .is-hover[aria-disabled=true],
+a.fd-button--positive .is-hover.is-disabled,
+a.fd-button--positive .is-hover:disabled {
+  --fd-button-color: var(--fd-color-status-1);
+  color: #0a7e3e;
+}
+.fd-button--positive:active, .fd-button--positive.is-active, .fd-button--positive[aria-selected=true], .fd-button--positive.is-selected, .fd-button--positive[aria-pressed=true], .fd-button--positive.is-pressed,
+a.fd-button--positive:active,
+a.fd-button--positive.is-active,
+a.fd-button--positive[aria-selected=true],
+a.fd-button--positive.is-selected,
+a.fd-button--positive[aria-pressed=true],
+a.fd-button--positive.is-pressed {
+  --fd-button-background-color: var(--fd-color-status-1);
+  background-color: #0a7e3e;
+}
+.fd-button--medium,
+a.fd-button--medium {
+  --fd-button-color: var(--fd-color-status-2);
+  --fd-button-border-color: var(--fd-color-status-2);
+  color: #e9730c;
+  border-color: #e9730c;
+}
+.fd-button--medium:focus, .fd-button--medium.is-focus,
+a.fd-button--medium:focus,
+a.fd-button--medium.is-focus {
+  box-shadow: 0 0 0 1px #e9730c;
+  box-shadow: 0 0 0 1px var(--fd-color-status-2);
+}
+.fd-button--medium:hover,
+.fd-button--medium .is-hover,
+a.fd-button--medium:hover,
+a.fd-button--medium .is-hover {
+  --fd-button-background-color: var(--fd-color-status-2);
+  background-color: #e9730c;
+}
+.fd-button--medium:hover[aria-disabled=true], .fd-button--medium:hover.is-disabled, .fd-button--medium:hover:disabled,
+.fd-button--medium .is-hover[aria-disabled=true],
+.fd-button--medium .is-hover.is-disabled,
+.fd-button--medium .is-hover:disabled,
+a.fd-button--medium:hover[aria-disabled=true],
+a.fd-button--medium:hover.is-disabled,
+a.fd-button--medium:hover:disabled,
+a.fd-button--medium .is-hover[aria-disabled=true],
+a.fd-button--medium .is-hover.is-disabled,
+a.fd-button--medium .is-hover:disabled {
+  --fd-button-color: var(--fd-color-status-2);
+  color: #e9730c;
+}
+.fd-button--medium:active, .fd-button--medium.is-active, .fd-button--medium[aria-selected=true], .fd-button--medium.is-selected, .fd-button--medium[aria-pressed=true], .fd-button--medium.is-pressed,
+a.fd-button--medium:active,
+a.fd-button--medium.is-active,
+a.fd-button--medium[aria-selected=true],
+a.fd-button--medium.is-selected,
+a.fd-button--medium[aria-pressed=true],
+a.fd-button--medium.is-pressed {
+  --fd-button-background-color: var(--fd-color-status-2);
+  background-color: #e9730c;
+}
+.fd-button--negative,
+a.fd-button--negative {
+  --fd-button-color: var(--fd-color-status-3);
+  --fd-button-border-color: var(--fd-color-status-3);
+  color: #bb0000;
+  border-color: #bb0000;
+}
+.fd-button--negative:focus, .fd-button--negative.is-focus,
+a.fd-button--negative:focus,
+a.fd-button--negative.is-focus {
+  box-shadow: 0 0 0 1px #bb0000;
+  box-shadow: 0 0 0 1px var(--fd-color-status-3);
+}
+.fd-button--negative:hover,
+.fd-button--negative .is-hover,
+a.fd-button--negative:hover,
+a.fd-button--negative .is-hover {
+  --fd-button-background-color: var(--fd-color-status-3);
+  background-color: #bb0000;
+}
+.fd-button--negative:hover[aria-disabled=true], .fd-button--negative:hover.is-disabled, .fd-button--negative:hover:disabled,
+.fd-button--negative .is-hover[aria-disabled=true],
+.fd-button--negative .is-hover.is-disabled,
+.fd-button--negative .is-hover:disabled,
+a.fd-button--negative:hover[aria-disabled=true],
+a.fd-button--negative:hover.is-disabled,
+a.fd-button--negative:hover:disabled,
+a.fd-button--negative .is-hover[aria-disabled=true],
+a.fd-button--negative .is-hover.is-disabled,
+a.fd-button--negative .is-hover:disabled {
+  --fd-button-color: var(--fd-color-status-3);
+  color: #bb0000;
+}
+.fd-button--negative:active, .fd-button--negative.is-active, .fd-button--negative[aria-selected=true], .fd-button--negative.is-selected, .fd-button--negative[aria-pressed=true], .fd-button--negative.is-pressed,
+a.fd-button--negative:active,
+a.fd-button--negative.is-active,
+a.fd-button--negative[aria-selected=true],
+a.fd-button--negative.is-selected,
+a.fd-button--negative[aria-pressed=true],
+a.fd-button--negative.is-pressed {
+  --fd-button-background-color: var(--fd-color-status-3);
+  background-color: #bb0000;
+}
+.fd-button--shell,
+a.fd-button--shell {
+  --fd-button-color: var(--fd-color-shell-2);
+  --fd-button-border-color: transparent;
+  --fd-button-background-color: transparent;
+  color: #d1e8ff;
+  border-color: transparent;
+  background-color: transparent;
+}
+.fd-button--shell[class*=sap-icon],
+a.fd-button--shell[class*=sap-icon] {
+  padding: 0;
+}
+.fd-button--shell[class*=sap-icon]::before, .fd-button--shell[class*=sap-icon]::after,
+a.fd-button--shell[class*=sap-icon]::before,
+a.fd-button--shell[class*=sap-icon]::after {
+  margin-right: 0;
+  margin-left: 0;
+}
+.fd-button--shell:focus,
+a.fd-button--shell:focus {
+  box-shadow: none;
+}
+.fd-button--shell:hover,
+.fd-button--shell .is-hover,
+a.fd-button--shell:hover,
+a.fd-button--shell .is-hover {
+  --fd-button-color: var(--fd-color-shell-2);
+  --fd-button-border-color: transparent;
+  --fd-button-background-color: hsl(217, 21%, 25%);
+  color: #d1e8ff;
+  border-color: transparent;
+  background-color: #323d4d;
+}
+.fd-button--shell:hover[aria-disabled=true], .fd-button--shell:hover.is-disabled, .fd-button--shell:hover:disabled,
+.fd-button--shell .is-hover[aria-disabled=true],
+.fd-button--shell .is-hover.is-disabled,
+.fd-button--shell .is-hover:disabled,
+a.fd-button--shell:hover[aria-disabled=true],
+a.fd-button--shell:hover.is-disabled,
+a.fd-button--shell:hover:disabled,
+a.fd-button--shell .is-hover[aria-disabled=true],
+a.fd-button--shell .is-hover.is-disabled,
+a.fd-button--shell .is-hover:disabled {
+  --fd-button-color: var(--fd-color-shell-2);
+  --fd-button-background-color: transparent;
+  color: #d1e8ff;
+  background-color: transparent;
+}
+.fd-button--shell:active, .fd-button--shell.is-active, .fd-button--shell[aria-selected=true], .fd-button--shell.is-selected, .fd-button--shell[aria-pressed=true], .fd-button--shell.is-pressed,
+a.fd-button--shell:active,
+a.fd-button--shell.is-active,
+a.fd-button--shell[aria-selected=true],
+a.fd-button--shell.is-selected,
+a.fd-button--shell[aria-pressed=true],
+a.fd-button--shell.is-pressed {
+  --fd-button-color: var(--fd-color-shell-2);
+  --fd-button-border-color: transparent;
+  --fd-button-background-color: hsl(217, 21%, 21%);
+  color: #d1e8ff;
+  border-color: transparent;
+  background-color: #2a3341;
+}
+
+/* stylelint-disable no-duplicate-selectors */
+.fd-button--xs {
+  font-size: 0.8571428571rem;
+  line-height: 1.3333333333;
+  font-weight: 400;
+  height: 24px;
+  max-height: 24px;
+  min-width: 24px;
+  line-height: 1;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.fd-button--xs::before {
+  font-size: 0.8571428571rem;
+  line-height: 1;
+}
+.fd-button--xs::after {
+  font-size: 0.8571428571rem;
+  line-height: 1;
+}
+.fd-button--xs::before, .fd-button--xs::after {
+  vertical-align: baseline;
+}
+.fd-button--xs::after {
+  font-size: 14px;
+  line-height: 20/14;
+}
+.fd-button--s {
+  font-size: 1rem;
+  line-height: 1.4285714286;
+  font-weight: 400;
+  height: 28px;
+  max-height: 28px;
+  min-width: 28px;
+  line-height: 1;
+}
+.fd-button--s::before {
+  font-size: 1.1428571429rem;
+  line-height: 1;
+}
+.fd-button--s::after {
+  font-size: 1.1428571429rem;
+  line-height: 1;
+}
+.fd-button--s::after {
+  font-size: 14px;
+  line-height: 20/14;
+}
+.fd-button--l {
+  font-size: 1rem;
+  line-height: 1.4285714286;
+  font-weight: 400;
+  height: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  line-height: 1;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.fd-button--l::before {
+  font-size: 1.4285714286rem;
+  line-height: 1;
+}
+.fd-button--l::after {
+  font-size: 1.4285714286rem;
+  line-height: 1;
+}
+.fd-button--main, .fd-button--action-bar {
+  --fd-button-color: var(--fd-color-action-2);
+  --fd-button-border-color: var(--fd-color-action-1);
+  --fd-button-background-color: var(--fd-color-action-1);
+}
+.fd-button--main:hover,
+.fd-button--main .is-hover, .fd-button--action-bar:hover,
+.fd-button--action-bar .is-hover {
+  --fd-button-background-color: var(--fd-color-action-hover);
+  --fd-button-color: var(--fd-color-action-2);
+}
+.fd-button--main:hover[aria-disabled=true], .fd-button--main:hover.is-disabled, .fd-button--main:hover:disabled,
+.fd-button--main .is-hover[aria-disabled=true],
+.fd-button--main .is-hover.is-disabled,
+.fd-button--main .is-hover:disabled, .fd-button--action-bar:hover[aria-disabled=true], .fd-button--action-bar:hover.is-disabled, .fd-button--action-bar:hover:disabled,
+.fd-button--action-bar .is-hover[aria-disabled=true],
+.fd-button--action-bar .is-hover.is-disabled,
+.fd-button--action-bar .is-hover:disabled {
+  --fd-button-background-color: var(--fd-color-action-1);
+  --fd-button-color: var(--fd-color-action-2);
+}
+.fd-button--main.fd-button--negative, .fd-button--action-bar.fd-button--negative {
+  --fd-button-color: var(--fd-color-action-2);
+  --fd-button-border-color: var(--fd-color-status-3);
+  --fd-button-background-color: var(--fd-color-status-3);
+}
+.fd-button--main.fd-button--negative:hover[aria-disabled=true], .fd-button--main.fd-button--negative:hover.is-disabled, .fd-button--main.fd-button--negative:hover:disabled,
+.fd-button--main.fd-button--negative .is-hover[aria-disabled=true],
+.fd-button--main.fd-button--negative .is-hover.is-disabled,
+.fd-button--main.fd-button--negative .is-hover:disabled, .fd-button--action-bar.fd-button--negative:hover[aria-disabled=true], .fd-button--action-bar.fd-button--negative:hover.is-disabled, .fd-button--action-bar.fd-button--negative:hover:disabled,
+.fd-button--action-bar.fd-button--negative .is-hover[aria-disabled=true],
+.fd-button--action-bar.fd-button--negative .is-hover.is-disabled,
+.fd-button--action-bar.fd-button--negative .is-hover:disabled {
+  --fd-button-background-color: var(--fd-color-status-3);
+  --fd-button-color: var(--fd-color-action-2);
+}
+.fd-button--main.fd-button--positive, .fd-button--action-bar.fd-button--positive {
+  --fd-button-color: var(--fd-color-action-2);
+  --fd-button-border-color: var(--fd-color-status-1);
+  --fd-button-background-color: var(--fd-color-status-1);
+}
+.fd-button--main.fd-button--positive:hover[aria-disabled=true], .fd-button--main.fd-button--positive:hover.is-disabled, .fd-button--main.fd-button--positive:hover:disabled,
+.fd-button--main.fd-button--positive .is-hover[aria-disabled=true],
+.fd-button--main.fd-button--positive .is-hover.is-disabled,
+.fd-button--main.fd-button--positive .is-hover:disabled, .fd-button--action-bar.fd-button--positive:hover[aria-disabled=true], .fd-button--action-bar.fd-button--positive:hover.is-disabled, .fd-button--action-bar.fd-button--positive:hover:disabled,
+.fd-button--action-bar.fd-button--positive .is-hover[aria-disabled=true],
+.fd-button--action-bar.fd-button--positive .is-hover.is-disabled,
+.fd-button--action-bar.fd-button--positive .is-hover:disabled {
+  --fd-button-background-color: var(--fd-color-status-1);
+  --fd-button-color: var(--fd-color-action-2);
+}
+.fd-button--secondary {
+  --fd-button-border-color: transparent;
+}
+.fd-button--secondary:hover,
+.fd-button--secondary .is-hover {
+  --fd-button-background-color: var(--fd-color-neutral-1);
+  --fd-button-color: var(--fd-color-action-1);
+}
+.fd-button--secondary:hover[aria-disabled=true], .fd-button--secondary:hover.is-disabled, .fd-button--secondary:hover:disabled,
+.fd-button--secondary .is-hover[aria-disabled=true],
+.fd-button--secondary .is-hover.is-disabled,
+.fd-button--secondary .is-hover:disabled {
+  --fd-button-background-color: var(--fd-color-background-2);
+  --fd-button-color: var(--fd-color-action-1);
+}
+.fd-button--secondary:active, .fd-button--secondary.is-active, .fd-button--secondary[aria-selected=true], .fd-button--secondary.is-selected, .fd-button--secondary[aria-pressed=true], .fd-button--secondary.is-pressed {
+  --fd-button-background-color: var(--fd-color-action-selected);
+  --fd-button-color: var(--fd-color-action-2);
+}
+.fd-button--secondary.fd-button--negative {
+  --fd-button-color: var(--fd-color-status-3);
+  --fd-button-border-color: transparent;
+  --fd-button-background-color: transparent;
+}
+.fd-button--secondary.fd-button--negative:hover,
+.fd-button--secondary.fd-button--negative .is-hover {
+  --fd-button-background-color: var(--fd-color-neutral-1);
+  --fd-button-color: var(--fd-color-status-3);
+}
+.fd-button--secondary.fd-button--negative:hover[aria-disabled=true], .fd-button--secondary.fd-button--negative:hover.is-disabled, .fd-button--secondary.fd-button--negative:hover:disabled,
+.fd-button--secondary.fd-button--negative .is-hover[aria-disabled=true],
+.fd-button--secondary.fd-button--negative .is-hover.is-disabled,
+.fd-button--secondary.fd-button--negative .is-hover:disabled {
+  --fd-button-background-color: transparent;
+  --fd-button-color: var(--fd-color-status-3);
+}
+.fd-button--secondary.fd-button--negative:active, .fd-button--secondary.fd-button--negative.is-active, .fd-button--secondary.fd-button--negative[aria-selected=true], .fd-button--secondary.fd-button--negative.is-selected, .fd-button--secondary.fd-button--negative[aria-pressed=true], .fd-button--secondary.fd-button--negative.is-pressed {
+  --fd-button-background-color: var(--fd-color-status-3);
+  --fd-button-color: var(--fd-color-action-2);
+}
+.fd-button--secondary.fd-button--positive {
+  --fd-button-color: var(--fd-color-status-1);
+  --fd-button-border-color: transparent;
+  --fd-button-background-color: transparent;
+}
+.fd-button--secondary.fd-button--positive:hover,
+.fd-button--secondary.fd-button--positive .is-hover {
+  --fd-button-background-color: var(--fd-color-neutral-1);
+  --fd-button-color: var(--fd-color-status-1);
+}
+.fd-button--secondary.fd-button--positive:hover[aria-disabled=true], .fd-button--secondary.fd-button--positive:hover.is-disabled, .fd-button--secondary.fd-button--positive:hover:disabled,
+.fd-button--secondary.fd-button--positive .is-hover[aria-disabled=true],
+.fd-button--secondary.fd-button--positive .is-hover.is-disabled,
+.fd-button--secondary.fd-button--positive .is-hover:disabled {
+  --fd-button-background-color: transparent;
+  --fd-button-color: var(--fd-color-status-1);
+}
+.fd-button--secondary.fd-button--positive:active, .fd-button--secondary.fd-button--positive.is-active, .fd-button--secondary.fd-button--positive[aria-selected=true], .fd-button--secondary.fd-button--positive.is-selected, .fd-button--secondary.fd-button--positive[aria-pressed=true], .fd-button--secondary.fd-button--positive.is-pressed {
+  --fd-button-background-color: var(--fd-color-status-1);
+  --fd-button-color: var(--fd-color-action-2);
+}
+.fd-button--toolbar {
+  --fd-button-color: var(--fd-color-text-2);
+  --fd-button-border-color: var(--fd-color-neutral-3);
+  --fd-button-background-color: var(--fd-color-neutral-1);
+}
+.fd-button--toolbar:focus, .fd-button--toolbar.is-focus {
+  box-shadow: 0 0 0 1px #085caf;
+  box-shadow: 0 0 0 1px var(--fd-color-neutral-3);
+}
+.fd-button--toolbar:active, .fd-button--toolbar.is-active, .fd-button--toolbar[aria-selected=true], .fd-button--toolbar.is-selected, .fd-button--toolbar[aria-pressed=true], .fd-button--toolbar.is-pressed {
+  --fd-button-background-color: var(--fd-color-action-selected);
+  --fd-button-color: var(--fd-color-action-2);
+}
+.fd-button--toolbar:hover,
+.fd-button--toolbar .is-hover {
+  --fd-button-background-color: var(--fd-color-action-hover);
+  --fd-button-color: var(--fd-color-action-2);
+}
+.fd-button--toolbar:hover[aria-disabled=true], .fd-button--toolbar:hover.is-disabled, .fd-button--toolbar:hover:disabled,
+.fd-button--toolbar .is-hover[aria-disabled=true],
+.fd-button--toolbar .is-hover.is-disabled,
+.fd-button--toolbar .is-hover:disabled {
+  --fd-button-background-color: var(--fd-color-neutral-3);
+  --fd-button-color: var(--fd-color-text-2);
+}
+
+/* stylelint-enable */
+.se-generic-editor .se-generic-editor__form {
+  padding: 0;
+}
+
+.se-generic-editor__header,
+.se-generic-editor__body,
+.se-generic-editor__footer {
+  padding: 20px;
+}
+
+.se-generic-editor__row {
+  margin-bottom: 16px;
+  white-space: initial;
+}
+
+.modal-footer.se-generic-editor__footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid #d9d9d9;
+  height: 69px;
+}
+.modal-footer.se-generic-editor__footer button {
+  text-transform: capitalize;
+  margin-left: 12px;
+}
+
+.se-control-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.se-control-label,
+.se-control-label > span:first-child {
+  color: #6a6d70;
+  margin-right: 4px;
+}
+.se-control-label.required::before {
+  font-weight: 700;
+  content: "*";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -8px;
+}
+
+.se-form-control-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.se-form-control-row--action {
+  cursor: pointer;
+}
+.se-form-control-row > * {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.se-form-control-row > *:first-child {
+  margin-right: 4px;
+}
+.se-form-control-row label {
+  color: #51555a;
+}
+
+.fd-form__label {
+  outline: none;
+}
+
+.se-form-help-message {
+  color: #6a6d70;
+  display: block;
+  padding: 8px 0;
+}
+
+.fd-form__message {
+  font-style: italic;
+}
+
+.se-generic-editor__row + .se-generic-editor__row--restrictions {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 16px;
+}
+
+.se-date-field.input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.se-date-field--input.fd-form-control {
+  box-shadow: none !important;
+  border-radius: 4px 0 0 4px;
+  height: 36px;
+}
+
+.se-date-field--button.input-group-addon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #89919a;
+  border-left: none;
+  box-shadow: none !important;
+  outline: none;
+  height: 36px;
+  background-color: #fafafa;
+  width: 36px;
+  color: #0a6ed1;
+}
+.se-date-field--button.input-group-addon:focus {
+  border: 2px solid #1973cc;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right {
+  top: 34px !important;
+  border-radius: 4px;
+  padding: 12px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right::before, .bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right::after {
+  display: none;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .list-unstyled {
+  display: flex;
+  flex-direction: column;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right a.btn:hover {
+  color: #0a6ed1;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .picker-switch.accordion-toggle {
+  order: 2;
+  width: 252px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .picker-switch.accordion-toggle tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .picker-switch.accordion-toggle td,
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .picker-switch.accordion-toggle a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 36px;
+  padding: 0;
+  text-decoration: none;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right .btn-primary {
+  font-family: "72", "web", "Open Sans", sans-serif;
+  box-shadow: none;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.dropdown-menu.pull-right table td.day {
+  line-height: 26px;
+  width: 36px;
+}
+
+select.cke_dialog_ui_input_select {
+  background-image: none;
+  -webkit-appearance: searchfield;
+  -moz-appearance: menulist;
+}se-dropdown-menu .fd-popover__popper {
+  border: 0;
+}
+
+.se-dropdown-more-menu__toggle {
+  color: #0a6ed1;
+  cursor: pointer;
+}
+.se-dropdown-more-menu__toggle.sap-icon--overflow {
+  position: relative;
+  bottom: 3px;
+}
+
+.se-dropdown-menu__list {
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+}
+.se-dropdown-menu__list .se-dropdown-menu__item-wrapper {
+  border-top: #eeeeef;
+}
+.se-dropdown-menu__list .se-dropdown-menu__item-wrapper:first-child .se-dropdown-item {
+  border-radius: 4px 4px 0 0;
+}
+.se-dropdown-menu__list .se-dropdown-menu__item-wrapper:last-child .se-dropdown-item {
+  border-radius: 0 0 4px 4px;
+}
+.se-dropdown-menu__list .se-dropdown-item {
+  text-decoration: none !important;
+  white-space: nowrap;
+  color: #32363a;
+  padding-left: 16px;
+  width: 100%;
+}
+.se-dropdown-menu__list .se-dropdown-item__delete,
+.se-dropdown-menu__list .se-dropdown-item__delete a {
+  order: 99;
+}
+.se-dropdown-menu__list .se-dropdown-item__delete, .se-dropdown-menu__list .se-dropdown-item__delete:hover,
+.se-dropdown-menu__list .se-dropdown-item__delete a,
+.se-dropdown-menu__list .se-dropdown-item__delete a:hover {
+  color: #bb0000;
+}
+.se-dropdown-menu__list .se-dropdown-item__delete.se-dropdown-item--disabled, .se-dropdown-menu__list .se-dropdown-item__delete.se-dropdown-item--disabled:hover,
+.se-dropdown-menu__list .se-dropdown-item__delete a.se-dropdown-item--disabled,
+.se-dropdown-menu__list .se-dropdown-item__delete a.se-dropdown-item--disabled:hover {
+  opacity: 0.4;
+  padding-right: 8px !important;
+  background: white !important;
+}
+
+.se-dropdown-item__delete-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.se-dropdown-item__delete-page-popover {
+  margin-right: 16px;
+}
+.se-dropdown-item__delete-page-popover .sap-icon--message-error {
+  color: #0a6ed1;
+}
+
+.se-dropdown-item__delete-link-wrapper {
+  width: 100%;
+}
+
+.se-dropdown-item__delete-link-wrapper--disabled {
+  cursor: not-allowed;
+}.se-dynamic-paged-list th {
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.se-dynamic-paged-list .fd-panel__footer {
+  border-radius: 0 0 4px 4px;
+  background-color: white;
+  height: 56px;
+  border-top: none !important;
+  padding: 0 16px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.se-dynamic-paged-list .fd-panel__footer .se-paged-list__page-count-wrapper--footer {
+  font-size: 1rem;
+  line-height: 1.4285714286;
+  font-weight: 400;
+}
+.se-dynamic-paged-list .fd-panel__footer .se-dynamic-list__pagination {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}@charset "UTF-8";
+@font-face {
+  font-family: "SAP-icons";
+  src: url("~fiori-fundamentals/scss/icons/SAP-icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* data attributes for inserting icons
+  <span data-sap-icon="\e001"> My Account</span>
+*/
+/* class per icon */
+[class*=sap-icon]::before {
+  font-family: "SAP-icons";
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  display: inline-block;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+}
+
+.sap-icon--s::before, .sap-icon--small::before {
+  font-size: 0.8571428571rem;
+  line-height: 1;
+}
+.sap-icon--m::before, .sap-icon--medium::before {
+  font-size: 1.1428571429rem;
+  line-height: 1;
+}
+.sap-icon--l::before, .sap-icon--large::before {
+  font-size: 1.4285714286rem;
+  line-height: 1;
+}
+.sap-icon--xl::before, .sap-icon--xlarge::before {
+  font-size: 1.7142857143rem;
+  line-height: 1;
+}
+.sap-icon--accidental-leave::before {
+  content: "";
+}
+.sap-icon--account::before {
+  content: "";
+}
+.sap-icon--wrench::before {
+  content: "";
+}
+.sap-icon--windows-doors::before {
+  content: "";
+}
+.sap-icon--washing-machine::before {
+  content: "";
+}
+.sap-icon--visits::before {
+  content: "";
+}
+.sap-icon--video::before {
+  content: "";
+}
+.sap-icon--travel-expense::before {
+  content: "";
+}
+.sap-icon--temperature::before {
+  content: "";
+}
+.sap-icon--task::before {
+  content: "";
+}
+.sap-icon--synchronize::before {
+  content: "";
+}
+.sap-icon--survey::before {
+  content: "";
+}
+.sap-icon--settings::before {
+  content: "";
+}
+.sap-icon--search::before {
+  content: "";
+}
+.sap-icon--sales-document::before {
+  content: "";
+}
+.sap-icon--retail-store::before {
+  content: "";
+}
+.sap-icon--refresh::before {
+  content: "";
+}
+.sap-icon--product::before {
+  content: "";
+}
+.sap-icon--present::before {
+  content: "";
+}
+.sap-icon--ppt-attachment::before {
+  content: "";
+}
+.sap-icon--pool::before {
+  content: "";
+}
+.sap-icon--pie-chart::before {
+  content: "";
+}
+.sap-icon--picture::before {
+  content: "";
+}
+.sap-icon--photo-voltaic::before {
+  content: "";
+}
+.sap-icon--phone::before {
+  content: "";
+}
+.sap-icon--pending::before {
+  content: "";
+}
+.sap-icon--pdf-attachment::before {
+  content: "";
+}
+.sap-icon--past::before {
+  content: "";
+}
+.sap-icon--outgoing-call::before {
+  content: "";
+}
+.sap-icon--opportunity::before {
+  content: "";
+}
+.sap-icon--opportunities::before {
+  content: "";
+}
+.sap-icon--notes::before {
+  content: "";
+}
+.sap-icon--money-bills::before {
+  content: "";
+}
+.sap-icon--map::before {
+  content: "";
+}
+.sap-icon--log::before {
+  content: "";
+}
+.sap-icon--line-charts::before {
+  content: "";
+}
+.sap-icon--lightbulb::before {
+  content: "";
+}
+.sap-icon--leads::before {
+  content: "";
+}
+.sap-icon--lead::before {
+  content: "";
+}
+.sap-icon--laptop::before {
+  content: "";
+}
+.sap-icon--kpi-managing-my-area::before {
+  content: "";
+}
+.sap-icon--kpi-corporate-performance::before {
+  content: "";
+}
+.sap-icon--incoming-call::before {
+  content: "";
+}
+.sap-icon--inbox::before {
+  content: "";
+}
+.sap-icon--horizontal-bar-chart::before {
+  content: "";
+}
+.sap-icon--history::before {
+  content: "";
+}
+.sap-icon--heating-cooling::before {
+  content: "";
+}
+.sap-icon--gantt-bars::before {
+  content: "";
+}
+.sap-icon--future::before {
+  content: "";
+}
+.sap-icon--fridge::before {
+  content: "";
+}
+.sap-icon--fallback::before {
+  content: "";
+}
+.sap-icon--expense-report::before {
+  content: "";
+}
+.sap-icon--excel-attachment::before {
+  content: "";
+}
+.sap-icon--energy-saving-lightbulb::before {
+  content: "";
+}
+.sap-icon--employee::before {
+  content: "";
+}
+.sap-icon--email::before {
+  content: "";
+}
+.sap-icon--edit::before {
+  content: "";
+}
+.sap-icon--duplicate::before {
+  content: "";
+}
+.sap-icon--download::before {
+  content: "";
+}
+.sap-icon--doc-attachment::before {
+  content: "";
+}
+.sap-icon--dishwasher::before {
+  content: "";
+}
+.sap-icon--delete::before {
+  content: "";
+}
+.sap-icon--decline::before {
+  content: "";
+}
+.sap-icon--complete::before {
+  content: "";
+}
+.sap-icon--competitor::before {
+  content: "";
+}
+.sap-icon--collections-management::before {
+  content: "";
+}
+.sap-icon--chalkboard::before {
+  content: "";
+}
+.sap-icon--cart::before {
+  content: "";
+}
+.sap-icon--card::before {
+  content: "";
+}
+.sap-icon--camera::before {
+  content: "";
+}
+.sap-icon--calendar::before {
+  content: "";
+}
+.sap-icon--begin::before {
+  content: "";
+}
+.sap-icon--basket::before {
+  content: "";
+}
+.sap-icon--bar-chart::before {
+  content: "";
+}
+.sap-icon--attachment::before {
+  content: "";
+}
+.sap-icon--arrow-top::before {
+  content: "";
+}
+.sap-icon--arrow-right::before {
+  content: "";
+}
+.sap-icon--arrow-left::before {
+  content: "";
+}
+.sap-icon--arrow-bottom::before {
+  content: "";
+}
+.sap-icon--approvals::before {
+  content: "";
+}
+.sap-icon--appointment::before {
+  content: "";
+}
+.sap-icon--alphabetical-order::before {
+  content: "";
+}
+.sap-icon--along-stacked-chart::before {
+  content: "";
+}
+.sap-icon--alert::before {
+  content: "";
+}
+.sap-icon--addresses::before {
+  content: "";
+}
+.sap-icon--address-book::before {
+  content: "";
+}
+.sap-icon--add-filter::before {
+  content: "";
+}
+.sap-icon--add-favorite::before {
+  content: "";
+}
+.sap-icon--add::before {
+  content: "";
+}
+.sap-icon--activities::before {
+  content: "";
+}
+.sap-icon--action::before {
+  content: "";
+}
+.sap-icon--accept::before {
+  content: "";
+}
+.sap-icon--hint::before {
+  content: "";
+}
+.sap-icon--group::before {
+  content: "";
+}
+.sap-icon--check-availability::before {
+  content: "";
+}
+.sap-icon--weather-proofing::before {
+  content: "";
+}
+.sap-icon--payment-approval::before {
+  content: "";
+}
+.sap-icon--batch-payments::before {
+  content: "";
+}
+.sap-icon--bed::before {
+  content: "";
+}
+.sap-icon--arobase::before {
+  content: "";
+}
+.sap-icon--family-care::before {
+  content: "";
+}
+.sap-icon--favorite::before {
+  content: "";
+}
+.sap-icon--navigation-right-arrow::before {
+  content: "";
+}
+.sap-icon--navigation-left-arrow::before {
+  content: "";
+}
+.sap-icon--e-care::before {
+  content: "";
+}
+.sap-icon--less::before {
+  content: "";
+}
+.sap-icon--lateness::before {
+  content: "";
+}
+.sap-icon--lab::before {
+  content: "";
+}
+.sap-icon--internet-browser::before {
+  content: "";
+}
+.sap-icon--instance::before {
+  content: "";
+}
+.sap-icon--inspection::before {
+  content: "";
+}
+.sap-icon--image-viewer::before {
+  content: "";
+}
+.sap-icon--home::before {
+  content: "";
+}
+.sap-icon--grid::before {
+  content: "";
+}
+.sap-icon--goalseek::before {
+  content: "";
+}
+.sap-icon--general-leave-request::before {
+  content: "";
+}
+.sap-icon--create-leave-request::before {
+  content: "";
+}
+.sap-icon--flight::before {
+  content: "";
+}
+.sap-icon--filter::before {
+  content: "";
+}
+.sap-icon--favorite-list::before {
+  content: "";
+}
+.sap-icon--factory::before {
+  content: "";
+}
+.sap-icon--endoscopy::before {
+  content: "";
+}
+.sap-icon--employee-pane::before {
+  content: "";
+}
+.sap-icon--employee-approvals::before {
+  content: "";
+}
+.sap-icon--email-read::before {
+  content: "";
+}
+.sap-icon--electrocardiogram::before {
+  content: "";
+}
+.sap-icon--documents::before {
+  content: "";
+}
+.sap-icon--decision::before {
+  content: "";
+}
+.sap-icon--database::before {
+  content: "";
+}
+.sap-icon--customer-history::before {
+  content: "";
+}
+.sap-icon--customer::before {
+  content: "";
+}
+.sap-icon--credit-card::before {
+  content: "";
+}
+.sap-icon--create-entry-time::before {
+  content: "";
+}
+.sap-icon--contacts::before {
+  content: "";
+}
+.sap-icon--compare::before {
+  content: "";
+}
+.sap-icon--clinical-order::before {
+  content: "";
+}
+.sap-icon--chain-link::before {
+  content: "";
+}
+.sap-icon--pull-down::before {
+  content: "";
+}
+.sap-icon--cargo-train::before {
+  content: "";
+}
+.sap-icon--car-rental::before {
+  content: "";
+}
+.sap-icon--business-card::before {
+  content: "";
+}
+.sap-icon--bar-code::before {
+  content: "";
+}
+.sap-icon--folder-blank::before {
+  content: "";
+}
+.sap-icon--passenger-train::before {
+  content: "";
+}
+.sap-icon--question-mark::before {
+  content: "";
+}
+.sap-icon--world::before {
+  content: "";
+}
+.sap-icon--iphone::before {
+  content: "";
+}
+.sap-icon--ipad::before {
+  content: "";
+}
+.sap-icon--warning::before {
+  content: "";
+}
+.sap-icon--sort::before {
+  content: "";
+}
+.sap-icon--course-book::before {
+  content: "";
+}
+.sap-icon--course-program::before {
+  content: "";
+}
+.sap-icon--add-coursebook::before {
+  content: "";
+}
+.sap-icon--print::before {
+  content: "";
+}
+.sap-icon--save::before {
+  content: "";
+}
+.sap-icon--play::before {
+  content: "";
+}
+.sap-icon--pause::before {
+  content: "";
+}
+.sap-icon--record::before {
+  content: "";
+}
+.sap-icon--response::before {
+  content: "";
+}
+.sap-icon--pushpin-on::before {
+  content: "";
+}
+.sap-icon--pushpin-off::before {
+  content: "";
+}
+.sap-icon--unfavorite::before {
+  content: "";
+}
+.sap-icon--learning-assistant::before {
+  content: "";
+}
+.sap-icon--timesheet::before {
+  content: "";
+}
+.sap-icon--time-entry-request::before {
+  content: "";
+}
+.sap-icon--list::before {
+  content: "";
+}
+.sap-icon--action-settings::before {
+  content: "";
+}
+.sap-icon--share::before {
+  content: "";
+}
+.sap-icon--feed::before {
+  content: "";
+}
+.sap-icon--role::before {
+  content: "";
+}
+.sap-icon--flag::before {
+  content: "";
+}
+.sap-icon--post::before {
+  content: "";
+}
+.sap-icon--inspect::before {
+  content: "";
+}
+.sap-icon--inspect-down::before {
+  content: "";
+}
+.sap-icon--appointment-2::before {
+  content: "";
+}
+.sap-icon--target-group::before {
+  content: "";
+}
+.sap-icon--marketing-campaign::before {
+  content: "";
+}
+.sap-icon--message-error::before {
+  content: "";
+}
+.sap-icon--notification::before {
+  content: "";
+}
+.sap-icon--comment::before {
+  content: "";
+}
+.sap-icon--shipping-status::before {
+  content: "";
+}
+.sap-icon--collaborate::before {
+  content: "";
+}
+.sap-icon--shortcut::before {
+  content: "";
+}
+.sap-icon--lead-outdated::before {
+  content: "";
+}
+.sap-icon--tools-opportunity::before {
+  content: "";
+}
+.sap-icon--permission::before {
+  content: "";
+}
+.sap-icon--supplier::before {
+  content: "";
+}
+.sap-icon--table-view::before {
+  content: "";
+}
+.sap-icon--table-chart::before {
+  content: "";
+}
+.sap-icon--switch-views::before {
+  content: "";
+}
+.sap-icon--e-learning::before {
+  content: "";
+}
+.sap-icon--manager::before {
+  content: "";
+}
+.sap-icon--switch-classes::before {
+  content: "";
+}
+.sap-icon--simple-payment::before {
+  content: "";
+}
+.sap-icon--signature::before {
+  content: "";
+}
+.sap-icon--sales-order-item::before {
+  content: "";
+}
+.sap-icon--sales-order::before {
+  content: "";
+}
+.sap-icon--request::before {
+  content: "";
+}
+.sap-icon--receipt::before {
+  content: "";
+}
+.sap-icon--puzzle::before {
+  content: "";
+}
+.sap-icon--process::before {
+  content: "";
+}
+.sap-icon--private::before {
+  content: "";
+}
+.sap-icon--popup-window::before {
+  content: "";
+}
+.sap-icon--person-placeholder::before {
+  content: "";
+}
+.sap-icon--per-diem::before {
+  content: "";
+}
+.sap-icon--paper-plane::before {
+  content: "";
+}
+.sap-icon--paid-leave::before {
+  content: "";
+}
+.sap-icon--pdf-reader::before {
+  content: "";
+}
+.sap-icon--overview-chart::before {
+  content: "";
+}
+.sap-icon--overlay::before {
+  content: "";
+}
+.sap-icon--org-chart::before {
+  content: "";
+}
+.sap-icon--number-sign::before {
+  content: "";
+}
+.sap-icon--notification-2::before {
+  content: "";
+}
+.sap-icon--my-sales-order::before {
+  content: "";
+}
+.sap-icon--meal::before {
+  content: "";
+}
+.sap-icon--loan::before {
+  content: "";
+}
+.sap-icon--order-status::before {
+  content: "";
+}
+.sap-icon--customer-order-entry::before {
+  content: "";
+}
+.sap-icon--performance::before {
+  content: "";
+}
+.sap-icon--menu::before {
+  content: "";
+}
+.sap-icon--employee-lookup::before {
+  content: "";
+}
+.sap-icon--education::before {
+  content: "";
+}
+.sap-icon--customer-briefing::before {
+  content: "";
+}
+.sap-icon--customer-and-contacts::before {
+  content: "";
+}
+.sap-icon--my-view::before {
+  content: "";
+}
+.sap-icon--accelerated::before {
+  content: "";
+}
+.sap-icon--to-be-reviewed::before {
+  content: "";
+}
+.sap-icon--warning2::before {
+  content: "";
+}
+.sap-icon--feeder-arrow::before {
+  content: "";
+}
+.sap-icon--quality-issue::before {
+  content: "";
+}
+.sap-icon--workflow-tasks::before {
+  content: "";
+}
+.sap-icon--create::before {
+  content: "";
+}
+.sap-icon--home-share::before {
+  content: "";
+}
+.sap-icon--globe::before {
+  content: "";
+}
+.sap-icon--tags::before {
+  content: "";
+}
+.sap-icon--work-history::before {
+  content: "";
+}
+.sap-icon--x-ray::before {
+  content: "";
+}
+.sap-icon--wounds-doc::before {
+  content: "";
+}
+.sap-icon--web-cam::before {
+  content: "";
+}
+.sap-icon--waiver::before {
+  content: "";
+}
+.sap-icon--vertical-bar-chart::before {
+  content: "";
+}
+.sap-icon--upstacked-chart::before {
+  content: "";
+}
+.sap-icon--trip-report::before {
+  content: "";
+}
+.sap-icon--microphone::before {
+  content: "";
+}
+.sap-icon--unpaid-leave::before {
+  content: "";
+}
+.sap-icon--tree::before {
+  content: "";
+}
+.sap-icon--toaster-up::before {
+  content: "";
+}
+.sap-icon--toaster-top::before {
+  content: "";
+}
+.sap-icon--toaster-down::before {
+  content: "";
+}
+.sap-icon--time-account::before {
+  content: "";
+}
+.sap-icon--theater::before {
+  content: "";
+}
+.sap-icon--taxi::before {
+  content: "";
+}
+.sap-icon--subway-train::before {
+  content: "";
+}
+.sap-icon--study-leave::before {
+  content: "";
+}
+.sap-icon--stethoscope::before {
+  content: "";
+}
+.sap-icon--step::before {
+  content: "";
+}
+.sap-icon--sonography::before {
+  content: "";
+}
+.sap-icon--soccor::before {
+  content: "";
+}
+.sap-icon--physical-activity::before {
+  content: "";
+}
+.sap-icon--pharmacy::before {
+  content: "";
+}
+.sap-icon--official-service::before {
+  content: "";
+}
+.sap-icon--offsite-work::before {
+  content: "";
+}
+.sap-icon--nutrition-activity::before {
+  content: "";
+}
+.sap-icon--newspaper::before {
+  content: "";
+}
+.sap-icon--monitor-payments::before {
+  content: "";
+}
+.sap-icon--map-2::before {
+  content: "";
+}
+.sap-icon--machine::before {
+  content: "";
+}
+.sap-icon--mri-scan::before {
+  content: "";
+}
+.sap-icon--end-user-experience-monitoring::before {
+  content: "";
+}
+.sap-icon--unwired::before {
+  content: "";
+}
+.sap-icon--customer-financial-fact-sheet::before {
+  content: "";
+}
+.sap-icon--retail-store-manager::before {
+  content: "";
+}
+.sap-icon--Netweaver-business-client::before {
+  content: "";
+}
+.sap-icon--electronic-medical-record::before {
+  content: "";
+}
+.sap-icon--eam-work-order::before {
+  content: "";
+}
+.sap-icon--customer-view::before {
+  content: "";
+}
+.sap-icon--crm-service-manager::before {
+  content: "";
+}
+.sap-icon--crm-sales::before {
+  content: "";
+}
+.sap-icon--widgets::before {
+  content: "";
+}
+.sap-icon--commission-check::before {
+  content: "";
+}
+.sap-icon--collections-insight::before {
+  content: "";
+}
+.sap-icon--clinical-tast-tracker::before {
+  content: "";
+}
+.sap-icon--citizen-connect::before {
+  content: "";
+}
+.sap-icon--cart-approval::before {
+  content: "";
+}
+.sap-icon--capital-projects::before {
+  content: "";
+}
+.sap-icon--bo-strategy-management::before {
+  content: "";
+}
+.sap-icon--business-objects-mobile::before {
+  content: "";
+}
+.sap-icon--business-objects-explorer::before {
+  content: "";
+}
+.sap-icon--business-objects-experience::before {
+  content: "";
+}
+.sap-icon--bbyd-dashboard::before {
+  content: "";
+}
+.sap-icon--bbyd-active-sales::before {
+  content: "";
+}
+.sap-icon--business-by-design::before {
+  content: "";
+}
+.sap-icon--business-one::before {
+  content: "";
+}
+.sap-icon--sap-box::before {
+  content: "";
+}
+.sap-icon--manager-insight::before {
+  content: "";
+}
+.sap-icon--accounting-document-verification::before {
+  content: "";
+}
+.sap-icon--hr-approval::before {
+  content: "";
+}
+.sap-icon--idea-wall::before {
+  content: "";
+}
+.sap-icon--Chart-Tree-Map::before {
+  content: "";
+}
+.sap-icon--cart-5::before {
+  content: "";
+}
+.sap-icon--cart-4::before {
+  content: "";
+}
+.sap-icon--wallet::before {
+  content: "";
+}
+.sap-icon--vehicle-repair::before {
+  content: "";
+}
+.sap-icon--upload::before {
+  content: "";
+}
+.sap-icon--unlocked::before {
+  content: "";
+}
+.sap-icon--umbrella::before {
+  content: "";
+}
+.sap-icon--travel-request::before {
+  content: "";
+}
+.sap-icon--travel-expense-report::before {
+  content: "";
+}
+.sap-icon--travel-itinerary::before {
+  content: "";
+}
+.sap-icon--time-overtime::before {
+  content: "";
+}
+.sap-icon--thing-type::before {
+  content: "";
+}
+.sap-icon--technical-object::before {
+  content: "";
+}
+.sap-icon--tag::before {
+  content: "";
+}
+.sap-icon--syringe::before {
+  content: "";
+}
+.sap-icon--syntax::before {
+  content: "";
+}
+.sap-icon--suitcase::before {
+  content: "";
+}
+.sap-icon--simulate::before {
+  content: "";
+}
+.sap-icon--shield::before {
+  content: "";
+}
+.sap-icon--share-2::before {
+  content: "";
+}
+.sap-icon--sales-quote::before {
+  content: "";
+}
+.sap-icon--repost::before {
+  content: "";
+}
+.sap-icon--provision::before {
+  content: "";
+}
+.sap-icon--projector::before {
+  content: "";
+}
+.sap-icon--add-product::before {
+  content: "";
+}
+.sap-icon--pipeline-analysis::before {
+  content: "";
+}
+.sap-icon--add-photo::before {
+  content: "";
+}
+.sap-icon--palette::before {
+  content: "";
+}
+.sap-icon--nurse::before {
+  content: "";
+}
+.sap-icon--sales-notification::before {
+  content: "";
+}
+.sap-icon--mileage::before {
+  content: "";
+}
+.sap-icon--meeting-room::before {
+  content: "";
+}
+.sap-icon--media-forward::before {
+  content: "";
+}
+.sap-icon--media-play::before {
+  content: "";
+}
+.sap-icon--media-pause::before {
+  content: "";
+}
+.sap-icon--media-reverse::before {
+  content: "";
+}
+.sap-icon--media-rewind::before {
+  content: "";
+}
+.sap-icon--measurement-document::before {
+  content: "";
+}
+.sap-icon--measuring-point::before {
+  content: "";
+}
+.sap-icon--measure::before {
+  content: "";
+}
+.sap-icon--map-3::before {
+  content: "";
+}
+.sap-icon--locked::before {
+  content: "";
+}
+.sap-icon--letter::before {
+  content: "";
+}
+.sap-icon--journey-arrive::before {
+  content: "";
+}
+.sap-icon--journey-change::before {
+  content: "";
+}
+.sap-icon--journey-depart::before {
+  content: "";
+}
+.sap-icon--it-system::before {
+  content: "";
+}
+.sap-icon--it-instance::before {
+  content: "";
+}
+.sap-icon--it-host::before {
+  content: "";
+}
+.sap-icon--iphone-2::before {
+  content: "";
+}
+.sap-icon--ipad-2::before {
+  content: "";
+}
+.sap-icon--inventory::before {
+  content: "";
+}
+.sap-icon--insurance-house::before {
+  content: "";
+}
+.sap-icon--insurance-life::before {
+  content: "";
+}
+.sap-icon--insurance-car::before {
+  content: "";
+}
+.sap-icon--initiative::before {
+  content: "";
+}
+.sap-icon--incident::before {
+  content: "";
+}
+.sap-icon--group-2::before {
+  content: "";
+}
+.sap-icon--goal::before {
+  content: "";
+}
+.sap-icon--functional-location::before {
+  content: "";
+}
+.sap-icon--full-screen::before {
+  content: "";
+}
+.sap-icon--form::before {
+  content: "";
+}
+.sap-icon--fob-watch::before {
+  content: "";
+}
+.sap-icon--blank-tag::before {
+  content: "";
+}
+.sap-icon--family-protection::before {
+  content: "";
+}
+.sap-icon--folder::before {
+  content: "";
+}
+.sap-icon--fax-machine::before {
+  content: "";
+}
+.sap-icon--example::before {
+  content: "";
+}
+.sap-icon--eraser::before {
+  content: "";
+}
+.sap-icon--employee-rejections::before {
+  content: "";
+}
+.sap-icon--drop-down-list::before {
+  content: "";
+}
+.sap-icon--draw-rectangle::before {
+  content: "";
+}
+.sap-icon--document::before {
+  content: "";
+}
+.sap-icon--doctor::before {
+  content: "";
+}
+.sap-icon--discussion-2::before {
+  content: "";
+}
+.sap-icon--discussion::before {
+  content: "";
+}
+.sap-icon--dimension::before {
+  content: "";
+}
+.sap-icon--customer-and-supplier::before {
+  content: "";
+}
+.sap-icon--crop::before {
+  content: "";
+}
+.sap-icon--add-contact::before {
+  content: "";
+}
+.sap-icon--compare-2::before {
+  content: "";
+}
+.sap-icon--color-fill::before {
+  content: "";
+}
+.sap-icon--collision::before {
+  content: "";
+}
+.sap-icon--curriculum::before {
+  content: "";
+}
+.sap-icon--chart-axis::before {
+  content: "";
+}
+.sap-icon--full-stacked-chart::before {
+  content: "";
+}
+.sap-icon--full-stacked-column-chart::before {
+  content: "";
+}
+.sap-icon--vertical-bar-chart-2::before {
+  content: "";
+}
+.sap-icon--horizontal-bar-chart-2::before {
+  content: "";
+}
+.sap-icon--horizontal-stacked-chart::before {
+  content: "";
+}
+.sap-icon--vertical-stacked-chart::before {
+  content: "";
+}
+.sap-icon--choropleth-chart::before {
+  content: "";
+}
+.sap-icon--geographic-bubble-chart::before {
+  content: "";
+}
+.sap-icon--multiple-radar-chart::before {
+  content: "";
+}
+.sap-icon--radar-chart::before {
+  content: "";
+}
+.sap-icon--crossed-line-chart::before {
+  content: "";
+}
+.sap-icon--multiple-line-chart::before {
+  content: "";
+}
+.sap-icon--multiple-bar-chart::before {
+  content: "";
+}
+.sap-icon--line-chart::before {
+  content: "";
+}
+.sap-icon--line-chart-dual-axis::before {
+  content: "";
+}
+.sap-icon--bubble-chart::before {
+  content: "";
+}
+.sap-icon--scatter-chart::before {
+  content: "";
+}
+.sap-icon--multiple-pie-chart::before {
+  content: "";
+}
+.sap-icon--column-chart-dual-axis::before {
+  content: "";
+}
+.sap-icon--tag-cloud-chart::before {
+  content: "";
+}
+.sap-icon--area-chart::before {
+  content: "";
+}
+.sap-icon--cause::before {
+  content: "";
+}
+.sap-icon--cart-3::before {
+  content: "";
+}
+.sap-icon--cart-2::before {
+  content: "";
+}
+.sap-icon--bus-public-transport::before {
+  content: "";
+}
+.sap-icon--burglary::before {
+  content: "";
+}
+.sap-icon--building::before {
+  content: "";
+}
+.sap-icon--border::before {
+  content: "";
+}
+.sap-icon--bookmark::before {
+  content: "";
+}
+.sap-icon--badge::before {
+  content: "";
+}
+.sap-icon--attachment-audio::before {
+  content: "";
+}
+.sap-icon--attachment-video::before {
+  content: "";
+}
+.sap-icon--attachment-html::before {
+  content: "";
+}
+.sap-icon--attachment-photo::before {
+  content: "";
+}
+.sap-icon--attachment-e-pub::before {
+  content: "";
+}
+.sap-icon--attachment-zip-file::before {
+  content: "";
+}
+.sap-icon--attachment-text-file::before {
+  content: "";
+}
+.sap-icon--add-equipment::before {
+  content: "";
+}
+.sap-icon--add-activity::before {
+  content: "";
+}
+.sap-icon--activity-individual::before {
+  content: "";
+}
+.sap-icon--activity-2::before {
+  content: "";
+}
+.sap-icon--add-activity-2::before {
+  content: "";
+}
+.sap-icon--activity-items::before {
+  content: "";
+}
+.sap-icon--activity-assigned-to-goal::before {
+  content: "";
+}
+.sap-icon--status-positive::before {
+  content: "";
+}
+.sap-icon--status-completed::before {
+  content: "";
+}
+.sap-icon--status-negative::before {
+  content: "";
+}
+.sap-icon--status-error::before {
+  content: "";
+}
+.sap-icon--status-inactive::before {
+  content: "";
+}
+.sap-icon--status-critical::before {
+  content: "";
+}
+.sap-icon--status-in-progress::before {
+  content: "";
+}
+.sap-icon--blank-tag-2::before {
+  content: "";
+}
+.sap-icon--cart-full::before {
+  content: "";
+}
+.sap-icon--locate-me::before {
+  content: "";
+}
+.sap-icon--paging::before {
+  content: "";
+}
+.sap-icon--company-view::before {
+  content: "";
+}
+.sap-icon--document-text::before {
+  content: "";
+}
+.sap-icon--explorer::before {
+  content: "";
+}
+.sap-icon--personnel-view::before {
+  content: "";
+}
+.sap-icon--sorting-ranking::before {
+  content: "";
+}
+.sap-icon--drill-down::before {
+  content: "";
+}
+.sap-icon--drill-up::before {
+  content: "";
+}
+.sap-icon--vds-file::before {
+  content: "";
+}
+.sap-icon--sap-logo-shape::before {
+  content: "";
+}
+.sap-icon--folder-full::before {
+  content: "";
+}
+.sap-icon--system-exit::before {
+  content: "";
+}
+.sap-icon--system-exit-2::before {
+  content: "";
+}
+.sap-icon--close-command-field::before {
+  content: "";
+}
+.sap-icon--open-command-field::before {
+  content: "";
+}
+.sap-icon--sys-enter-2::before {
+  content: "";
+}
+.sap-icon--sys-enter::before {
+  content: "";
+}
+.sap-icon--sys-help-2::before {
+  content: "";
+}
+.sap-icon--sys-help::before {
+  content: "";
+}
+.sap-icon--sys-back::before {
+  content: "";
+}
+.sap-icon--sys-back-2::before {
+  content: "";
+}
+.sap-icon--sys-cancel::before, a.select2-search-choice-close::before,
+.se-generic-editor-dropdown__remove-button::before {
+  content: "";
+}
+.sap-icon--sys-cancel-2::before {
+  content: "";
+}
+.sap-icon--open-folder::before {
+  content: "";
+}
+.sap-icon--sys-find-next::before {
+  content: "";
+}
+.sap-icon--sys-find::before {
+  content: "";
+}
+.sap-icon--sys-monitor::before {
+  content: "";
+}
+.sap-icon--sys-prev-page::before {
+  content: "";
+}
+.sap-icon--sys-first-page::before {
+  content: "";
+}
+.sap-icon--sys-next-page::before {
+  content: "";
+}
+.sap-icon--sys-last-page::before {
+  content: "";
+}
+.sap-icon--generate-shortcut::before {
+  content: "";
+}
+.sap-icon--create-session::before {
+  content: "";
+}
+.sap-icon--display-more::before {
+  content: "";
+}
+.sap-icon--enter-more::before {
+  content: "";
+}
+.sap-icon--zoom-in::before {
+  content: "";
+}
+.sap-icon--zoom-out::before {
+  content: "";
+}
+.sap-icon--header::before {
+  content: "";
+}
+.sap-icon--detail-view::before {
+  content: "";
+}
+.sap-icon--show-edit::before {
+  content: "";
+}
+.sap-icon--collapse::before {
+  content: "";
+}
+.sap-icon--expand::before {
+  content: "";
+}
+.sap-icon--positive::before {
+  content: "";
+}
+.sap-icon--negative::before {
+  content: "";
+}
+.sap-icon--display::before {
+  content: "";
+}
+.sap-icon--menu2::before {
+  content: "";
+}
+.sap-icon--redo::before {
+  content: "";
+}
+.sap-icon--undo::before {
+  content: "";
+}
+.sap-icon--navigation-up-arrow::before {
+  content: "";
+}
+.sap-icon--navigation-down-arrow::before, .select2-arrow.ui-select-toggle::before {
+  content: "";
+}
+.sap-icon--down::before {
+  content: "";
+}
+.sap-icon--up::before {
+  content: "";
+}
+.sap-icon--shelf::before {
+  content: "";
+}
+.sap-icon--background::before {
+  content: "";
+}
+.sap-icon--resize::before {
+  content: "";
+}
+.sap-icon--move::before {
+  content: "";
+}
+.sap-icon--show::before {
+  content: "";
+}
+.sap-icon--hide::before {
+  content: "";
+}
+.sap-icon--nav-back::before {
+  content: "";
+}
+.sap-icon--error::before {
+  content: "";
+}
+.sap-icon--slim-arrow-right::before {
+  content: "";
+}
+.sap-icon--slim-arrow-left::before {
+  content: "";
+}
+.sap-icon--slim-arrow-down::before {
+  content: "";
+}
+.sap-icon--slim-arrow-up::before {
+  content: "";
+}
+.sap-icon--forward::before {
+  content: "";
+}
+.sap-icon--overflow::before {
+  content: "";
+}
+.sap-icon--value-help::before {
+  content: "";
+}
+.sap-icon--multiselect::before {
+  content: "";
+}
+.sap-icon--exitfullscreen::before {
+  content: "";
+}
+.sap-icon--sys-add::before {
+  content: "";
+}
+.sap-icon--sys-minus::before {
+  content: "";
+}
+.sap-icon--dropdown::before {
+  content: "";
+}
+.sap-icon--expand-group::before {
+  content: "";
+}
+.sap-icon--vertical-grip::before {
+  content: "";
+}
+.sap-icon--horizontal-grip::before {
+  content: "";
+}
+.sap-icon--sort-descending::before {
+  content: "";
+}
+.sap-icon--sort-ascending::before {
+  content: "";
+}
+.sap-icon--arrow-down::before {
+  content: "";
+}
+.sap-icon--legend::before {
+  content: "";
+}
+.sap-icon--collapse-group::before {
+  content: "";
+}
+.sap-icon--message-warning::before {
+  content: "";
+}
+.sap-icon--message-information::before {
+  content: "";
+}
+.sap-icon--message-success::before {
+  content: "";
+}
+.sap-icon--restart::before {
+  content: "";
+}
+.sap-icon--stop::before {
+  content: "";
+}
+.sap-icon--add-process::before {
+  content: "";
+}
+.sap-icon--cancel-maintenance::before {
+  content: "";
+}
+.sap-icon--activate::before {
+  content: "";
+}
+.sap-icon--resize-horizontal::before {
+  content: "";
+}
+.sap-icon--resize-vertical::before {
+  content: "";
+}
+.sap-icon--connected::before {
+  content: "";
+}
+.sap-icon--disconnected::before {
+  content: "";
+}
+.sap-icon--edit-outside::before {
+  content: "";
+}
+.sap-icon--key::before {
+  content: "";
+}
+.sap-icon--minimize::before {
+  content: "";
+}
+.sap-icon--back-to-top::before {
+  content: "";
+}
+.sap-icon--hello-world::before {
+  content: "";
+}
+.sap-icon--outbox::before {
+  content: "";
+}
+.sap-icon--donut-chart::before {
+  content: "";
+}
+.sap-icon--heatmap-chart::before {
+  content: "";
+}
+.sap-icon--horizontal-bullet-chart::before {
+  content: "";
+}
+.sap-icon--vertical-bullet-chart::before {
+  content: "";
+}
+.sap-icon--call::before {
+  content: "";
+}
+.sap-icon--download-from-cloud::before {
+  content: "";
+}
+.sap-icon--upload-to-cloud::before {
+  content: "";
+}
+.sap-icon--jam::before {
+  content: "";
+}
+.sap-icon--sap-ui5::before {
+  content: "";
+}
+.sap-icon--message-popup::before {
+  content: "";
+}
+.sap-icon--cloud::before {
+  content: "";
+}
+.sap-icon--horizontal-waterfall-chart::before {
+  content: "";
+}
+.sap-icon--vertical-waterfall-chart::before {
+  content: "";
+}
+.sap-icon--broken-link::before {
+  content: "";
+}
+.sap-icon--headset::before {
+  content: "";
+}
+.sap-icon--thumb-up::before {
+  content: "";
+}
+.sap-icon--thumb-down::before {
+  content: "";
+}
+.sap-icon--multiselect-all::before {
+  content: "";
+}
+.sap-icon--multiselect-none::before {
+  content: "";
+}
+.sap-icon--scissors::before {
+  content: "";
+}
+.sap-icon--sound::before {
+  content: "";
+}
+.sap-icon--sound-loud::before {
+  content: "";
+}
+.sap-icon--sound-off::before {
+  content: "";
+}
+.sap-icon--date-time::before {
+  content: "";
+}
+.sap-icon--user-settings::before {
+  content: "";
+}
+.sap-icon--key-user-settings::before {
+  content: "";
+}
+.sap-icon--developer-settings::before {
+  content: "";
+}
+.sap-icon--text-formatting::before {
+  content: "";
+}
+.sap-icon--bold-text::before {
+  content: "";
+}
+.sap-icon--italic-text::before {
+  content: "";
+}
+.sap-icon--underline-text::before {
+  content: "";
+}
+.sap-icon--text-align-justified::before {
+  content: "";
+}
+.sap-icon--text-align-left::before {
+  content: "";
+}
+.sap-icon--text-align-center::before {
+  content: "";
+}
+.sap-icon--text-align-right::before {
+  content: "";
+}
+.sap-icon--bullet-text::before {
+  content: "";
+}
+.sap-icon--numbered-text::before {
+  content: "";
+}
+.sap-icon--co::before {
+  content: "";
+}
+.sap-icon--ui-notifications::before {
+  content: "";
+}
+.sap-icon--bell::before {
+  content: "";
+}
+.sap-icon--cancel-share::before {
+  content: "";
+}
+.sap-icon--write-new-document::before {
+  content: "";
+}
+.sap-icon--write-new::before {
+  content: "";
+}
+.sap-icon--cancel::before {
+  content: "";
+}
+.sap-icon--screen-split-one::before {
+  content: "";
+}
+.sap-icon--screen-split-two::before {
+  content: "";
+}
+.sap-icon--screen-split-three::before {
+  content: "";
+}
+.sap-icon--customize::before {
+  content: "";
+}
+.sap-icon--user-edit::before {
+  content: "";
+}
+.sap-icon--source-code::before {
+  content: "";
+}
+.sap-icon--copy::before {
+  content: "";
+}
+.sap-icon--paste::before {
+  content: "";
+}
+.sap-icon--line-chart-time-axis::before {
+  content: "";
+}
+.sap-icon--clear-filter::before {
+  content: "";
+}
+.sap-icon--reset::before {
+  content: "";
+}
+.sap-icon--trend-up::before {
+  content: "";
+}
+.sap-icon--trend-down::before {
+  content: "";
+}
+.sap-icon--cursor::before {
+  content: "";
+}
+.sap-icon--add-document::before {
+  content: "";
+}
+.sap-icon--create-form::before {
+  content: "";
+}
+.sap-icon--resize-corner::before {
+  content: "";
+}
+.sap-icon--chevron-phase::before {
+  content: "";
+}
+.sap-icon--chevron-phase-2::before {
+  content: "";
+}
+.sap-icon--rhombus-milestone::before {
+  content: "";
+}
+.sap-icon--rhombus-milestone-2::before {
+  content: "";
+}
+.sap-icon--circle-task::before {
+  content: "";
+}
+.sap-icon--circle-task-2::before {
+  content: "";
+}
+.sap-icon--project-definition-triangle::before {
+  content: "";
+}
+.sap-icon--project-definition-triangle-2::before {
+  content: "";
+}
+.sap-icon--master-task-triangle::before {
+  content: "";
+}
+.sap-icon--master-task-triangle-2::before {
+  content: "";
+}
+.sap-icon--program-triangles::before {
+  content: "";
+}
+.sap-icon--program-triangles-2::before {
+  content: "";
+}
+.sap-icon--mirrored-task-circle::before {
+  content: "";
+}
+.sap-icon--mirrored-task-circle-2::before {
+  content: "";
+}
+.sap-icon--checklist-item::before {
+  content: "";
+}
+.sap-icon--checklist-item-2::before {
+  content: "";
+}
+.sap-icon--checklist::before {
+  content: "";
+}
+.sap-icon--checklist-2::before {
+  content: "";
+}
+.sap-icon--chart-table-view::before {
+  content: "";
+}
+.sap-icon--filter-analytics::before {
+  content: "";
+}
+.sap-icon--filter-facets::before {
+  content: "";
+}
+.sap-icon--filter-fields::before {
+  content: "";
+}
+.sap-icon--indent::before {
+  content: "";
+}
+.sap-icon--outdent::before {
+  content: "";
+}
+.sap-icon--heading-1::before {
+  content: "";
+}
+.sap-icon--heading-2::before {
+  content: "";
+}
+.sap-icon--heading-3::before {
+  content: "";
+}
+.sap-icon--decrease-line-height::before {
+  content: "";
+}
+.sap-icon--increase-line-height::before {
+  content: "";
+}
+.sap-icon--fx::before {
+  content: "";
+}
+.sap-icon--add-folder::before {
+  content: "";
+}
+.sap-icon--away::before {
+  content: "";
+}
+.sap-icon--busy::before {
+  content: "";
+}
+.sap-icon--appear-offline::before {
+  content: "";
+}
+.sap-icon--blur::before {
+  content: "";
+}
+.sap-icon--pixelate::before {
+  content: "";
+}
+.sap-icon--horizontal-combination-chart::before {
+  content: "";
+}
+.sap-icon--add-employee::before {
+  content: "";
+}
+.sap-icon--text-color::before {
+  content: "";
+}
+.sap-icon--browse-folder::before {
+  content: "";
+}
+.sap-icon--primary-key::before {
+  content: "";
+}
+.sap-icon--two-keys::before {
+  content: "";
+}
+.sap-icon--strikethrough::before {
+  content: "";
+}
+.sap-icon--text::before {
+  content: "";
+}
+.sap-icon--responsive::before {
+  content: "";
+}
+.sap-icon--desktop-mobile::before {
+  content: "";
+}
+.sap-icon--table-row::before {
+  content: "";
+}
+.sap-icon--table-column::before {
+  content: "";
+}
+.sap-icon--validate::before {
+  content: "";
+}
+.sap-icon--keyboard-and-mouse::before {
+  content: "󢠛";
+}
+.sap-icon--touch::before {
+  content: "";
+}
+.sap-icon--expand-all::before {
+  content: "";
+}
+.sap-icon--collapse-all::before {
+  content: "";
+}
+.sap-icon--combine::before {
+  content: "";
+}
+.sap-icon--split::before {
+  content: "";
+}
+.sap-icon--animate-spin {
+  display: inline-block;
+  animation: sap-icon-spin 2s infinite linear;
+}
+.sap-icon--animate-pulse {
+  display: inline-block;
+  animation: sap-icon-spin 2s infinite steps(8);
+}
+
+@keyframes sap-icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+/*!
+ * ui-select
+ * http://github.com/angular-ui/ui-select
+ * Version: 0.19.8 - 2017-04-18T05:43:43.881Z
+ * License: MIT
+ */
+.ui-select-highlight {
+  font-weight: 700;
+}
+
+.ui-select-offscreen {
+  clip: rect(0 0 0 0) !important;
+  width: 1px !important;
+  height: 1px !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  outline: 0 !important;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+.selectize-control.single > .selectize-input > input, .selectize-control > .selectize-dropdown {
+  width: 100%;
+}
+
+.ui-select-choices-row:hover {
+  background-color: #f5f5f5;
+}
+
+.ng-dirty.ng-invalid > a.select2-choice {
+  border-color: #D44950;
+}
+
+.select2-result-single {
+  padding-left: 0;
+}
+
+.select-locked > .ui-select-match-close, .select2-locked > .select2-search-choice-close {
+  display: none;
+}
+
+body > .select2-container.open {
+  z-index: 9999;
+}
+
+.ui-select-container.select2.direction-up .ui-select-match, .ui-select-container[theme=select2].direction-up .ui-select-match {
+  border-radius: 0 0 4px 4px;
+}
+
+.ui-select-container.select2.direction-up .ui-select-dropdown, .ui-select-container[theme=select2].direction-up .ui-select-dropdown {
+  border-radius: 4px 4px 0 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25);
+  margin-top: -4px;
+}
+
+.ui-select-container.select2.direction-up .ui-select-dropdown .select2-search, .ui-select-container[theme=select2].direction-up .ui-select-dropdown .select2-search {
+  margin-top: 4px;
+}
+
+.ui-select-container.select2.direction-up.select2-dropdown-open .ui-select-match, .ui-select-container[theme=select2].direction-up.select2-dropdown-open .ui-select-match {
+  border-bottom-color: #5897fb;
+}
+
+.ui-select-container[theme=select2] .ui-select-dropdown .ui-select-search-hidden, .ui-select-container[theme=select2] .ui-select-dropdown .ui-select-search-hidden input {
+  opacity: 0;
+  height: 0;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.selectize-input.selectize-focus {
+  border-color: #007FBB !important;
+}
+
+.selectize-control.multi > .selectize-input > input {
+  margin: 0 !important;
+}
+
+.ng-dirty.ng-invalid > div.selectize-input {
+  border-color: #D44950;
+}
+
+.ui-select-container[theme=selectize].direction-up .ui-select-dropdown {
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25);
+  margin-top: -2px;
+}
+
+.ui-select-container[theme=selectize] input.ui-select-search-hidden {
+  opacity: 0;
+  height: 0;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 0;
+}
+
+.btn-default-focus {
+  color: #333;
+  background-color: #EBEBEB;
+  border-color: #ADADAD;
+  text-decoration: none;
+  outline: -webkit-focus-ring-color auto 5px;
+  outline-offset: -2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.ui-select-bootstrap .ui-select-toggle {
+  position: relative;
+}
+
+.ui-select-bootstrap .ui-select-toggle > .caret {
+  position: absolute;
+  height: 10px;
+  top: 50%;
+  right: 10px;
+  margin-top: -2px;
+}
+
+.input-group > .ui-select-bootstrap.dropdown {
+  position: static;
+}
+
+.input-group > .ui-select-bootstrap > input.ui-select-search.form-control {
+  border-radius: 4px 0 0 4px;
+}
+
+.input-group > .ui-select-bootstrap > input.ui-select-search.form-control.direction-up {
+  border-radius: 4px 0 0 4px !important;
+}
+
+.ui-select-bootstrap .ui-select-search-hidden {
+  opacity: 0;
+  height: 0;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.ui-select-bootstrap > .ui-select-match > .btn {
+  text-align: left !important;
+}
+
+.ui-select-bootstrap > .ui-select-match > .caret {
+  position: absolute;
+  top: 45%;
+  right: 15px;
+}
+
+.ui-select-bootstrap > .ui-select-choices, .ui-select-bootstrap > .ui-select-no-choice {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+  margin-top: -1px;
+}
+
+body > .ui-select-bootstrap.open {
+  z-index: 1000;
+}
+
+.ui-select-multiple.ui-select-bootstrap {
+  height: auto;
+  padding: 3px 3px 0;
+}
+
+.ui-select-multiple.ui-select-bootstrap input.ui-select-search {
+  background-color: transparent !important;
+  border: none;
+  outline: 0;
+  height: 1.666666em;
+  margin-bottom: 3px;
+}
+
+.ui-select-multiple.ui-select-bootstrap .ui-select-match .close {
+  font-size: 1.6em;
+  line-height: 0.75;
+}
+
+.ui-select-multiple.ui-select-bootstrap .ui-select-match-item {
+  outline: 0;
+  margin: 0 3px 3px 0;
+}
+
+.ui-select-multiple .ui-select-match-item {
+  position: relative;
+}
+
+.ui-select-multiple .ui-select-match-item.dropping .ui-select-match-close {
+  pointer-events: none;
+}
+
+.ui-select-multiple:hover .ui-select-match-item.dropping-before:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  margin-right: 2px;
+  border-left: 1px solid #428bca;
+}
+
+.ui-select-multiple:hover .ui-select-match-item.dropping-after:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  margin-left: 2px;
+  border-right: 1px solid #428bca;
+}
+
+.ui-select-bootstrap .ui-select-choices-row > span {
+  cursor: pointer;
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+
+.ui-select-bootstrap .ui-select-choices-row > span:focus, .ui-select-bootstrap .ui-select-choices-row > span:hover {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5;
+}
+
+.ui-select-bootstrap .ui-select-choices-row.active > span {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #428bca;
+}
+
+.ui-select-bootstrap .ui-select-choices-row.active.disabled > span, .ui-select-bootstrap .ui-select-choices-row.disabled > span {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+}
+
+.ui-select-match.ng-hide-add, .ui-select-search.ng-hide-add {
+  display: none !important;
+}
+
+.ui-select-bootstrap.ng-dirty.ng-invalid > button.btn.ui-select-match {
+  border-color: #D44950;
+}
+
+.ui-select-container[theme=bootstrap].direction-up .ui-select-dropdown {
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.ui-select-bootstrap .ui-select-match-text {
+  width: 100%;
+  padding-right: 1em;
+}
+
+.ui-select-bootstrap .ui-select-match-text span {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ui-select-bootstrap .ui-select-toggle > a.btn {
+  position: absolute;
+  height: 10px;
+  right: 10px;
+  margin-top: -2px;
+}
+
+.ui-select-refreshing.glyphicon {
+  position: absolute;
+  right: 0;
+  padding: 8px 27px;
+}
+
+@-webkit-keyframes ui-select-spin {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes ui-select-spin {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.ui-select-spin {
+  -webkit-animation: ui-select-spin 2s infinite linear;
+  animation: ui-select-spin 2s infinite linear;
+}
+
+.ui-select-refreshing.ng-animate {
+  -webkit-animation: none 0s;
+}
+
+/*# sourceMappingURL=select.min.css.map */
+.select2-container {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+.select2-container .select2-selection--single {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height: 28px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  display: block;
+  padding-left: 8px;
+  padding-right: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.select2-container .select2-selection--single .select2-selection__clear {
+  position: relative;
+}
+
+.select2-container[dir=rtl] .select2-selection--single .select2-selection__rendered {
+  padding-right: 8px;
+  padding-left: 20px;
+}
+
+.select2-container .select2-selection--multiple {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  min-height: 32px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+  display: inline-block;
+  overflow: hidden;
+  padding-left: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.select2-container .select2-search--inline {
+  float: left;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+  box-sizing: border-box;
+  border: none;
+  font-size: 100%;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.select2-dropdown {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: -100000px;
+  width: 100%;
+  z-index: 1051;
+}
+
+.select2-results {
+  display: block;
+}
+
+.select2-results__options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.select2-results__option {
+  padding: 6px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.select2-results__option[aria-selected] {
+  cursor: pointer;
+}
+
+.select2-container--open .select2-dropdown {
+  left: 0;
+}
+
+.select2-container--open .select2-dropdown--above {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.select2-container--open .select2-dropdown--below {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.select2-search--dropdown {
+  display: block;
+  padding: 4px;
+}
+
+.select2-search--dropdown .select2-search__field {
+  padding: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.select2-search--dropdown.select2-search--hide {
+  display: none;
+}
+
+.select2-close-mask {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  z-index: 99;
+  background-color: #fff;
+  filter: alpha(opacity=0);
+}
+
+.select2-hidden-accessible {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #444;
+  line-height: 28px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__clear {
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: #999;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 26px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 20px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #888 transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  height: 0;
+  left: 50%;
+  margin-left: -4px;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
+
+.select2-container--default[dir=rtl] .select2-selection--single .select2-selection__clear {
+  float: left;
+}
+
+.select2-container--default[dir=rtl] .select2-selection--single .select2-selection__arrow {
+  left: 1px;
+  right: auto;
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--single {
+  background-color: #eee;
+  cursor: default;
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear {
+  display: none;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #888 transparent;
+  border-width: 0 4px 5px 4px;
+}
+
+.select2-container--default .select2-selection--multiple {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: text;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0 5px;
+  width: 100%;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+  list-style: none;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__clear {
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-right: 10px;
+  padding: 1px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #e4e4e4;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: default;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 0 5px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #999;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+  color: #333;
+}
+
+.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice, .select2-container--default[dir=rtl] .select2-selection--multiple .select2-search--inline {
+  float: right;
+}
+
+.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice {
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice__remove {
+  margin-left: 2px;
+  margin-right: auto;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: solid black 1px;
+  outline: 0;
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--multiple {
+  background-color: #eee;
+  cursor: default;
+}
+
+.select2-container--default.select2-container--disabled .select2-selection__choice__remove {
+  display: none;
+}
+
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--single, .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+  background: transparent;
+  border: none;
+  outline: 0;
+  box-shadow: none;
+  -webkit-appearance: textfield;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.select2-container--default .select2-results__option[role=group] {
+  padding: 0;
+}
+
+.select2-container--default .select2-results__option[aria-disabled=true] {
+  color: #999;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background-color: #ddd;
+}
+
+.select2-container--default .select2-results__option .select2-results__option {
+  padding-left: 1em;
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__group {
+  padding-left: 0;
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option {
+  margin-left: -1em;
+  padding-left: 2em;
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+  margin-left: -2em;
+  padding-left: 3em;
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+  margin-left: -3em;
+  padding-left: 4em;
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+  margin-left: -4em;
+  padding-left: 5em;
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+  margin-left: -5em;
+  padding-left: 6em;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #5897fb;
+  color: white;
+}
+
+.select2-container--default .select2-results__group {
+  cursor: default;
+  display: block;
+  padding: 6px;
+}
+
+.select2-container--classic .select2-selection--single {
+  background-color: #f7f7f7;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  outline: 0;
+  background-image: -webkit-linear-gradient(top, white 50%, #eeeeee 100%);
+  background-image: -o-linear-gradient(top, white 50%, #eeeeee 100%);
+  background-image: linear-gradient(to bottom, white 50%, #eeeeee 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFEEEEEE", GradientType=0);
+}
+
+.select2-container--classic .select2-selection--single:focus {
+  border: 1px solid #5897fb;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__rendered {
+  color: #444;
+  line-height: 28px;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__clear {
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__placeholder {
+  color: #999;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__arrow {
+  background-color: #ddd;
+  border: none;
+  border-left: 1px solid #aaa;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  height: 26px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 20px;
+  background-image: -webkit-linear-gradient(top, #eeeeee 50%, #cccccc 100%);
+  background-image: -o-linear-gradient(top, #eeeeee 50%, #cccccc 100%);
+  background-image: linear-gradient(to bottom, #eeeeee 50%, #cccccc 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFEEEEEE", endColorstr="#FFCCCCCC", GradientType=0);
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__arrow b {
+  border-color: #888 transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  height: 0;
+  left: 50%;
+  margin-left: -4px;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
+
+.select2-container--classic[dir=rtl] .select2-selection--single .select2-selection__clear {
+  float: left;
+}
+
+.select2-container--classic[dir=rtl] .select2-selection--single .select2-selection__arrow {
+  border: none;
+  border-right: 1px solid #aaa;
+  border-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  left: 1px;
+  right: auto;
+}
+
+.select2-container--classic.select2-container--open .select2-selection--single {
+  border: 1px solid #5897fb;
+}
+
+.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow {
+  background: transparent;
+  border: none;
+}
+
+.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #888 transparent;
+  border-width: 0 4px 5px 4px;
+}
+
+.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-image: -webkit-linear-gradient(top, white 0%, #eeeeee 50%);
+  background-image: -o-linear-gradient(top, white 0%, #eeeeee 50%);
+  background-image: linear-gradient(to bottom, white 0%, #eeeeee 50%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFEEEEEE", GradientType=0);
+}
+
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-image: -webkit-linear-gradient(top, #eeeeee 50%, white 100%);
+  background-image: -o-linear-gradient(top, #eeeeee 50%, white 100%);
+  background-image: linear-gradient(to bottom, #eeeeee 50%, white 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFEEEEEE", endColorstr="#FFFFFFFF", GradientType=0);
+}
+
+.select2-container--classic .select2-selection--multiple {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: text;
+  outline: 0;
+}
+
+.select2-container--classic .select2-selection--multiple:focus {
+  border: 1px solid #5897fb;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__rendered {
+  list-style: none;
+  margin: 0;
+  padding: 0 5px;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__clear {
+  display: none;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice {
+  background-color: #e4e4e4;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: default;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 0 5px;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove {
+  color: #888;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover {
+  color: #555;
+}
+
+.select2-container--classic[dir=rtl] .select2-selection--multiple .select2-selection__choice {
+  float: right;
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+.select2-container--classic[dir=rtl] .select2-selection--multiple .select2-selection__choice__remove {
+  margin-left: 2px;
+  margin-right: auto;
+}
+
+.select2-container--classic.select2-container--open .select2-selection--multiple {
+  border: 1px solid #5897fb;
+}
+
+.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.select2-container--classic .select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa;
+  outline: 0;
+}
+
+.select2-container--classic .select2-search--inline .select2-search__field {
+  outline: 0;
+  box-shadow: none;
+}
+
+.select2-container--classic .select2-dropdown {
+  background-color: white;
+  border: 1px solid transparent;
+}
+
+.select2-container--classic .select2-dropdown--above {
+  border-bottom: none;
+}
+
+.select2-container--classic .select2-dropdown--below {
+  border-top: none;
+}
+
+.select2-container--classic .select2-results > .select2-results__options {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.select2-container--classic .select2-results__option[role=group] {
+  padding: 0;
+}
+
+.select2-container--classic .select2-results__option[aria-disabled=true] {
+  color: grey;
+}
+
+.select2-container--classic .select2-results__option--highlighted[aria-selected] {
+  background-color: #3875d7;
+  color: white;
+}
+
+.select2-container--classic .select2-results__group {
+  cursor: default;
+  display: block;
+  padding: 6px;
+}
+
+.select2-container--classic.select2-container--open .select2-dropdown {
+  border-color: #5897fb;
+}
+
+.select2-display-none {
+  display: none;
+}
+
+.ui-select-choices li {
+  list-style: none !important;
+}
+
+.select2-container-disabled .ui-select-toggle {
+  cursor: not-allowed;
+}
+
+.select2-search {
+  width: 100%;
+  margin: 8px 0;
+  padding: 0 10px;
+  position: relative;
+}
+
+.ui-select-search.select2-input {
+  width: 100% !important;
+  border: none;
+  margin: 0;
+  background: white;
+  box-shadow: 0 0 0 1px #89919a;
+}
+.ui-select-search.select2-input:focus {
+  box-shadow: 0 0 0 2px #1973cc;
+}
+
+.select2-search-field {
+  list-style: none !important;
+  padding: 8px;
+}
+.select2-search-field input {
+  height: 36px;
+  margin-top: 4px;
+  width: 100% !important;
+}
+
+.select2-arrow.ui-select-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #89919a !important;
+  background-color: #fafafa !important;
+  min-width: 36px;
+  align-self: stretch;
+}
+.select2-arrow.ui-select-toggle::before {
+  font-family: "SAP-icons";
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  display: inline-block;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+}
+.select2-arrow.ui-select-toggle b {
+  display: none !important;
+}
+.select2-arrow.ui-select-toggle::before {
+  color: #0a6ed1;
+}
+
+.y-infinite-scrolling__listbox-header {
+  font-size: 1.1428571429rem;
+  line-height: 1.25;
+  font-weight: 400;
+  padding: 8px 12px;
+  border-bottom: 1px solid #d9d9d9;
+  color: #51555a;
+}
+
+.select2-drop,
+.select2-drop-active,
+.ui-select-dropdown {
+  position: absolute;
+  border: none;
+  width: 100%;
+  top: 100%;
+  z-index: 2000;
+  background: white;
+  box-shadow: 0 0 0 1px #89919a;
+  border-radius: 4px;
+}
+
+.select2-results {
+  max-height: 200px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: none;
+  margin-bottom: 4px;
+}
+.select2-results li.select2-highlighted {
+  background: rgba(10, 110, 209, 0.07);
+}
+.select2-results li.select2-disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+.select2-results li.select2-disabled:hover {
+  background: none;
+}
+
+.select2-container.ng-not-empty .ui-select-match-item.select2-search-choice:hover {
+  background-color: #fafafa;
+}
+.select2-container.ng-not-empty .select2-search-field {
+  border-top: 1px solid #89919a;
+  border-radius: 0 0 4px 4px;
+}
+
+.select2-container {
+  display: block;
+}
+.select2-container ul.select2-choices {
+  box-shadow: 0 0 0 1px #89919a !important;
+  margin: 0;
+  border-radius: 4px;
+  padding-top: 1px;
+  cursor: default;
+}
+.select2-container a.ui-select-match,
+.select2-container a.select2-choice,
+.select2-container a.select2-choices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  word-break: break-all;
+  background-color: white;
+  color: #51555a;
+  padding-left: 12px;
+  border-radius: 4px;
+  box-shadow: none;
+  border: 1px solid #89919a;
+  text-decoration: none;
+  height: 36px;
+}
+.select2-container a.ui-select-match .select2-chosen,
+.select2-container a.select2-choice .select2-chosen,
+.select2-container a.select2-choices .select2-chosen {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  word-break: break-all;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 8px 0 0;
+  width: 100%;
+}
+
+.ui-select-match-item {
+  display: grid !important;
+  grid-template-columns: 16fr 1fr;
+  align-items: center;
+  padding: 8px 16px;
+  min-height: 36px;
+}
+
+.select2-result-label.ui-select-choices-row-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  color: #51555a;
+  min-height: 36px;
+}
+.select2-result-label.ui-select-choices-row-inner > div {
+  width: 100%;
+}
+.select2-result-label.ui-select-choices-row-inner:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.select2-with-searchbox .ui-select-choices {
+  margin: 0;
+}
+
+a.select2-search-choice-close,
+.se-generic-editor-dropdown__remove-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: initial;
+  text-decoration: none;
+  outline: none;
+  padding: 6px 10px;
+  color: #0a6ed1;
+}
+a.select2-search-choice-close::before,
+.se-generic-editor-dropdown__remove-button::before {
+  font-family: "SAP-icons";
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  display: inline-block;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+}
+a.select2-search-choice-close:hover, a.select2-search-choice-close:active,
+.se-generic-editor-dropdown__remove-button:hover,
+.se-generic-editor-dropdown__remove-button:active {
+  color: #085caf;
+}
+
+.se-generic-editor-dropdown__remove-button {
+  background-color: white;
+  border: none;
+}
+
+.se-generic-editor-dropdown__match2 .se-generic-editor-dropdown__remove-button {
+  color: #0a6ed1;
+}.y-dropdown-more-menu__toggle {
+  color: #0a6ed1;
+  cursor: pointer;
+}
+.y-dropdown-more-menu__toggle.sap-icon--overflow {
+  position: relative;
+  bottom: 3px;
+}
+
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-color: white;
+  border-radius: 4px !important;
+  min-width: 100px;
+  width: fit-content;
+  position: absolute;
+  border: 1px solid #d9d9d9;
+  z-index: 2000;
+  top: 96%;
+  left: initial !important;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+}
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list::before {
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0 8px 8px 8px;
+  border-bottom-color: #d9d9d9;
+  border-bottom-color: var(var(--fd-color-neutral-4));
+  border-left-color: transparent;
+  border-right-color: transparent;
+  content: "";
+  position: absolute;
+  top: -8px;
+}
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list::after {
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0 8px 8px 8px;
+  border-bottom-color: white;
+  border-bottom-color: var(var(--fd-color-background-4));
+  border-left-color: transparent;
+  border-right-color: transparent;
+  content: "";
+  position: absolute;
+  top: -7px;
+}
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list::before, .y-dropdown-more-menu.open .se-y-dropdown-menu__list::after {
+  right: 10px;
+}
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list::before, .y-dropdown-more-menu.open .se-y-dropdown-menu__list::after {
+  display: none;
+}
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list .se-dropdown-menu__item-wrapper {
+  border-top: #eeeeef;
+}
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list .se-dropdown-item {
+  text-decoration: none !important;
+  white-space: nowrap;
+  color: #32363a;
+  padding-left: 16px;
+  width: 100%;
+}
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list .se-dropdown-item__delete,
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list .se-dropdown-item__delete a {
+  order: 99;
+}
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list .se-dropdown-item__delete, .y-dropdown-more-menu.open .se-y-dropdown-menu__list .se-dropdown-item__delete:hover,
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list .se-dropdown-item__delete a,
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list .se-dropdown-item__delete a:hover {
+  color: #bb0000;
+}
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list .se-dropdown-item__delete.se-dropdown-item--disabled, .y-dropdown-more-menu.open .se-y-dropdown-menu__list .se-dropdown-item__delete.se-dropdown-item--disabled:hover,
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list .se-dropdown-item__delete a.se-dropdown-item--disabled,
+.y-dropdown-more-menu.open .se-y-dropdown-menu__list .se-dropdown-item__delete a.se-dropdown-item--disabled:hover {
+  opacity: 0.4;
+  padding-right: 8px !important;
+  background: white !important;
+}
+
+.se-dropdown-item__delete-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.se-dropdown-item__delete-page-popover {
+  margin-right: 16px;
+}
+.se-dropdown-item__delete-page-popover .sap-icon--message-error {
+  color: #0a6ed1;
+}
+
+.se-dropdown-item__delete-link-wrapper {
+  width: 100%;
+}
+
+.se-dropdown-item__delete-link-wrapper--disabled {
+  cursor: not-allowed;
+}ul.se-tabset.nav-tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.se-tabset .se-tabset__select .fd-popover__popper {
+  width: 200px !important;
+}
+.se-tabset .se-tabset__select li {
+  margin-bottom: -1px;
+}
+.se-tabset .se-tabset__select li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 3px 3px 0 0;
+}
+.se-tabset .se-tabset__select li a:hover {
+  border-color: #c6c6c6 #c6c6c6 #d4d7dc;
+  text-decoration: none;
+  background-color: #c6c6c6;
+}
+.se-tabset .se-tabset__select li.active > a,
+.se-tabset .se-tabset__select li.active > a:hover,
+.se-tabset .se-tabset__select li.active > a:focus {
+  color: #0486e0;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #0486e0;
+  border-bottom-color: transparent;
+}
+.se-tabset .se-tabset__select li.sm-tab-error {
+  color: #ff3b30;
+}
+.se-tabset .se-tabset__select li.sm-tab-error:before {
+  content: "! ";
+}
+
+.se-tabset .se-tabset__link,
+.se-tabset .se-tabset__link:hover {
+  padding: 0 0 12px;
+  margin-right: 30px;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #51555a;
+  background-color: transparent;
+  text-decoration: none;
+  border: none !important;
+}
+
+.se-tabset__tab.active .se-tabset__link {
+  color: #0a6ed1;
+}
+.se-tabset__tab.active .se-tabset__link::after {
+  border-bottom: 3px solid #0a6ed1;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-radius: 12px;
+  content: "";
+  position: absolute;
+  top: 90%;
+  height: 0;
+  left: 0;
+  width: 100%;
+}
+
+.se-tabset__tab.active .se-tabset__link.sm-tab-error {
+  color: #ff3b30;
+}
+.se-tabset__tab.active .se-tabset__link.sm-tab-error:before {
+  content: "! ";
+}
+
+.multi-tabs-editor .se-tabset.nav-tabs {
+  display: inline-flex;
+  justify-items: center;
+  padding-bottom: 2px;
+  margin-bottom: 4px;
+  vertical-align: bottom;
+}
+.multi-tabs-editor .se-tabset.nav-tabs .se-tabset__link {
+  display: flex;
+  justify-content: center;
+  padding: 0 4px;
+  margin-right: 0;
+  min-width: 30px;
+  box-sizing: border-box;
+}
+.multi-tabs-editor .se-tabset.nav-tabs .se-tabset__tab:last-child .se-tabset__link {
+  margin-right: 0;
+}.se-tooltip > div > .fd-popover-container-custom > .fd-popover__arrow,
+body > .fd-popover-container-custom .fd-popover__arrow {
+  z-index: 9999;
+}
+
+.se-tooltip .se-popover {
+  cursor: default;
+}
+.se-tooltip--stretched {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.se-tooltip--stretched .fd-popover__control {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.se-tooltip-container.fd-popover-container-custom {
+  z-index: 2000;
+}y-actionable-search-item .se-actionable-search-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #89919a;
+  border-top: 1px solid #89919a;
+  border-bottom: none;
+  padding-left: 16px;
+}
+y-actionable-search-item .se-actionable-search-item__create-btn {
+  font-weight: 700;
+  border-left: 1px solid #89919a !important;
+  border-radius: 0 4px 4px 0 !important;
+}.angular-ui-tree-dropzone, .angular-ui-tree-empty {
+  border: 1px dashed #bbb;
+  min-height: 100px;
+  background-color: #e5e5e5;
+  background-image: -webkit-linear-gradient(45deg, #fff 25%, transparent 0, transparent 75%, #fff 0, #fff), -webkit-linear-gradient(45deg, #fff 25%, transparent 0, transparent 75%, #fff 0, #fff);
+  background-image: linear-gradient(45deg, #fff 25%, transparent 0, transparent 75%, #fff 0, #fff), linear-gradient(45deg, #fff 25%, transparent 0, transparent 75%, #fff 0, #fff);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+
+.angular-ui-tree-empty {
+  pointer-events: none;
+}
+
+.angular-ui-tree-nodes {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.angular-ui-tree-nodes .angular-ui-tree-nodes {
+  padding-left: 20px;
+}
+
+.angular-ui-tree-node, .angular-ui-tree-placeholder {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 20px;
+  line-height: 20px;
+}
+
+.angular-ui-tree-hidden {
+  display: none;
+}
+
+.angular-ui-tree-placeholder {
+  margin: 10px;
+  padding: 0;
+  min-height: 30px;
+}
+
+.angular-ui-tree-handle {
+  cursor: move;
+  text-decoration: none;
+  font-weight: 700;
+  box-sizing: border-box;
+  min-height: 20px;
+  line-height: 20px;
+}
+
+.angular-ui-tree-drag {
+  position: absolute;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.8;
+}
+
+.angular-ui-tree-drag .tree-node-content {
+  margin-top: 0;
+}
+
+.categoryTable .se-tree__body .desktopLayout {
+  padding: 0;
+  background-color: white;
+}
+
+.se-tree__nodes {
+  list-style-type: none;
+  border-radius: 0 0 4px 4px;
+}
+.se-tree__nodes--item .col-xs-1 {
+  min-width: 40px;
+  width: fit-content;
+  padding: 0;
+}
+.se-tree__nodes--nodata {
+  font-style: italic;
+  padding: 15px 45px;
+}
+
+.se-tree-node:not(.hovered) .se-navigation-picker-renderer {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .se-tree-node__entry.col-xs-5,
+.se-navigation-editor-tree__entry.col-xs-5 {
+    width: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .se-tree-node__entry.col-xs-5,
+.se-navigation-editor-tree__entry.col-xs-5 {
+    width: 280px;
+  }
+}
+@media (min-width: 1200px) {
+  .se-tree-node__entry.col-xs-5,
+.se-navigation-editor-tree__entry.col-xs-5 {
+    width: 400px;
+  }
+}
+@media (min-width: 1400px) {
+  .se-tree-node__entry.col-xs-5,
+.se-navigation-editor-tree__entry.col-xs-5 {
+    width: 550px;
+  }
+}
+
+.fd-modal__body .se-tree-node__entry.col-xs-5 {
+  width: 160px;
+}
+
+.fd-modal__body .se-tree-node__name.col-xs-3 {
+  width: 200px;
+}
+
+.se-navigation-picker-renderer {
+  min-height: 50px;
+}
+.se-navigation-picker-renderer__btn {
+  float: right;
+  padding-top: 15px;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4285714286;
+  font-weight: 400;
+}
+
+.se-tree-node:active .se-navigation-picker-renderer .se-navigation-picker-renderer__btn {
+  color: var(--sapList_Active_TextColor);
+}
+
+.se-navigation-editor-tree .se-tree-node:active .sap-icon--overflow {
+  color: var(--sapList_Active_TextColor);
+}
+
+.angular-ui-tree-handle,
+.se-tree-node {
+  min-height: 50px;
+  background-color: var(--sapList_Background);
+  position: relative;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSize);
+  font-weight: normal;
+  color: var(--sapList_TextColor);
+}
+.angular-ui-tree-handle--first-level,
+.se-tree-node--first-level {
+  border-bottom-width: var(--sapList_BorderWidth);
+  border-bottom-style: solid;
+  border-bottom-color: var(--sapList_BorderColor);
+}
+.angular-ui-tree-handle--selected,
+.se-tree-node--selected {
+  background-color: var(--sapList_SelectionBackgroundColor);
+  color: var(--sapList_TextColor);
+}
+.angular-ui-tree-handle--selected:hover,
+.se-tree-node--selected:hover {
+  background-color: var(--sapList_Hover_SelectionBackground);
+  color: var(--sapList_TextColor);
+}
+.angular-ui-tree-handle:hover,
+.se-tree-node:hover {
+  background-color: var(--sapList_Hover_Background);
+  color: var(--sapList_TextColor);
+}
+.angular-ui-tree-handle--selected:active, .angular-ui-tree-handle--first-level:active, .angular-ui-tree-handle:active,
+.se-tree-node--selected:active,
+.se-tree-node--first-level:active,
+.se-tree-node:active {
+  background-color: var(--sapList_Active_Background);
+  color: var(--sapList_Active_TextColor);
+}
+.angular-ui-tree-handle--selected:active .se-tree-node__expander .sap-icon--slim-arrow-down::before,
+.angular-ui-tree-handle--selected:active .se-tree-node__expander .sap-icon--slim-arrow-right::before, .angular-ui-tree-handle--first-level:active .se-tree-node__expander .sap-icon--slim-arrow-down::before,
+.angular-ui-tree-handle--first-level:active .se-tree-node__expander .sap-icon--slim-arrow-right::before, .angular-ui-tree-handle:active .se-tree-node__expander .sap-icon--slim-arrow-down::before,
+.angular-ui-tree-handle:active .se-tree-node__expander .sap-icon--slim-arrow-right::before,
+.se-tree-node--selected:active .se-tree-node__expander .sap-icon--slim-arrow-down::before,
+.se-tree-node--selected:active .se-tree-node__expander .sap-icon--slim-arrow-right::before,
+.se-tree-node--first-level:active .se-tree-node__expander .sap-icon--slim-arrow-down::before,
+.se-tree-node--first-level:active .se-tree-node__expander .sap-icon--slim-arrow-right::before,
+.se-tree-node:active .se-tree-node__expander .sap-icon--slim-arrow-down::before,
+.se-tree-node:active .se-tree-node__expander .sap-icon--slim-arrow-right::before {
+  color: var(--sapList_Active_TextColor);
+}
+.angular-ui-tree-handle--selected:active .se-tree-node__name,
+.angular-ui-tree-handle--selected:active .se-tree-node__entry,
+.angular-ui-tree-handle--selected:active .se-tree-node__title, .angular-ui-tree-handle--first-level:active .se-tree-node__name,
+.angular-ui-tree-handle--first-level:active .se-tree-node__entry,
+.angular-ui-tree-handle--first-level:active .se-tree-node__title, .angular-ui-tree-handle:active .se-tree-node__name,
+.angular-ui-tree-handle:active .se-tree-node__entry,
+.angular-ui-tree-handle:active .se-tree-node__title,
+.se-tree-node--selected:active .se-tree-node__name,
+.se-tree-node--selected:active .se-tree-node__entry,
+.se-tree-node--selected:active .se-tree-node__title,
+.se-tree-node--first-level:active .se-tree-node__name,
+.se-tree-node--first-level:active .se-tree-node__entry,
+.se-tree-node--first-level:active .se-tree-node__title,
+.se-tree-node:active .se-tree-node__name,
+.se-tree-node:active .se-tree-node__entry,
+.se-tree-node:active .se-tree-node__title {
+  color: var(--sapList_Active_TextColor);
+}
+.angular-ui-tree-handle__name,
+.se-tree-node__name {
+  padding-left: 0;
+}
+.angular-ui-tree-handle__name span,
+.se-tree-node__name span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  word-break: break-all;
+  display: block;
+  word-wrap: break-word;
+}
+.angular-ui-tree-handle__name h6,
+.se-tree-node__name h6 {
+  width: 15em;
+  word-wrap: break-word;
+}
+.angular-ui-tree-handle__actions,
+.se-tree-node__actions {
+  padding-top: 17px;
+  padding-right: 20px;
+}
+.angular-ui-tree-handle__ol,
+.se-tree-node__ol {
+  list-style-type: none;
+}
+.angular-ui-tree-handle__popover,
+.se-tree-node__popover {
+  max-width: 100%;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  word-break: break-all;
+}
+.angular-ui-tree-handle__expander,
+.se-tree-node__expander {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 45px;
+  font-size: 1.1428571429rem;
+  line-height: 1.25;
+  font-weight: 400;
+}
+.angular-ui-tree-handle__expander .sap-icon--slim-arrow-down::before,
+.angular-ui-tree-handle__expander .sap-icon--slim-arrow-right::before,
+.se-tree-node__expander .sap-icon--slim-arrow-down::before,
+.se-tree-node__expander .sap-icon--slim-arrow-right::before {
+  color: var(--sapContent_IconColor);
+  font-weight: 700;
+}
+.angular-ui-tree-handle__expander--wrapper.col-xs-1,
+.se-tree-node__expander--wrapper.col-xs-1 {
+  max-width: 60px;
+}
+.angular-ui-tree-handle__name, .angular-ui-tree-handle__title, .angular-ui-tree-handle__entry,
+.se-tree-node__name,
+.se-tree-node__title,
+.se-tree-node__entry {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  font-size: 1rem;
+  line-height: 1.4285714286;
+  font-weight: 400;
+  color: #51555a;
+  font-weight: 700;
+}
+.angular-ui-tree-handle__title, .angular-ui-tree-handle__entry,
+.se-tree-node__title,
+.se-tree-node__entry {
+  font-size: 1rem;
+  line-height: 1.4285714286;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  word-break: break-all;
+  color: #51555a;
+}
+
+.angular-ui-tree-nodes .angular-ui-tree-nodes {
+  padding-left: 0 !important;
+}.se-ge-breadcrumb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.se-ge-breadcrumb__data {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.se-ge-breadcrumb__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+.se-ge-breadcrumb__item:first-child {
+  margin-left: 0;
+}
+
+.se-ge-breadcrumb__divider {
+  margin-left: 16px;
+  color: #51555a;
+}
+
+.se-ge-breadcrumb__title {
+  font-weight: 700;
+}

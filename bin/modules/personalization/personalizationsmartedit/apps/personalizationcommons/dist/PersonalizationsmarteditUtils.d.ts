@@ -1,0 +1,40 @@
+/// <reference types="angular-translate" />
+import { ICatalogService, SeValueProvider, TypedMap } from 'smarteditcommons';
+import * as angular from 'angular';
+export declare const PERSONALIZATION_MODEL_STATUS_CODES_PROVIDER: SeValueProvider;
+export declare const PERSONALIZATION_VIEW_STATUS_MAPPING_CODES_PROVIDER: SeValueProvider;
+export declare const PERSONALIZATION_COMBINED_VIEW_CSS_MAPPING_PROVIDER: SeValueProvider;
+export declare const COMBINED_VIEW_TOOLBAR_ITEM_KEY_PROVIDER: SeValueProvider;
+export declare const CUSTOMIZE_VIEW_TOOLBAR_ITEM_KEY_PROVIDER: SeValueProvider;
+export declare class PersonalizationsmarteditUtils {
+    private $translate;
+    private l10nFilter;
+    private PERSONALIZATION_MODEL_STATUS_CODES;
+    private PERSONALIZATION_VIEW_STATUS_MAPPING_CODES;
+    private PERSONALIZATION_COMBINED_VIEW_CSS_MAPPING;
+    private catalogService;
+    constructor($translate: angular.translate.ITranslateService, l10nFilter: any, PERSONALIZATION_MODEL_STATUS_CODES: TypedMap<string>, PERSONALIZATION_VIEW_STATUS_MAPPING_CODES: TypedMap<string>, PERSONALIZATION_COMBINED_VIEW_CSS_MAPPING: any, catalogService: ICatalogService);
+    pushToArrayIfValueExists(array: any, sKey: string, sValue: string): void;
+    getVariationCodes(variations: any): any;
+    getVariationKey(customizationId: string, variations: any): any;
+    getSegmentTriggerForVariation(variation: any): any;
+    isPersonalizationItemEnabled(item: any): any;
+    getEnablementTextForCustomization(customization: any, keyPrefix: string): string;
+    getEnablementTextForVariation(variation: any, keyPrefix: string): string;
+    getEnablementActionTextForVariation(variation: any, keyPrefix: string): string;
+    getActivityStateForCustomization(customization: any): string;
+    getActivityStateForVariation(customization: any, variation: any): string;
+    isItemVisible(item: any): boolean;
+    getVisibleItems(items: any): any;
+    getValidRank(items: any, item: any, increaseValue: any): any;
+    getStatusesMapping(): any;
+    getClassForElement(index: any): string;
+    getLetterForElement(index: any): string;
+    getCommerceCustomizationTooltip(variation: any, prefix: string, suffix: string): string;
+    getCommerceCustomizationTooltipHTML(variation: any): string;
+    isItemFromCurrentCatalog(item: any, seData: any): boolean;
+    hasCommerceActions(variation: any): boolean;
+    getCatalogVersionNameByUuid(catalogVersionUuid: string): Promise<any>;
+    getAndSetCatalogVersionNameL10N(customization: any): void;
+    uniqueArray(array1: any[], array2: any[], fieldName?: string): any[];
+}

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2021 SAP SE or an SAP affiliate company. All rights reserved.
+  -->
+
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="beans.xsd">
+
+	<bean class="de.hybris.platform.customerticketingocc.dto.ticket.TicketCategoryWsDTO">
+		<description>Ticket category</description>
+		<hints>
+			<hint name="wsRelated"/>
+			<hint name="alias">TicketCategory</hint>
+		</hints>
+		<property name="name" type="String">
+			<description>Localised category name</description>
+			<hints>
+				<hint name="example">Enquiry</hint>
+			</hints>
+		</property>
+		<property name="id" type="String">
+			<description>Category id</description>
+			<hints>
+				<hint name="example">ENQUIRY</hint>
+				<hint name="required">true</hint>
+			</hints>
+		</property>
+	</bean>
+
+	<bean class="de.hybris.platform.customerticketingocc.dto.ticket.TicketCategoryListWsDTO">
+		<description>Represents a list of ticket categories.</description>
+		<hints>
+			<hint name="wsRelated"/>
+			<hint name="alias">TicketCategoryList</hint>
+		</hints>
+		<property name="ticketCategories" type="java.util.List&lt;de.hybris.platform.customerticketingocc.dto.ticket.TicketCategoryWsDTO>" />
+	</bean>
+
+	<bean class="de.hybris.platform.customerticketingocc.dto.ticket.TicketStatusWsDTO">
+		<description>Ticket status</description>
+		<hints>
+			<hint name="wsRelated"/>
+			<hint name="alias">TicketStatus</hint>
+		</hints>
+		<property name="name" type="String">
+			<description>Localised ticket status</description>
+			<hints>
+				<hint name="example">Closed</hint>
+			</hints>
+		</property>
+		<property name="id" type="String">
+			<description>Ticket status id</description>
+			<hints>
+				<hint name="example">CLOSED</hint>
+				<hint name="required">true</hint>
+			</hints>
+		</property>
+	</bean>
+
+	<bean class="de.hybris.platform.customerticketingocc.dto.ticket.TicketEventWsDTO">
+		<description>Representation of the ticket event object.</description>
+		<hints>
+			<hint name="wsRelated"/>
+			<hint name="alias">TicketEvent</hint>
+		</hints>
+		<property name="author" type="String">
+			<description>Name of the user who initiated this ticket event</description>
+			<hints>
+				<hint name="example">Mark Rivers</hint>
+			</hints>
+		</property>
+		<property name="createdAt" type="java.util.Date">
+			<description>Datetime when this event is created </description>
+			<hints>
+				<hint name="example">2021-01-13T10:06:57+0000</hint>
+			</hints>
+		</property>
+		<property name="message" type="String">
+			<description>Detailed description of your question</description>
+			<hints>
+				<hint name="example">It is broken when I receive it. Please send one replacement to me.</hint>
+				<hint name="required">true</hint>
+			</hints>
+		</property>
+		<property name="addedByAgent" type="java.lang.Boolean">
+			<description>Whether this event is added by agent or not.</description>
+			<hints>
+				<hint name="example">false</hint>
+			</hints>
+		</property>
+		<property name="toStatus" type="de.hybris.platform.customerticketingocc.dto.ticket.TicketStatusWsDTO" />
+	</bean>
+
+	<bean class="de.hybris.platform.customerticketingocc.dto.ticket.TicketStarterWsDTO">
+		<description>Representation of objects containing a set of fields for ticket creation.</description>
+		<hints>
+			<hint name="wsRelated"/>
+			<hint name="alias">TicketStarter</hint>
+		</hints>
+		<property name="subject" type="String">
+			<description>subject of ticket</description>
+			<hints>
+				<hint name="example">My drill is broken.</hint>
+				<hint name="required">true</hint>
+			</hints>
+		</property>
+		<property name="message" type="String" >
+			<description>Detailed description of your question</description>
+			<hints>
+				<hint name="example">It is broken when I receive it. Please send one replacement to me.</hint>
+				<hint name="required">true</hint>
+			</hints>
+		</property>
+		<property name="ticketCategory" type="de.hybris.platform.customerticketingocc.dto.ticket.TicketCategoryWsDTO">
+			<hints>
+				<hint name="required">true</hint>
+			</hints>
+		</property>
+		<property name="associatedTo" type="de.hybris.platform.customerticketingocc.dto.ticket.TicketAssociatedObjectWsDTO" />
+	</bean>
+
+	<bean class="de.hybris.platform.customerticketingocc.dto.ticket.TicketWsDTO">
+		<description>Representation of the ticket object.</description>
+		<hints>
+			<hint name="wsRelated"/>
+			<hint name="alias">Ticket</hint>
+		</hints>
+		<property name="id" type="String">
+			<description>Ticket id</description>
+			<hints>
+				<hint name="example">0000001</hint>
+			</hints>
+		</property>
+		<property name="customerId" type="String">
+			<description>Customer id</description>
+			<hints>
+				<hint name="example">1000001</hint>
+			</hints>
+		</property>
+		<property name="subject" type="String">
+			<description>Subject of ticket</description>
+			<hints>
+				<hint name="example">My drill is broken.</hint>
+			</hints>
+		</property>
+		<property name="createdAt" type="java.util.Date">
+			<description>Ticket creation date</description>
+			<hints>
+				<hint name="example">2021-01-13T10:06:57+0000</hint>
+			</hints>
+		</property>
+		<property name="modifiedAt" type="java.util.Date">
+			<description>Last modification date of ticket</description>
+			<hints>
+				<hint name="example">2021-01-13T10:06:57+0000</hint>
+			</hints>
+		</property>
+		<property name="availableStatusTransitions" type="java.util.List&lt;de.hybris.platform.customerticketingocc.dto.ticket.TicketStatusWsDTO>" />
+		<property name="associatedTo" type="de.hybris.platform.customerticketingocc.dto.ticket.TicketAssociatedObjectWsDTO" />
+		<property name="status" type="de.hybris.platform.customerticketingocc.dto.ticket.TicketStatusWsDTO" />
+		<property name="ticketEvents" type="java.util.List&lt;de.hybris.platform.customerticketingocc.dto.ticket.TicketEventWsDTO>" />
+		<property name="ticketCategory" type="de.hybris.platform.customerticketingocc.dto.ticket.TicketCategoryWsDTO" />
+	</bean>
+
+	<bean class="de.hybris.platform.customerticketingocc.dto.ticket.TicketListWsDTO">
+		<description>Represents a list of ticket results.</description>
+		<hints>
+			<hint name="wsRelated"/>
+			<hint name="alias">TicketList</hint>
+		</hints>
+		<property name="tickets" type="java.util.List&lt;de.hybris.platform.customerticketingocc.dto.ticket.TicketWsDTO>">
+			<description>List of tickets</description>
+		</property>
+		<property name="pagination" type="de.hybris.platform.commercewebservicescommons.dto.search.pagedata.PaginationWsDTO">
+			<description>Pagination of ticket list</description>
+		</property>
+		<property name="sorts" type="java.util.List&lt;de.hybris.platform.commercewebservicescommons.dto.search.pagedata.SortWsDTO>">
+			<description>Sorts of ticket list</description>
+		</property>
+	</bean>
+
+	<bean class="de.hybris.platform.customerticketingocc.dto.ticket.TicketAssociatedObjectWsDTO">
+		<description>Represents an object that can be associated with a ticket. The object could be a cart or an order item.</description>
+		<hints>
+			<hint name="wsRelated"/>
+			<hint name="alias">TicketAssociatedObject</hint>
+		</hints>
+		<property name="code" type="String">
+			<description>Associated object code</description>
+			<hints>
+				<hint name="example">00001000</hint>
+				<hint name="required">true</hint>
+			</hints>
+		</property>
+		<property name="type" type="String">
+			<description>Type of associated objects, Cart or Order</description>
+			<hints>
+				<hint name="example">Cart</hint>
+				<hint name="required">true</hint>
+			</hints>
+		</property>
+		<property name="modifiedAt" type="java.util.Date">
+			<description>Last modified time</description>
+			<hints>
+				<hint name="example">2021-01-13T10:06:57+0000</hint>
+			</hints>
+		</property>
+	</bean>
+
+	<bean class="de.hybris.platform.customerticketingocc.dto.ticket.TicketAssociatedObjectListWsDTO">
+		<description>Represents a list of ticket associated objects.</description>
+		<hints>
+			<hint name="wsRelated"/>
+			<hint name="alias">TicketAssociatedObjectList</hint>
+		</hints>
+		<property name="ticketAssociatedObjects" type="java.util.List&lt;de.hybris.platform.customerticketingocc.dto.ticket.TicketAssociatedObjectWsDTO>"/>
+	</bean>
+
+</beans>

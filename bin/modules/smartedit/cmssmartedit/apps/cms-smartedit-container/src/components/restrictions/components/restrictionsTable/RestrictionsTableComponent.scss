@@ -1,0 +1,38 @@
+.se-restrictions-list .se-restriction__item {
+    @include se-flex-row(space-between);
+    border-top-color: fd-color('neutral', 2) !important;
+    cursor: default;
+
+    &:last-child {
+        margin-bottom: 42px; // To display the dropdown properly without scrolling
+    }
+}
+
+.se-restriction__item-name {
+    @include fd-weight('bold');
+    color: fd-color('text', 1);
+    margin: 0;
+}
+
+.se-restriction__item-type-and-id {
+    color: fd-color('text', 2);
+    margin-top: 0;
+}
+
+.se-restriction__item-description {
+    @include se-text-ellipsis;
+    color: fd-color('text', 3);
+    width: 90%;
+}
+
+.se-restrictions-list--empty__message {
+    color: fd-color('text', 3);
+}
+
+.error-input {
+    &.se-restriction__item-description,
+    &.se-restriction__item-name,
+    &.se-restriction__item-type-and-id {
+        color: fd-color('status', 3);
+    }
+}

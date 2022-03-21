@@ -1,0 +1,36 @@
+import { HttpClient } from '@angular/common/http';
+import { OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { ModalRef } from '@fundamental-ngx/core';
+import { ILoginData, ILoginModalFeedback, ISessionService, IStorageService } from '../../interfaces';
+import { SSOAuthenticationHelper } from '../../services/authentication/sso-authentication.helper';
+import { LogService } from '../../services/log.service';
+import { UrlUtils } from '../../utils';
+import { LoginDialogResource } from './login-dialog-resource-provider';
+export declare class LoginDialogComponent implements OnInit {
+    private modalRef;
+    private logService;
+    private httpClient;
+    private sessionService;
+    private storageService;
+    private urlUtils;
+    private ssoAuthenticationHelper;
+    resource: LoginDialogResource;
+    hostClass: boolean;
+    data: ILoginData;
+    authURIKey: string;
+    authURI: string;
+    isFullScreen: boolean;
+    ssoEnabled: boolean;
+    form: FormGroup;
+    constructor(modalRef: ModalRef, logService: LogService, httpClient: HttpClient, sessionService: ISessionService, storageService: IStorageService, urlUtils: UrlUtils, ssoAuthenticationHelper: SSOAuthenticationHelper, resource: LoginDialogResource);
+    ngOnInit(): void;
+    signinWithSSO: () => Promise<ILoginModalFeedback>;
+    signinWithCredentials(): Promise<ILoginModalFeedback>;
+    private isMainEndPoint;
+    private storeAccessToken;
+    private sendCredentials;
+    private APIAuthenticationFailureReportFactory;
+    private acceptUser;
+    private hasRequiredCredentialsError;
+}

@@ -1,0 +1,9 @@
+.cms-sub-type__selector-link {
+    @include se-flex-row;
+    color: fd-color('action', 1);
+    height: 46px;
+
+    &:hover {
+        color: fd-color-state('hover', 'action');
+    }
+}

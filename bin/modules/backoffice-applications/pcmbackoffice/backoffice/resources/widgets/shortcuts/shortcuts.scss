@@ -1,0 +1,42 @@
+@import 'scss/support/shortcuts-variables.scss';
+
+.yw-shortcuts-widget {
+
+    &.widget_body {
+    	height: 100%;
+    }
+    .yw-shortcuts-header {
+        	font-size: $font-size__base;
+        	padding-left:$container-spacing-default__third;
+        	color: $black__blueish--200;
+        	padding: $shortcuts-header-padding;
+        	border-bottom: $shortcuts-header-border-bottom;
+       }
+
+	.yw-listbox-body {
+		border:none;
+
+		.z-listcell{
+    		padding-left:$container-spacing-default__base;
+    		border:none;
+
+    		.z-listcell-content{
+				padding-left:$container-spacing-default__semi-third;
+    			font-size:$font-size__base;
+    		}
+
+    	}
+    }
+
+    div.z-listcell-content{
+    	color: $black__blueish--200;
+    }
+
+	tr.z-listitem-selected.z-listitem, tr.z-listitem-selected.z-listitem:hover{
+        background:none;
+     }
+
+    .z-listitem-selected > .z-listcell > .z-listcell-content {
+        color:$blue__default;
+    }
+}

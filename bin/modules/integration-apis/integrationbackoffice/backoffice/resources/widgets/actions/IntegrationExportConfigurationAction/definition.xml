@@ -1,0 +1,21 @@
+<!--
+  ~ Copyright (c) 2021 SAP SE or an SAP affiliate company. All rights reserved.
+  -->
+<action-definition id="integrationbackoffice.actions.ExportConfigurationAction"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="http://www.hybris.com/schema/cockpitng/action-definition.xsd">
+
+    <name>Integration Export Configuration</name>
+    <description>Action to download an exportable configuration</description>
+    <version>1.0</version>
+
+    <actionClassName>de.hybris.platform.integrationbackoffice.widgets.configuration.actions.ExportConfigurationAction</actionClassName>
+
+    <iconUri>/icons/icon_action_export_config_default.png</iconUri>
+    <iconHoverUri>/icons/icon_action_export_config_hover.png</iconHoverUri>
+    <iconDisabledUri>/icons/icon_action_export_config_disabled.png</iconDisabledUri>
+
+    <sockets>
+        <output id="exportConfigurationPerform" type="java.lang.String"/>
+    </sockets>
+</action-definition>

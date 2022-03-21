@@ -1,0 +1,23 @@
+<div class="se-file-selector" [ngClass]="customClass">
+    <label
+        *ngIf="!disabled"
+        class="se-file-selector__btn se-button se-button--text"
+        [ngClass]="{ 'se-button--disabled': disabled }"
+    >
+        <!-- "Upload image to library" / "Replace" Button -->
+        <span
+            class="sap-icon--share se-media__action-icon"
+            [ngClass]="{
+                'sap-icon--share': isReplaceMode(),
+                'sap-icon--upload': !isReplaceMode()
+            }"
+        ></span>
+        <span class="se-file-selector__label" [translate]="labelI18nKey"></span>
+        <input
+            type="file"
+            class="hide se-file-selector__input"
+            [accept]="buildAcceptedFileTypesList()"
+            (change)="onSelect($event.target.files)"
+        />
+    </label>
+</div>

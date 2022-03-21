@@ -1,0 +1,27 @@
+.se-restrictions-container__header {
+    @include se-flex-row(space-between);
+    border-bottom: se-border();
+    padding-bottom: fd-space('xs');
+
+    &--right {
+        @include se-flex-row();
+        > span,
+        > div {
+            margin-left: fd-space('xs');
+        }
+    }
+    &--empty {
+        border-bottom: none;
+    }
+}
+
+.se-restrictions__sub-header {
+    @include fd-weight('bold');
+    align-self: flex-start;
+    color: fd-color('text', 2);
+    margin: 0;
+}
+
+.se-restriction__clear-all__btn {
+    text-transform: capitalize;
+}

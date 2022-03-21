@@ -1,0 +1,1 @@
+export { ComponentSharedService } from './ComponentSharedServiceOuter';

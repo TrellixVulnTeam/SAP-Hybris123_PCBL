@@ -1,0 +1,52 @@
+@mixin se-media-action-btn {
+    @include se-text-btn;
+    height: 32px;
+}
+
+// MediaContainerField
+.se-media-container-field__media-list {
+    @include se-grid-columns(4, 0 fd-space('s'));
+}
+.se-media-container-cell {
+    &--mobile {
+        order: 4;
+    }
+    &--desktop {
+        order: 2;
+    }
+    &--tablet {
+        order: 3;
+    }
+    &--widescreen {
+        order: 1;
+    }
+}
+
+.se-media__action-icon {
+    color: fd-color('action', 1);
+    margin-right: fd-space('xxs');
+    width: 12px;
+
+    &--basic {
+        @include fd-type('1');
+
+        &::before {
+            vertical-align: middle;
+        }
+    }
+
+    &--delete {
+        color: fd-color('status', 3);
+    }
+}
+
+.se-media-action-btn {
+    @include se-media-action-btn();
+}
+
+.se-media-upload-form-wrapper {
+    display: block;
+    &--spaced {
+        margin-top: fd-space('s');
+    }
+}

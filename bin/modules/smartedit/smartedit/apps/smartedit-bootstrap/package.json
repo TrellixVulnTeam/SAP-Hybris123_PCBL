@@ -1,0 +1,44 @@
+{
+    "name": "smarteditbootstrap",
+    "version": "0.0.1",
+    "private": true,
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "description": "SmartEdit Bootstrap library",
+    "scripts": {
+        "build": "se-packagr",
+        "lint": "npm run lint:base -- 'src/**/*.{js,ts}'",
+        "lint:base": "eslint"
+    },
+    "files": [
+        "dist",
+        "assets"
+    ],
+    "devDependencies": {
+        "@smartedit/packagr": "0.0.1",
+        "smartedit-build": "0.0.1",
+        "@types/angular": "1.7.3",
+        "eslint": "7.9.0",
+        "@typescript-eslint/eslint-plugin": "4.1.1",
+        "@typescript-eslint/parser": "4.1.1",
+        "eslint-config-prettier": "6.11.0",
+        "eslint-plugin-import": "2.22.0",
+        "eslint-plugin-jsdoc": "30.5.1",
+        "eslint-plugin-prefer-arrow": "1.2.2",
+        "eslint-plugin-deprecation": "1.1.0",
+        "eslint-plugin-ban": "1.5.1",
+        "eslint-plugin-prettier": "3.1.4",
+        "typescript": "3.9.3"
+    },
+    "dependencies": {
+        "smarteditcommons": "0.0.1",
+        "@angular/common": "8.2.14",
+        "@angular/core": "8.2.14",
+        "@angular/platform-browser": "8.2.14",
+        "@angular/platform-browser-dynamic": "8.2.14",
+        "angular": "1.8.0",
+        "rxjs": "6.5.4",
+        "tslib": "1.10.0",
+        "zone.js": "0.9.1"
+    }
+}

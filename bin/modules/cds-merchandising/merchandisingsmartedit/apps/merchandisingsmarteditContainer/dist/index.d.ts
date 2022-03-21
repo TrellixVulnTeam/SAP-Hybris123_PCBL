@@ -1,0 +1,2 @@
+import './legacymerchandisingsmarteditcontainer';
+import './merchandisingsmarteditcontainer';

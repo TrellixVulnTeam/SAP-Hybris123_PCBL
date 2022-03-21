@@ -1,0 +1,131 @@
+.se-page-list {
+    $root: &;
+
+    background-color: fd-color('background', 1);
+    min-height: 100vh;
+    height: 100%; // if page is longer than the view height
+
+    &__page-link-anchor {
+        text-decoration: none !important;
+        color: fd-color('text', 2);
+        &:hover {
+            color: fd-color('action', 1);
+        }
+    }
+
+    &__header {
+        padding: fd-space('s') 30px;
+        background-color: fd-color('background', 2);
+    }
+
+    &__page-link-icon {
+        @include fd-type('-1');
+        color: fd-color('text', 2);
+    }
+
+    &__catalog-name {
+        @include fd-type('4');
+        display: block;
+        margin-bottom: fd-space('base');
+    }
+
+    &__sub-title {
+        color: fd-color('text', 3);
+    }
+
+    &__body {
+        padding: 20px 20px 70px;
+    }
+
+    &__page-link--left {
+        cursor: pointer;
+
+        #{$root}__page-link-anchor {
+            margin-left: 3px;
+        }
+    }
+
+    &__page-link--right {
+        cursor: pointer;
+
+        #{$root}__page-link-anchor {
+            margin-right: 3px;
+        }
+    }
+
+    &__table-header {
+        @include se-flex-row(space-between);
+        background-color: fd-color('background', 2);
+        height: 56px;
+        padding: 20px;
+        border-radius: fd-space('base') fd-space('base') 0 0;
+
+        &--right {
+            @include se-flex-row();
+        }
+
+        .se-paged-list__page-count-wrapper {
+            @include fd-type('1');
+            margin-right: auto;
+        }
+    }
+
+    &__table-body {
+        padding-bottom: fd-space('s');
+
+        .se-data-table__arrow {
+            margin-left: 2px;
+        }
+        .se-paged-list-item {
+            cursor: default;
+        }
+    }
+
+    &__search {
+        margin-right: fd-space('s');
+        width: 380px;
+    }
+
+    &__add {
+        text-transform: capitalize;
+    }
+}
+// Table cells
+.se-paged-list {
+    &__header {
+        @include fd-type('0');
+    }
+    &__header-syncStatus,
+    &__header-dropdownitems,
+    &__header-pageStatus {
+        cursor: default;
+    }
+}
+
+.se-paged-list-item-name a {
+    text-decoration: none !important;
+}
+.se-sync-btn {
+    &__status--done {
+        color: fd-color('status', 1);
+    }
+    &__status--not {
+        color: fd-color('status', 2);
+    }
+}
+
+.ySmartEditTrashPageToolbar {
+    background-color: fd-color('background', 2);
+}
+
+.fd-table {
+    th.se-paged-list__header-numberOfRestrictions,
+    td.se-paged-list-item-numberOfRestrictions,
+    td.se-paged-list-item-syncStatus,
+    th.se-paged-list__header-syncStatus {
+        text-align: center;
+    }
+    td.se-paged-list-item-syncStatus {
+        @include fd-type('1');
+    }
+}

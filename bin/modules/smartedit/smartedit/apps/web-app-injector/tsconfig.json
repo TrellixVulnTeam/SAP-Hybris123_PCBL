@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "lib": ["dom", "es5", "scripthost", "es2015", "es2015.iterable"],
+        "baseUrl": ".",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "allowJs": true,
+        "noUnusedParameters": false,
+        "strictNullChecks": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmitOnError": true,
+        "traceResolution": true,
+        "listEmittedFiles": true,
+        "skipLibCheck": true,
+        "pretty": true,
+        "declaration": false,
+        "experimentalDecorators": true
+    },
+    "include": ["src/**/*.ts"]
+}

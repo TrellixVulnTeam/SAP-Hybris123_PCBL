@@ -1,0 +1,57 @@
+<div class="container">
+    <se-media-format
+        [error-messages]="controller.field.messages"
+        [is-editable]="controller.field.editable"
+        [is-under-edit]="controller.isUnderEdit"
+        [is-field-disabled]="controller.isFieldDisabled()"
+        [media-uuid]="controller.mediaUuid"
+        [media-format]="controller.mediaFormat"
+        (on-file-select)="controller.onFileSelect($event)"
+    >
+    </se-media-format>
+
+    <form name="ctrlForm">
+        <div>
+            <span>_isFieldDisabled: {{ controller._isFieldDisabled }}</span>
+            <input
+                type="checkbox"
+                id="is-field-disabled"
+                data-ng-model="controller.model.isFieldDisabled"
+                data-ng-change="controller.setIsFieldDisabled()"
+            />
+        </div>
+
+        <div>
+            <span>mediaUuid:{{ controller.mediaUuid }}</span>
+            <input
+                type="text"
+                name="set-media-uuid"
+                id="set-media-uuid"
+                data-ng-model="controller.model.mediaUuid"
+            />
+            <button type="button" id="set-media-uuid-btn" data-ng-click="controller.setMediaUuid()">
+                Set
+            </button>
+        </div>
+
+        <div>
+            <span>field: {{ controller.field | json }}</span>
+            <input
+                type="checkbox"
+                id="set-field-editable"
+                data-ng-model="controller.model.field.editable"
+                data-ng-change="controller.setField()"
+            />
+        </div>
+
+        <div>
+            <span>isUnderEdit: {{ controller.isUnderEdit }}</span>
+            <input
+                type="checkbox"
+                id="set-is-under-edit"
+                data-ng-model="controller.model.isUnderEdit"
+                data-ng-change="controller.setIsUnderEdit()"
+            />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,312 @@
+{
+  "extensions": [
+    {
+      "name": "@smart/utils",
+      "version": "1.1.52",
+      "projectFolder": "../smartedit/apps/smart-utils",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/smartedit/apps/smart-utils",
+      "dependencies": []
+    },
+    {
+      "name": "smarteditcommons",
+      "version": "0.0.1",
+      "projectFolder": "../smartedit/apps/smartedit-commons",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/smartedit/apps/smartedit-commons",
+      "dependencies": [
+        "@smart/utils"
+      ]
+    },
+    {
+      "name": "personalizationcommons",
+      "version": "0.0.1",
+      "projectFolder": "../../personalization/personalizationsmartedit/apps/personalizationcommons",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/personalization/personalizationsmartedit/apps/personalizationcommons",
+      "dependencies": [
+        "smarteditcommons"
+      ]
+    },
+    {
+      "name": "smartedit",
+      "version": "0.0.1",
+      "projectFolder": "../smartedit/apps/smartedit",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/smartedit/apps/smartedit",
+      "dependencies": [
+        "smarteditcommons"
+      ],
+      "type": "inner"
+    },
+    {
+      "name": "cmscommons",
+      "version": "0.0.1",
+      "projectFolder": "../cmssmartedit/apps/cms-commons",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/cmssmartedit/apps/cms-commons",
+      "dependencies": [
+        "smarteditcommons"
+      ]
+    },
+    {
+      "name": "cmssmartedit",
+      "version": "0.0.1",
+      "projectFolder": "../cmssmartedit/apps/cms-smartedit",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/cmssmartedit/apps/cms-smartedit",
+      "dependencies": [
+        "smarteditcommons",
+        "cmscommons",
+        "smartedit"
+      ],
+      "type": "inner",
+      "angularApp": "cmssmartedit"
+    },
+    {
+      "name": "personalizationsmartedit",
+      "version": "0.0.1",
+      "projectFolder": "../../personalization/personalizationsmartedit/apps/personalizationsmartedit",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/personalization/personalizationsmartedit/apps/personalizationsmartedit",
+      "dependencies": [
+        "smarteditcommons",
+        "smartedit",
+        "cmscommons",
+        "cmssmartedit",
+        "personalizationcommons"
+      ],
+      "type": "inner",
+      "angularApp": "personalizationsmartedit"
+    },
+    {
+      "name": "smarteditcontainer",
+      "version": "0.0.1",
+      "projectFolder": "../smartedit/apps/smartedit-container",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/smartedit/apps/smartedit-container",
+      "dependencies": [
+        "smarteditcommons"
+      ],
+      "type": "container"
+    },
+    {
+      "name": "cmssmarteditcontainer",
+      "version": "0.0.1",
+      "projectFolder": "../cmssmartedit/apps/cms-smartedit-container",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/cmssmartedit/apps/cms-smartedit-container",
+      "dependencies": [
+        "smarteditcommons",
+        "smarteditcontainer",
+        "cmscommons"
+      ],
+      "type": "container",
+      "angularApp": "cmssmarteditContainer"
+    },
+    {
+      "name": "personalizationsmarteditcontainer",
+      "version": "0.0.1",
+      "projectFolder": "../../personalization/personalizationsmartedit/apps/personalizationsmarteditcontainer",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/personalization/personalizationsmartedit/apps/personalizationsmarteditcontainer",
+      "dependencies": [
+        "smarteditcommons",
+        "smarteditcontainer",
+        "cmscommons",
+        "cmssmarteditcontainer",
+        "personalizationcommons"
+      ],
+      "type": "container",
+      "angularApp": "personalizationsmarteditContainer"
+    },
+    {
+      "name": "merchandisingsmarteditcommons",
+      "version": "0.0.1",
+      "projectFolder": "../../cds-merchandising/merchandisingsmartedit/apps/merchandisingsmarteditcommons",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/cds-merchandising/merchandisingsmartedit/apps/merchandisingsmarteditcommons",
+      "dependencies": [
+        "smarteditcommons"
+      ]
+    },
+    {
+      "name": "merchandisingsmartedit",
+      "version": "0.0.1",
+      "projectFolder": "../../cds-merchandising/merchandisingsmartedit/apps/merchandisingsmartedit",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/cds-merchandising/merchandisingsmartedit/apps/merchandisingsmartedit",
+      "dependencies": [
+        "smarteditcommons",
+        "smartedit",
+        "merchandisingsmarteditcommons"
+      ],
+      "type": "inner",
+      "angularApp": "merchandisingsmartedit"
+    },
+    {
+      "name": "merchandisingsmarteditcontainer",
+      "version": "0.0.1",
+      "projectFolder": "../../cds-merchandising/merchandisingsmartedit/apps/merchandisingsmarteditContainer",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/cds-merchandising/merchandisingsmartedit/apps/merchandisingsmarteditContainer",
+      "dependencies": [
+        "smarteditcommons",
+        "smarteditcontainer",
+        "merchandisingsmarteditcommons"
+      ],
+      "type": "container",
+      "angularApp": "merchandisingsmarteditContainer"
+    },
+    {
+      "name": "smarteditbootstrap",
+      "version": "0.0.1",
+      "projectFolder": "../smartedit/apps/smartedit-bootstrap",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/smartedit/apps/smartedit-bootstrap",
+      "dependencies": [
+        "smarteditcommons"
+      ],
+      "type": "inner"
+    },
+    {
+      "name": "smarteditloader",
+      "version": "0.0.1",
+      "projectFolder": "../smartedit/apps/smartedit-loader",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/smartedit/apps/smartedit-loader",
+      "dependencies": [
+        "smarteditcommons",
+        "smarteditcontainer"
+      ],
+      "type": "container"
+    },
+    {
+      "name": "smartedit-e2e",
+      "version": "0.0.1",
+      "projectFolder": "../smartedit/apps/smartedit-e2e",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/smartedit/apps/smartedit-e2e",
+      "dependencies": [
+        "@smart/utils",
+        "smartedit",
+        "smarteditbootstrap",
+        "smarteditcommons",
+        "smarteditcontainer",
+        "smarteditloader"
+      ],
+      "type": "e2e"
+    },
+    {
+      "name": "webappinjector",
+      "version": "0.0.1",
+      "projectFolder": "../smartedit/apps/web-app-injector",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/smartedit/apps/web-app-injector",
+      "dependencies": [
+        "smarteditcontainer",
+        "smartedit"
+      ]
+    },
+    {
+      "name": "personalizationsearchsmartedit",
+      "version": "0.0.1",
+      "projectFolder": "../../personalization-search/personalizationsearchsmartedit/apps/personalizationsearchsmartedit",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/personalization-search/personalizationsearchsmartedit/apps/personalizationsearchsmartedit",
+      "dependencies": [
+        "smarteditcommons",
+        "smartedit"
+      ],
+      "type": "inner",
+      "angularApp": "personalizationsearchsmartedit"
+    },
+    {
+      "name": "personalizationsearchsmarteditcontainer",
+      "version": "0.0.1",
+      "projectFolder": "../../personalization-search/personalizationsearchsmartedit/apps/personalizationsearchsmarteditContainer",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/personalization-search/personalizationsearchsmartedit/apps/personalizationsearchsmarteditContainer",
+      "dependencies": [
+        "smarteditcommons",
+        "smarteditcontainer"
+      ],
+      "type": "container",
+      "angularApp": "personalizationsearchsmarteditContainer"
+    },
+    {
+      "name": "personalizationpromotionssmarteditcommons",
+      "version": "0.0.1",
+      "projectFolder": "../../personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmarteditcommons",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmarteditcommons",
+      "dependencies": [
+        "smarteditcommons"
+      ]
+    },
+    {
+      "name": "personalizationpromotionssmartedit",
+      "version": "0.0.1",
+      "projectFolder": "../../personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit",
+      "dependencies": [
+        "smarteditcommons",
+        "smartedit",
+        "personalizationpromotionssmarteditcommons"
+      ],
+      "type": "inner",
+      "angularApp": "personalizationpromotionssmartedit"
+    },
+    {
+      "name": "personalizationpromotionssmarteditcontainer",
+      "version": "0.0.1",
+      "projectFolder": "../../personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmarteditContainer",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmarteditContainer",
+      "dependencies": [
+        "smarteditcommons",
+        "smarteditcontainer",
+        "personalizationpromotionssmarteditcommons"
+      ],
+      "type": "container",
+      "angularApp": "personalizationpromotionssmarteditContainer"
+    },
+    {
+      "name": "cms-backend-mock",
+      "version": "0.0.1",
+      "projectFolder": "../cmssmartedit/apps/cms-backend-mock",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/cmssmartedit/apps/cms-backend-mock",
+      "dependencies": []
+    },
+    {
+      "name": "cms-smartedit-e2e",
+      "version": "0.0.1",
+      "projectFolder": "../cmssmartedit/apps/cms-smartedit-e2e",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/cmssmartedit/apps/cms-smartedit-e2e",
+      "dependencies": [
+        "smartedit",
+        "smarteditbootstrap",
+        "smarteditcommons",
+        "smarteditcontainer",
+        "smarteditloader",
+        "cms-backend-mock",
+        "cmscommons",
+        "cmssmarteditcontainer",
+        "cmssmartedit"
+      ],
+      "type": "e2e"
+    },
+    {
+      "name": "smarteditmaster",
+      "version": "0.0.1",
+      "projectFolder": "../smartedit/apps/smartedit-master",
+      "appDir": "/opt/bambooagent/xml-data/temporary-repositories/maintenance/hybris/bin/modules/smartedit/smartedit/apps/smartedit-master",
+      "dependencies": [
+        "personalizationcommons",
+        "personalizationsmartedit",
+        "personalizationsmarteditcontainer",
+        "merchandisingsmartedit",
+        "merchandisingsmarteditcontainer",
+        "merchandisingsmarteditcommons",
+        "@smart/utils",
+        "smartedit",
+        "smarteditbootstrap",
+        "smarteditcommons",
+        "smarteditcontainer",
+        "smartedit-e2e",
+        "smarteditloader",
+        "webappinjector",
+        "personalizationsearchsmartedit",
+        "personalizationsearchsmarteditcontainer",
+        "personalizationpromotionssmartedit",
+        "personalizationpromotionssmarteditcontainer",
+        "personalizationpromotionssmarteditcommons",
+        "cms-backend-mock",
+        "cmscommons",
+        "cmssmartedit",
+        "cmssmarteditcontainer",
+        "cms-smartedit-e2e"
+      ],
+      "type": "master"
+    }
+  ]
+}

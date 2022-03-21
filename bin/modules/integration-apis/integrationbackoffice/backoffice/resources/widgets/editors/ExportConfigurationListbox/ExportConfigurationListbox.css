@@ -1,0 +1,11 @@
+.yw-de_hybris_platform_integrationbackoffice_widgets_ExportConfigurationListbox .yw-integrationbackoffice-editor-listbox .z-listheader-checkable {
+    visibility: visible;
+}
+
+.yw-de_hybris_platform_integrationbackoffice_widgets_ExportConfigurationListbox .z-listbox-emptybody-content {
+    visibility: visible;
+}
+
+.yw-integrationbackoffice-exportconfiguration-listbox .z-listcell-content {
+    padding-left: 22px !important;
+}

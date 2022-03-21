@@ -1,0 +1,23 @@
+@import '~smarteditcommons/styling/sass/styles';
+
+// fixes global resets coming from techne within the container
+html {
+    font-size: $fd-font-size !important;
+}
+
+body {
+    height: initial;
+    font-family: $font-sap !important;
+    background-color: fd-color('background', 1) !important;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.se-control-label {
+    display: inline-flex;
+}

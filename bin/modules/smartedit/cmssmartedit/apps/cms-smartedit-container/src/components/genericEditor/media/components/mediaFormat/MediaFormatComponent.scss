@@ -1,0 +1,33 @@
+.se-media-format {
+    height: 100%;
+
+    &__screen-type {
+        @include fd-weight('bold');
+        padding-top: fd-space('base');
+        padding-bottom: 10px;
+        color: fd-color('text', 1);
+    }
+
+    &__error {
+        color: fd-color('status', 3);
+    }
+}
+
+.se-media--absent {
+    @include se-flex-row(center);
+    height: 75px;
+    border: 1px dashed fd-color('neutral', 3);
+}
+
+.se-media--edit-wrapper {
+    height: 100%;
+}
+
+.se-media--edit {
+    @include se-flex-row(center);
+}
+.se-media-preview--edit {
+    @include se-text-ellipsis;
+    display: block;
+    font-style: italic;
+}

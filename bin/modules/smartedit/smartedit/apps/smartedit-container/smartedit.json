@@ -1,0 +1,31 @@
+{
+    "name": "smarteditcontainer",
+    "extension": {
+        "type": "container"
+    },
+    "typescript": {
+        "entry": "./src/index.ts",
+        "dist": "./dist/index.js"
+    },
+    "style": {
+        "global": "node_modules/smartedit-build/styles/se-variables.scss",
+        "urlsToRewrite": [
+            {
+                "urlMatcher": "../../../Base/baseLib/sap_fiori_3/fonts/*",
+                "assetsLocation": "node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts"
+            },
+            {
+                "urlMatcher": "../../../Base/baseLib/sap_base_fiori/fonts/*",
+                "assetsLocation": "node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_base_fiori/fonts"
+            }
+        ]
+    },
+    "legacy": {
+        "js": ["./src/**/*[!Test].js"],
+        "ngTemplates": {
+            "moduleName": "coretemplates",
+            "includePathInName": false,
+            "files": ["./src/**/*.html"]
+        }
+    }
+}

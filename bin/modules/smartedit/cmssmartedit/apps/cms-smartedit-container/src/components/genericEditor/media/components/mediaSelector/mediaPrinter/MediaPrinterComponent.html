@@ -1,0 +1,36 @@
+<!-- Selected -->
+<div class="se-media-selector" *ngIf="isSelected">
+    <span class="se-media-selector__left-section se-media-preview-container">
+        <se-media-preview [imageUrl]="media.url"></se-media-preview>
+        <img class="se-media-preview__image-thumbnail" [src]="media.url" />
+    </span>
+
+    <span class="se-media-selector__right-section">
+        <se-media-advanced-properties
+            [code]="media.code"
+            [description]="media.description"
+            [altText]="media.altText"
+        ></se-media-advanced-properties>
+        <button
+            class="se-media-action-btn replace-image"
+            [disabled]="isDisabled()"
+        >
+            <span class="sap-icon--share se-media__action-icon"></span>
+            <se-media-action-label
+                [state]="isDisabled() ? 'disabled' : null"
+                [i18nKey]="'se.upload.image.replace'"
+            ></se-media-action-label>
+        </button>
+        <se-media-remove-button
+            [isDisabled]="isDisabled()"
+            (clickHandler)="select.removeSelectedOption($event, media)"
+        ></se-media-remove-button>
+    </span>
+</div>
+<!-- Not selected dropdown option -->
+<div class="se-media-selector__search" *ngIf="!isSelected">
+    <div class="se-media-selector__search-img-wrapper">
+        <img [src]="media.url" class="se-media-selector__search-img" />
+    </div>
+    <div class="se-media-selector__search-name">{{ media.code }}</div>
+</div>

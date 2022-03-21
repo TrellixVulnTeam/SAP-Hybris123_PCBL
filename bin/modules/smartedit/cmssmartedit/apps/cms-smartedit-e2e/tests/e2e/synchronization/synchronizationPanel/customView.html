@@ -1,0 +1,12 @@
+<div class="offset">
+    <se-page-synchronization-header
+        [sync-status]="controller.syncStatus"
+        [page-sync-conditions]="controller.pageSyncConditions"
+    ></se-page-synchronization-header>
+    <se-synchronization-panel
+        [item-id]="controller.itemId"
+        [get-sync-status]="controller.getSyncStatus"
+        [perform-sync]="controller.performSync"
+    >
+    </se-synchronization-panel>
+</div>

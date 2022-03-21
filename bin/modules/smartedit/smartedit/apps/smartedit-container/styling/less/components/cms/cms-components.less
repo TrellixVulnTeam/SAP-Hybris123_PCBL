@@ -1,0 +1,43 @@
+/****************************************************
+				slider-panel
+****************************************************/
+.ySEPageRestr-search__input::-ms-clear,
+.ySECompSearchField::-ms-clear,
+.ySEPage-list-search-input::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+a.nav-close:hover,
+a.nav-close:active {
+    text-decoration: none;
+}
+
+/****************************************************
+				carousel-component
+****************************************************/
+.se-item-selector-panel__content__item {
+    margin-bottom: 0.5 * @smartedit-gutter;
+}
+
+.se-catalog-aware-selector__content__btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.se-catalog-aware-selector__content .se-catalog-aware-selector__list .desktopLayout {
+    padding: 0;
+}
+
+.se-catalog-aware-selector__list .se-tree__nodes--item .se-tree-node,
+.se-catalog-aware-selector__list .se-tree__nodes--item .se-tree-node__ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .se-tree-node__li {
+        width: 100%;
+    }
+}

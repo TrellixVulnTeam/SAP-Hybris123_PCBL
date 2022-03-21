@@ -1,0 +1,63 @@
+@import '../../workflow.scss';
+
+se-page-workflow-menu {
+    .toolbar-action {
+        .page-tasks-btn {
+            &[aria-expanded='true'] {
+                background-color: fd-color-state('selected');
+            }
+
+            &__label {
+                font-size: 14px;
+                color: fd-color('text', 1);
+            }
+
+            &__icon {
+                color: $workflow-action-color;
+                font-size: 18px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .se-page-workflow-menu {
+        @include se-dropdown-menu('center');
+        min-width: 350px;
+        min-height: 130px;
+        right: -126px;
+        left: auto;
+        font-size: $fd-font-size;
+        font-family: $fd-font-family;
+        line-height: $fd-line-height;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+
+            &-text {
+                font-size: 16px;
+                padding: 20px 0 0 16px;
+            }
+
+            &-menu {
+                padding: 16px 16px 0 0;
+            }
+        }
+    }
+
+    .se-page-workflow-menu-tabs {
+        .se-tabset {
+            margin: 0;
+
+            &__tab {
+                margin-left: 16px;
+            }
+            &__link {
+                color: $workflow-text-color;
+                &:hover {
+                    color: $workflow-action-color;
+                }
+            }
+        }
+    }
+}

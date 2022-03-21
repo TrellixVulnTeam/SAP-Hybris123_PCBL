@@ -1,0 +1,27 @@
+<div class="se-media">
+    <se-media-selector
+        *ngIf="!image"
+        [id]="mediaSelectorId"
+        [isDisabled]="isFieldDisabled"
+        [mediaId]="mediaIdByLang[lang]"
+        (mediaIdChange)="onMediaIdChange($event)"
+    >
+    </se-media-selector>
+    <se-media-file-selector
+        *ngIf="canShowFileSelector()"
+        [labelI18nKey]="'se.upload.image.to.library'"
+        [acceptedFileTypes]="acceptedFileTypes"
+        [selectionMode]="'upload'"
+        [disabled]="isFieldDisabled"
+        (onFileSelect)="onFileSelect($event)"
+    ></se-media-file-selector>
+    <se-media-upload-form
+        *ngIf="image"
+        class="se-media-upload-form-wrapper"
+        [image]="image"
+        (onCancel)="resetImage()"
+        (onSelect)="onFileSelect($event)"
+        (onUploadSuccess)="onMediaUploaded($event)"
+    ></se-media-upload-form>
+    <se-media-errors *ngIf="fileErrors.length > 0" [errors]="fileErrors"></se-media-errors>
+</div>

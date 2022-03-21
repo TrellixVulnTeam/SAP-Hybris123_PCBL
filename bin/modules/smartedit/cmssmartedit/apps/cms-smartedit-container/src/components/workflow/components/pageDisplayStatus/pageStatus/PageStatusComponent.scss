@@ -1,0 +1,33 @@
+.se-page-status {
+    @include se-flex-row();
+
+    &__label {
+        white-space: nowrap;
+    }
+
+    &__icon {
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        &--draft {
+            @include status-icon();
+            background-color: fd-color('text', 4);
+        }
+        &--in_progress {
+            @include status-icon();
+            background-color: fd-color('status', 2);
+        }
+        &--ready_to_sync {
+            @include status-icon();
+            background-color: fd-color('action', 1);
+        }
+        &--synced {
+            @include status-icon();
+            background-color: fd-color('status', 1);
+        }
+        &--locked {
+            color: fd-color('text', 1);
+        }
+    }
+}

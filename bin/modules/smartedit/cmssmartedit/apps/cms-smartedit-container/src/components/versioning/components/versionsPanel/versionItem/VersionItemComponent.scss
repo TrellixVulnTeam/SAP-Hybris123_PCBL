@@ -1,0 +1,47 @@
+:host(.se-version-item--last) {
+    .se-version-item {
+        border-bottom: none;
+    }
+}
+
+.se-version-item {
+    padding: 10px 20px;
+    border-bottom: se-border();
+    &:hover {
+        background-color: fd-color-state('hover');
+    }
+
+    &--selected {
+        background-color: fd-color-state('selected');
+        &:hover {
+            background-color: fd-color-state('selected-hover');
+        }
+    }
+
+    &__header {
+        @include se-flex-row(space-between);
+    }
+
+    &__label {
+        @include fd-weight('bold');
+        @include se-text-ellipsis;
+        max-width: 225px;
+        color: fd-color('action', 1);
+    }
+
+    &__date {
+        color: fd-color('text', 3);
+    }
+
+    &__description {
+        @include se-flex-row();
+        max-width: 260px;
+    }
+
+    &__description-text {
+        padding-right: 2px;
+        width: 230px;
+        word-break: break-all;
+        white-space: normal;
+    }
+}

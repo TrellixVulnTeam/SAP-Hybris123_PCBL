@@ -1,0 +1,41 @@
+.yw-modal-createWebhookConfigurationModal {
+    height: auto !important;
+    max-height: 1000px !important;
+    overflow: visible !important;
+}
+
+.yw-modal-createWebhookConfigurationModal .z-window-content {
+    height: auto !important;
+}
+
+.yw-webhookbackoffice-modal-body {
+    border-top: 1px solid #d5d8dc;
+    border-bottom: 1px solid #d5d8dc;
+    padding: 15px 20px 35px 20px;
+}
+
+.yw-webhookbackoffice-modal-button {
+    left: 10px;
+    margin: 10px;
+}
+
+[ytestid=consumedDestinationEditor] {
+    height: 40px;
+}
+
+.yw-webhookbackoffice-modal-body.z-vlayout .z-vlayout-inner:nth-child(1) {
+    padding-bottom: 0 !important;
+}
+
+.yw-de_hybris_platform_webhookbackoffice_widgets_CreateWebhookConfigurationModal .yw-notification {
+    position: relative;
+    top: 0;
+}
+
+.CreateWebhookConfigurationModal-Navigation {
+    text-align: right;
+}
+
+.yw-modal-createWebhookConfigurationModal .yw-modal-eventType-toolTip.z-image{
+    padding-bottom: 2px;
+}

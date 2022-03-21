@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--3rd prty libs-->
+        <script src="../../../../node_modules/ckeditor4/ckeditor.js"></script>
+        <script src="../../base/smarteditcontainer/vendor.js"></script>
+
+        <!--libs-->
+        <script src="../../base/smarteditcontainer/base-container-app.js"></script>
+        <script src="../../base/smarteditcontainer/outer-app.js"></script>
+
+        <!-- Mocks -->
+        <script src="outerMocks.js"></script>
+    </head>
+    <style>
+        .outer-app-root {
+            z-index: 1000;
+            position: absolute;
+            width: 100%;
+            background: white;
+            top: 200px;
+            left: 0;
+        }
+    </style>
+    <body>
+        <div><outer-app-root></outer-app-root></div>
+    </body>
+</html>

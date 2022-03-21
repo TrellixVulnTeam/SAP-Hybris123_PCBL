@@ -1,0 +1,27 @@
+<div class="pull-right dropdown tree-node se-tree-node__actions col-sm-1" [hidden]="isReadOnly">
+    <se-dropdown-menu
+        [dropdownItems]="dropdownItems"
+        [selectedItem]="node"
+        class="pull-right se-tree-node__actions--more-menu"
+    ></se-dropdown-menu>
+</div>
+
+<div class="se-tree-node__name col-xs-3" [title]="node.name | seL10n | async">
+    <span> {{ node.name | seL10n | async }} </span>
+</div>
+<div class="pull-right tree-node se-tree-node__entry col-xs-5">
+    <se-tooltip
+        class="se-dropdown-item__delete-page-popover"
+        [triggers]="['mouseenter', 'mouseleave']"
+        [isChevronVisible]="true"
+        [appendTo]="'body'"
+    >
+        <span se-tooltip-trigger class="se-tree-node__popover">
+            <span> {{ entryString }} </span>
+        </span>
+        <span se-tooltip-body>{{ entryString }}</span>
+    </se-tooltip>
+</div>
+<div class="se-tree-node__title col-xs-2">
+    <span [hidden]="!node.title"> {{ node.title | seL10n | async }} </span>
+</div>

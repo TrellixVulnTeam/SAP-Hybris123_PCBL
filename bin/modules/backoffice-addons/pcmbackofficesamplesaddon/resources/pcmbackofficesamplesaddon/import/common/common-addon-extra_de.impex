@@ -1,0 +1,51 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved
+# -----------------------------------------------------------------------
+
+"#% impex.setValidationMode(""import_relaxed"");"
+
+
+$lang=de
+$solrIndexedType=solrIndexedType(identifier)[unique=true,default='BackofficeProduct'];
+$typeCode=type(code)[default='Product'];
+$active=active[allownull=true,default=true];
+
+UPDATE SolrIndexedProperty;name[unique=true];$solrIndexedType;backofficeDisplayName[lang=$lang];
+"#%beforeEach:
+import de.hybris.platform.core.Registry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.apache.commons.lang3.StringUtils;
+import de.hybris.platform.util.Config;
+
+Logger LOGGER = LoggerFactory.getLogger(""ImpExImportReader"");
+extensionNames = Registry.getCurrentTenant().getTenantSpecificExtensionNames();
+if(!extensionNames.contains(""backofficesolrsearch""))
+{
+    LOGGER.info(""backofficeDisplayName [{}] was skipped because the extension [{}] is not be initialized now"", line.get(3), ""backofficesolrsearch"");
+    line.clear();
+}
+"
+;pcmCoreAttributesCoverageGroup;;Core-Attribute;
+;pcmMarketingAttributesCoverageGroup;;Marketingattribute;
+
+INSERT_UPDATE AsFacet;uid[unique=true];name[lang=$lang];
+;b80fb32b-a9f7-4095-f1b0-f9296c98bd5e;Core-Attribute;
+;2cf550a1-7749-0624-d8a8-c1fd37ad37b7;Marketingattribute;
+
+INSERT_UPDATE NotNullConstraint;id[unique=true];$typeCode;$active;message[lang=$lang];
+;ProductNameNotNullForAllLocalesConstraint;;;Das Attribut "Bezeichner" sollte Werte für alle Sprachen enthalten.;
+
+INSERT_UPDATE SizeConstraint;id[unique=true];$typeCode;$active;message[lang=$lang];
+;ProductEurope1PricesSizeConstraint;;;Das Attribut "Preise" muss mindestens 1 Element enthalten.;
+;ProductSupercategoriesSizeConstraint;;;Das Attribut "Übergeordnete Kategorien" muss mindestens 1 Element enthalten.;
+;ProductGalleryImagesSizeConstraint;;;Das Attribut "Galeriebilder" muss mindestens 1 Element enthalten.;
+;ProductReferencesSizeConstraint;;;Das Attribut "Produktreferenzen" muss mindestens 1 Element enthalten.;
+
+INSERT_UPDATE NotEmptyConstraint;id[unique=true];$typeCode;$active;message[lang=$lang];
+;ProductCodeNotEmptyConstraint;;;Das Attribut "Artikelnummer" darf nicht leer sein.;
+;ProductDescriptionNotEmptyConstraint;;;Das Attribut "Beschreibung" sollte nicht leer sein.;
+;ProductEanNotEmptyConstraint;;;Das Attribut "EAN" sollte nicht leer sein.;
+
+INSERT_UPDATE HybrisEnumValueCodeConstraint;id[unique=true];$typeCode;$active;message[lang=$lang];
+;ProductApprovedHybrisEnumValueCodeConstraint;;;Der Attributwert für "Genehmigung" sollte "genehmigt" sein.;

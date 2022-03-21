@@ -1,0 +1,6 @@
+{
+    "name": "cms-smartedit-e2e",
+    "extension": {
+        "type": "e2e"
+    }
+}

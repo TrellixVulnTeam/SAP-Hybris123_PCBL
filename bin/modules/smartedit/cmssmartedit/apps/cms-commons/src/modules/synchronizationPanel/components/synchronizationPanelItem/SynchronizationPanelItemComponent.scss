@@ -1,0 +1,36 @@
+.se-sync-panel-item-checkbox {
+    @include se-flex-row();
+    margin: 0 !important;
+    &__field {
+        margin: 0;
+    }
+
+    &__label {
+        @include se-text-ellipsis();
+        max-width: 190px !important; // Override Techne
+        margin: 0 !important;
+        padding-left: fd-space('xxs');
+        color: fd-color('text', 1);
+        text-transform: capitalize;
+
+        &--select-all {
+            font-weight: bold !important;
+        }
+    }
+}
+
+.se-sync-panel-item-info-icon {
+    @include fd-type('1');
+
+    &__icon {
+        &.sap-icon--accept {
+            @include fd-type('1');
+            color: fd-color('status', 1);
+        }
+
+        &.sap-icon--message-warning {
+            @include fd-type('1');
+            color: fd-color('status', 2);
+        }
+    }
+}

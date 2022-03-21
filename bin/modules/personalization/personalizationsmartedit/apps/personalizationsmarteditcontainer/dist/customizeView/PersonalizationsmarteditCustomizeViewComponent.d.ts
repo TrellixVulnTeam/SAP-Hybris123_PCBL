@@ -1,0 +1,40 @@
+/// <reference types="angular-translate" />
+import * as angular from "angular";
+import { PersonalizationsmarteditContextService } from 'personalizationsmarteditcontainer/service/PersonalizationsmarteditContextServiceOuter';
+import { PaginationHelper } from 'personalizationcommons';
+import { PersonalizationsmarteditMessageHandler } from 'personalizationcommons';
+import { PersonalizationsmarteditUtils } from 'personalizationcommons';
+import { CustomizationDataFactory } from "personalizationsmarteditcontainer/dataFactory/CustomizationDataFactory";
+export declare class PersonalizationsmarteditCustomizeViewComponent {
+    protected $translate: angular.translate.ITranslateService;
+    protected customizationDataFactory: CustomizationDataFactory;
+    protected personalizationsmarteditContextService: PersonalizationsmarteditContextService;
+    protected personalizationsmarteditMessageHandler: PersonalizationsmarteditMessageHandler;
+    protected personalizationsmarteditUtils: PersonalizationsmarteditUtils;
+    protected PERSONALIZATION_CUSTOMIZATION_PAGE_FILTER: any;
+    pagination: PaginationHelper;
+    moreCustomizationsRequestProcessing: boolean;
+    customizationsList: any;
+    filters: any;
+    catalogFilter: any;
+    pageFilter: any;
+    statusFilter: any;
+    nameFilter: any;
+    context: any;
+    constructor($translate: angular.translate.ITranslateService, customizationDataFactory: CustomizationDataFactory, personalizationsmarteditContextService: PersonalizationsmarteditContextService, personalizationsmarteditMessageHandler: PersonalizationsmarteditMessageHandler, personalizationsmarteditUtils: PersonalizationsmarteditUtils, PERSONALIZATION_CUSTOMIZATION_PAGE_FILTER: any);
+    $onInit(): void;
+    $onDestroy(): void;
+    $onChanges(changes: any): void;
+    errorCallback(): any;
+    successCallback(response: any): any;
+    getStatus(): any;
+    getCustomizations(categoryFilter: any): void;
+    getCustomizationsFilterObject(): any;
+    refreshList(): any;
+    catalogFilterChange(itemId: string): void;
+    pageFilterChange(itemId: string): void;
+    statusFilterChange(itemId: string): void;
+    nameInputKeypress(keyEvent: any): void;
+    addMoreCustomizationItems(): void;
+    getPage(): void;
+}

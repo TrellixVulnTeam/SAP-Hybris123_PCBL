@@ -1,0 +1,48 @@
+.se-landing-page {
+    @include se-flex-column;
+    padding-top: 48px;
+    align-items: normal;
+}
+
+.se-landing-page-footer-logo {
+    align-self: flex-start;
+    margin: auto 50px 20px;
+}
+
+.se-landing-page-container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.se-landing-page-actions {
+    background-color: var(--sapBaseColor);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.se-landing-page-catalog {
+    & + & {
+        margin-top: 16px;
+    }
+}
+
+.se-landing-page-site-selection {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 8px;
+}
+
+se-catalog-details + se-catalog-details {
+    margin-top: 20px;
+    display: block;
+}
+
+.se-landing-page-catalogs {
+    margin-bottom: 30px;
+}
+
+.se-landing-page-sub-header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}

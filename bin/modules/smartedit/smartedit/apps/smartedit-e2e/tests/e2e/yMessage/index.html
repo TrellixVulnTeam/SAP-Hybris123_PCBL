@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--3rd prty libs-->
+        <script src="../../../node_modules/ckeditor4/ckeditor.js"></script>
+        <script src="../base/smarteditcontainer/vendor.js"></script>
+
+        <!--libs-->
+        <script src="../base/smarteditcontainer/base-container-app.js"></script>
+        <script src="../base/smarteditcontainer/outer-app.js"></script>
+
+        <!--Mocks-->
+        <script src="outer-mocks.js"></script>
+    </head>
+
+    <body>
+        <y-message data-message-id="y-message-id" data-type="info">
+            <message-title> {{ 'test.title' | translate }} </message-title>
+            <message-description> {{ 'test.description' | translate }} </message-description>
+        </y-message>
+
+        <y-message data-message-id="y-message-without-type-id">
+            <message-title> {{ 'test.title' | translate }} </message-title>
+            <message-description> {{ 'test.description' | translate }} </message-description>
+        </y-message>
+
+        <y-message> </y-message>
+
+        <y-message data-message-id="y-message-with-complex-description-id">
+            <message-title> {{ 'test.title' | translate }} </message-title>
+            <message-description>
+                <div>
+                    <strong>Some test</strong> value <a href="link/">link</a>.
+                    <code> <span class="inner-class">data</span> </code> test.
+                </div>
+            </message-description>
+        </y-message>
+    </body>
+</html>

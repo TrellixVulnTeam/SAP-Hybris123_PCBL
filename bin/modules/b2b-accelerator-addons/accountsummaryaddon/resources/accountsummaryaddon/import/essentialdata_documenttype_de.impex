@@ -1,0 +1,14 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+# Add Document type
+
+#% if: de.hybris.platform.servicelayer.i18n.util.LanguageUtils.isLanguagePresent("de")
+
+INSERT_UPDATE B2BDocumentType;code[unique=true];name[lang=de];includeInOpenBalance;displayInAllList
+;Purchase Order;Kauf-Bestellung;true;true
+;Invoice;Rechnung;true;true
+;Credit Note;Gutschrift;true;true
+;Debit Note;Lastschrift;true;true
+;Statement;Abrechnung;false;false
+#% endif:

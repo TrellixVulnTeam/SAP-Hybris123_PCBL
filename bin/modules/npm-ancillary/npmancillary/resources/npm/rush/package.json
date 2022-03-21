@@ -1,0 +1,47 @@
+{
+	"name": "@microsoft/rush",
+	"version": "5.55.1",
+	"description": "A professional solution for consolidating all your JavaScript projects in one Git repo",
+	"keywords": [
+		"install",
+		"build",
+		"publish",
+		"fast",
+		"incremental",
+		"package manager",
+		"monorepo",
+		"package.json"
+	],
+	"preferGlobal": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/microsoft/rushstack/tree/master/apps/rush"
+	},
+	"engines": {
+		"node": ">=5.6.0"
+	},
+	"engineStrict": true,
+	"homepage": "https://rushjs.io",
+	"bin": {
+		"rush": "./bin/rush",
+		"rushx": "./bin/rushx"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"@microsoft/rush-lib": "5.55.1",
+		"@rushstack/node-core-library": "3.42.2",
+		"colors": "~1.2.1",
+		"semver": "~7.3.0"
+	},
+	"devDependencies": {
+		"@rushstack/eslint-config": "2.4.2",
+		"@rushstack/heft": "0.41.6",
+		"@rushstack/heft-node-rig": "1.2.25",
+		"@types/heft-jest": "1.0.1",
+		"@types/node": "12.20.24",
+		"@types/semver": "7.3.5"
+	},
+	"scripts": {
+		"build": "heft test --clean"
+	}
+}

@@ -1,0 +1,11 @@
+backoffice-core-21.05.0-RC15.jar
+backoffice-widgets-21.05.0-RC15.jar
+cockpitadmin-21.05.0-RC15.jar
+cockpitcore-21.05.0-RC15.jar
+cockpit-data-integration-21.05.0-RC15.jar
+cockpit-demo-widgets-21.05.0-RC15.jar
+cockpitframework-21.05.0-RC15.jar
+cockpit-module-aggregator-21.05.0-RC15.jar
+cockpit-standard-editors-21.05.0-RC15.jar
+cockpittesting-21.05.0-RC15.jar
+cockpitwidgets-21.05.0-RC15.jar

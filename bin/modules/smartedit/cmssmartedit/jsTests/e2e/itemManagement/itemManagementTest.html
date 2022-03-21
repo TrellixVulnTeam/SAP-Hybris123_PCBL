@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--this should really just use a customView??? -->
+        <!--3rd party libs-->
+        <script src="../../node_modules/ckeditor/ckeditor.js"></script>
+        <script src="../e2e/base/cms-container/vendor.js"></script>
+
+        <!-- base app -->
+        <script src="../e2e/base/cms-container/base-container-app.js"></script>
+        <script src="./outer-app.js"></script>
+
+        <script src="outerMocks.js"></script>
+    </head>
+
+    <body data-ng-app="cmssmarteditContainer">
+        <div data-ng-controller="testController as $ctrl">
+            <div style="text-align: center; width: 40%; margin: auto">
+                <div>
+                    <div><h2>Component input options</h2></div>
+                    <div class="btn-group">
+                        <label
+                            data-ng-class="{ 'btn': true, 'btn-primary': $ctrl.mode === 'add' }"
+                            data-ng-click="$ctrl.modeChanged('add')"
+                            >Add</label
+                        >
+                        <label
+                            data-ng-class="{ 'btn': true, 'btn-primary': $ctrl.mode === 'edit' }"
+                            data-ng-click="$ctrl.modeChanged('edit')"
+                            >Edit</label
+                        >
+                        <label
+                            data-ng-class="{ 'btn': true, 'btn-primary': $ctrl.mode === 'create' }"
+                            data-ng-click="$ctrl.modeChanged('create')"
+                            >Create</label
+                        >
+                    </div>
+                    <div><br /></div>
+                </div>
+                <h2>Component being tested</h2>
+                <div style="border: solid; padding: 1em; margin: 1em">
+                    <div style="text-align: left" data-ng-if="$ctrl.visible">
+                        <se-item-manager
+                            [item]="$ctrl.restriction"
+                            [(submit-function)]="$ctrl.submitCallback"
+                            [mode]="$ctrl.mode"
+                            [structure-api]="$ctrl.structureApi"
+                            [content-api]="$ctrl.contentApi"
+                            [uri-context]="$ctrl.uriContext"
+                            [(is-dirty)]="$ctrl.isDirty"
+                        ></se-item-manager>
+                    </div>
+                </div>
+                <div>
+                    <button
+                        data-ng-class="{ 'btn': true, 'btn-primary': $ctrl.submitEnabled }"
+                        data-ng-disabled="!$ctrl.submitEnabled()"
+                        data-ng-click="$ctrl.submit()"
+                    >
+                        Submit
+                    </button>
+                    <div><h2>Output of component</h2></div>
+                    <div><br /></div>
+                    <div>Result: {{ $ctrl.result }}</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

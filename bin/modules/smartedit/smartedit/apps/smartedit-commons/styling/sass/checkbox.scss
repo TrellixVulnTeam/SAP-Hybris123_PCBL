@@ -1,0 +1,13 @@
+//fix the css issue in safari
+.fd-checkbox:checked,
+.fd-radio:checked,
+input[type='checkbox']:checked,
+input[type='radio']:checked {
+    background-color: var(--fd-forms-border-color--check);
+}
+
+.fd-checkbox:checked:before,
+input[type='checkbox']:checked:before {
+    --fd-forms-border-color: var(--fd-color-action-2);
+    border-color: var(--fd-forms-border-color);
+}

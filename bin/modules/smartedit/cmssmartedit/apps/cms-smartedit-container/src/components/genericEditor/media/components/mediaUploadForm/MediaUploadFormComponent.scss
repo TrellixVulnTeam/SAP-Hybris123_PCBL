@@ -1,0 +1,31 @@
+.se-media-upload-form {
+    @include se-box-shadow;
+    border-radius: fd-space('base');
+
+    &__header {
+        @include se-flex-row(space-between);
+        border-bottom: se-border();
+        height: 53px;
+        padding: 20px;
+
+        &-title {
+            @include fd-type('1');
+            color: fd-color('text', 1);
+        }
+    }
+
+    &__replace-file {
+        @include se-flex-row(space-between);
+        padding: 16px 20px 0;
+    }
+
+    &__file-name {
+        @include se-text-ellipsis;
+        max-width: 80%;
+    }
+
+    &__file-info {
+        @include se-grid-columns(2, 16px);
+        padding: 20px;
+    }
+}

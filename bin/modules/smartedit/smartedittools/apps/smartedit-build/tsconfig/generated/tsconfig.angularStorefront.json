@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "lib": [
+            "dom",
+            "es5",
+            "scripthost",
+            "es2015",
+            "es2015.iterable"
+        ],
+        "allowJs": false,
+        "checkJs": false,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": false,
+        "strictNullChecks": false,
+        "forceConsistentCasingInFileNames": true,
+        "noEmitOnError": true,
+        "baseUrl": "/Users/i861632/Develop/yenv/yenvs/smartedit/sources/smartedit-module/smartedit/smartedit-build/test/e2e/dummystorefront/angular",
+        "typeRoots": [
+            "../../node_modules/@types"
+        ],
+        "traceResolution": false,
+        "listEmittedFiles": false,
+        "skipLibCheck": true,
+        "pretty": true,
+        "declaration": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "paths": {},
+        "importHelpers": true,
+        "sourceMap": true
+    },
+    "include": [
+        "/Users/i861632/Develop/yenv/yenvs/smartedit/sources/smartedit-module/smartedit/smartedit-build/test/e2e/dummystorefront/angular/**/*"
+    ]
+}

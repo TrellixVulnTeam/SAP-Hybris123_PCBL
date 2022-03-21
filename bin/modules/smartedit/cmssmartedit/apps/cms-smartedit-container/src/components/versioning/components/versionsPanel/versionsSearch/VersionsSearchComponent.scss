@@ -1,0 +1,18 @@
+.se-versions-panel {
+    &__search {
+        @include se-flex-row(space-between);
+        padding: fd-space('xxs') 20px;
+        border-bottom: se-border();
+    }
+
+    &__count {
+        @include se-flex-row();
+        @include fd-type('-1');
+        white-space: nowrap;
+    }
+}
+
+.se-input-group {
+    flex-grow: 1;
+    margin-right: fd-space('s');
+}

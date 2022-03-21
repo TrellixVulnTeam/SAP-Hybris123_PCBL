@@ -1,0 +1,12 @@
+<se-dropdown-menu
+    *ngIf="showDropdown"
+    [useProjectedAnchor]="true"
+    [dropdownItems]="pageApprovalOptions$ | async"
+    [(isOpen)]="isOpen"
+    (isOpenChange)="onDropdownToggle($event)"
+    [additionalClasses]="['se-page-approval-selector-list']"
+>
+    <button
+        class="se-page-approval-selector__toggle-btn fd-button--light sap-icon--navigation-down-arrow"
+    ></button>
+</se-dropdown-menu>

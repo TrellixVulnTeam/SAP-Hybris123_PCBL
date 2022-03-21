@@ -1,0 +1,16 @@
+<se-tooltip
+    [triggers]="['mouseenter', 'mouseleave']"
+    placement="auto"
+    [isChevronVisible]="true"
+    [title]="title"
+    class="se-help"
+>
+    <span se-tooltip-trigger class="sap-icon--sys-help se-y-help-icon"></span>
+    <!-- Legacy AngularJS -->
+    <ng-container se-tooltip-body>
+        <div *ngIf="template" [seCompileHtml]="template"></div>
+        <div *ngIf="templateUrl" [ngInclude]="templateUrl"></div>
+    </ng-container>
+
+    <ng-content se-tooltip-body></ng-content>
+</se-tooltip>

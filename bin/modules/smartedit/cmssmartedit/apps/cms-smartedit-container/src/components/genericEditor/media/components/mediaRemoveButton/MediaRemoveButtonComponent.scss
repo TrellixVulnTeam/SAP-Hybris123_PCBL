@@ -1,0 +1,6 @@
+.se-media-remove-btn-txt {
+    color: fd-color('status', 3);
+    &--disabled {
+        color: fd-color('status', 4);
+    }
+}

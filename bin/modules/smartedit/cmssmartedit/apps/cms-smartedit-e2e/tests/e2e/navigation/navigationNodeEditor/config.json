@@ -1,0 +1,16 @@
+{
+    "jsFiles": [
+        {
+            "value": "{\"smartEditContainerLocation\":\"/apps/cms-smartedit-e2e/generated/e2e/util/commonMockedModule/setApparelStagedUKExperience.js\"}",
+            "key": "applications.setApparelStagedUKExperience"
+        },
+        {
+            "value": "{\"smartEditContainerLocation\":\"/apps/cms-smartedit-e2e/generated/e2e/navigation/navigationNodeEditor/navigationNodeEditorMocks.js\"}",
+            "key": "applications.navigationNodeEditorMocks"
+        },
+        {
+            "value": "{\"smartEditContainerLocation\":\"/apps/cms-smartedit-e2e/generated/e2e/util/commonMockedModule/navigationNodesMocks.js\"}",
+            "key": "applications.navigationNodeMocks"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+:host {
+    white-space: normal;
+}
+:host(.se-workflow-inbox-task-last) {
+    .se-workflow-inbox-task-body {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+}
+.se-workflow-inbox-task-header a {
+    @include fd-type('0');
+    @include fd-weight('bold');
+    text-decoration: none;
+    margin-bottom: fd-space('base');
+}
+.se-workflow-inbox-task-desc {
+    @include fd-type('0');
+    color: fd-color('text', 1);
+}
+.se-workflow-inbox-task-body {
+    @include fd-type('-1');
+    color: fd-color('text', 4);
+    text-transform: lowercase;
+    margin: fd-space('tiny') 0 20px;
+    padding-bottom: fd-space('xs');
+    border-bottom: se-border();
+}

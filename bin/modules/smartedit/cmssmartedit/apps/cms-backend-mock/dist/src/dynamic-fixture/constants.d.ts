@@ -1,0 +1,1 @@
+export declare const DYNAMIC_FIXTURE_CONFIG = "DYNAMIC_FIXTURE_CONFIG";

@@ -1,0 +1,22 @@
+<div style="padding-top: 30px; padding-left: 30px">
+    <div>
+        <span>readOnly:{{ readOnly }}</span>
+        <input type="checkbox" id="test-readOnly" data-ng-model="controller.readOnly" />
+    </div>
+    <div>
+        <span>onPrimaryPageSelectedCounter:</span>
+        <span id="test-onPrimaryPageSelectedCounter"
+            >{{ controller.onPrimaryPageSelectedCounter }}</span
+        >
+    </div>
+</div>
+
+<div style="border: double; border-color: #808080">
+    <se-display-conditions-primary-page
+        [read-only]="controller.readOnly"
+        [associated-primary-page]="controller.associatedPrimaryPage"
+        (on-primary-page-select)="controller.onPrimaryPageSelect($event)"
+        [page-type]="controller.pageType"
+    >
+    </se-display-conditions-primary-page>
+</div>

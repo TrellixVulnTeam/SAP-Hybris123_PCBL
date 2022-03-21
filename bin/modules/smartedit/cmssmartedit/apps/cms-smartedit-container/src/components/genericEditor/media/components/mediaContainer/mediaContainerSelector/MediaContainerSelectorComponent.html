@@ -1,0 +1,25 @@
+<se-generic-editor-dropdown
+    [id]="id"
+    [field]="field"
+    [qualifier]="field.qualifier"
+    [model]="mediaContainerNameModel"
+    [showRemoveButton]="true"
+    [itemComponent]="itemComponent"
+    [actionableSearchItem]="actionableSearchItem"
+>
+</se-generic-editor-dropdown>
+
+<div *ngIf="isSelected() || creationInProgress">
+    <label class="se-control-label required se-media-container-name-label">
+        {{ 'se.cms.media.responsive.name' | lowercase | translate }}</label
+    >
+    <input
+        type="text"
+        name="media-container-qualifier"
+        [id]="'media-container-qualifier-' + id"
+        class="fd-form-control"
+        [ngModel]="name"
+        (ngModelChange)="onNameChange($event)"
+        [readOnly]="isNameReadOnly()"
+    />
+</div>

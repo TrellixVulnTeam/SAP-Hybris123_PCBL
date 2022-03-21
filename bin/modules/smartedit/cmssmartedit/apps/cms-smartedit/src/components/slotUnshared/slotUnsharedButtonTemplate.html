@@ -1,0 +1,34 @@
+<div class="slot-unshared-button-template" data-ng-if="ctrl.isLocalSlot() || ctrl.isCustomSlot()">
+    <div
+        class="se-slot-ctx-menu__dropdown-toggle-wrapper se-slot-ctx-menu__divider"
+        data-uib-dropdown
+        data-dropdown-append-to="'#smarteditoverlay'"
+        data-auto-close="outsideClick"
+        data-is-open="ctrl.isPopupOpened"
+    >
+        <button
+            type="button"
+            data-uib-dropdown-toggle
+            class="se-slot-ctx-menu__dropdown-toggle se-slot-ctx-menu__dropdown-toggle-icon"
+            data-ng-class="{'se-slot-ctx-menu__dropdown-toggle--open': ctrl.isPopupOpened, 'sap-icon--chain-link': ctrl.isLocalSlot(), 'sap-icon--broken-link': ctrl.isCustomSlot()}"
+            id="slot-unshared-button-{{::ctrl.slotId}}"
+        ></button>
+        <div
+            class="dropdown-menu dropdown-menu-right se-toolbar-menu-content se-slot__dropdown-menu"
+            data-uib-dropdown-menu
+        >
+            <div class="se-slot-contextual-menu__header" data-translate="{{ctrl.getLabel()}}"></div>
+
+            <div class="se-shared-slot__body">
+                <div data-has-operation-permission="'se.revert.to.global.or.shared.slot.link'">
+                    <a
+                        class="se-shared-slot__link revert-slot-link fd-link"
+                        data-ng-click="ctrl.revertBackSlot()"
+                        data-translate="{{ctrl.getRevertBackLinkLabel()}}"
+                    >
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

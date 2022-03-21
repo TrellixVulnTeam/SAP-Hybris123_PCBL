@@ -1,0 +1,5 @@
+// Move to CatalogAwareSelectorComponent when migrating to Angular
+.se-catalog-aware-selector__add-item-btn {
+    @include se-flex-row;
+    color: fd-color('action', 1);
+}

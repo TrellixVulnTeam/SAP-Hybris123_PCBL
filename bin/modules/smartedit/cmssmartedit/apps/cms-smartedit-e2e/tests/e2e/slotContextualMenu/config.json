@@ -1,0 +1,12 @@
+{
+    "jsFiles": [
+        {
+            "value": "{\"smartEditContainerLocation\":\"/apps/cms-smartedit-e2e/generated/e2e/util/outerGoToApparelStagedUK.js\"}",
+            "key": "applications.ngGoToApparelStagedUK"
+        },
+        {
+            "value": "{\"smartEditContainerLocation\":\"/apps/cms-smartedit-e2e/generated/e2e/slotContextualMenu/mockDataOverrides.js\"}",
+            "key": "applications.mockDataOverridesModule"
+        }
+    ]
+}

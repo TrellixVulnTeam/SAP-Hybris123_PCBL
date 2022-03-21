@@ -1,0 +1,147 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.55.1",
+  "pnpmVersion": "5.18.10",
+  "pnpmOptions": {
+    "pnpmStore": "global",
+    "strictPeerDependencies": true
+  },
+  "nodeSupportedVersionRange": ">=14.15.0 <15.0.0 || >=16.0.0 <17.0.0",
+  "projectFolderMinDepth": 1,
+  "projectFolderMaxDepth": 20,
+  "gitPolicy": {},
+  "repository": {},
+  "eventHooks": {
+    "preRushInstall": [],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": []
+  },
+  "variants": [],
+  "projects": [
+    {
+      "packageName": "@smartedit/packagr",
+      "projectFolder": "apps/smartedit-packagr"
+    },
+    {
+      "packageName": "@smartedit/scripts",
+      "projectFolder": "apps/smartedit-scripts"
+    },
+    {
+      "packageName": "smartedit-build",
+      "projectFolder": "apps/smartedit-build"
+    },
+    {
+      "packageName": "@smartedit/storefront-generator",
+      "projectFolder": "apps/storefront-generator"
+    },
+    {
+      "packageName": "@smartedit/test-server",
+      "projectFolder": "apps/test-server"
+    },
+    {
+      "packageName": "@smartedit/e2e-utils",
+      "projectFolder": "apps/smartedit-e2e-utils"
+    },
+    {
+      "packageName": "@smart/utils",
+      "projectFolder": "../smartedit/apps/smart-utils"
+    },
+    {
+      "packageName": "smarteditcommons",
+      "projectFolder": "../smartedit/apps/smartedit-commons"
+    },
+    {
+      "packageName": "personalizationcommons",
+      "projectFolder": "../../personalization/personalizationsmartedit/apps/personalizationcommons"
+    },
+    {
+      "packageName": "smartedit",
+      "projectFolder": "../smartedit/apps/smartedit"
+    },
+    {
+      "packageName": "cmscommons",
+      "projectFolder": "../cmssmartedit/apps/cms-commons"
+    },
+    {
+      "packageName": "cmssmartedit",
+      "projectFolder": "../cmssmartedit/apps/cms-smartedit"
+    },
+    {
+      "packageName": "personalizationsmartedit",
+      "projectFolder": "../../personalization/personalizationsmartedit/apps/personalizationsmartedit"
+    },
+    {
+      "packageName": "smarteditcontainer",
+      "projectFolder": "../smartedit/apps/smartedit-container"
+    },
+    {
+      "packageName": "cmssmarteditcontainer",
+      "projectFolder": "../cmssmartedit/apps/cms-smartedit-container"
+    },
+    {
+      "packageName": "personalizationsmarteditcontainer",
+      "projectFolder": "../../personalization/personalizationsmartedit/apps/personalizationsmarteditcontainer"
+    },
+    {
+      "packageName": "merchandisingsmarteditcommons",
+      "projectFolder": "../../cds-merchandising/merchandisingsmartedit/apps/merchandisingsmarteditcommons"
+    },
+    {
+      "packageName": "merchandisingsmartedit",
+      "projectFolder": "../../cds-merchandising/merchandisingsmartedit/apps/merchandisingsmartedit"
+    },
+    {
+      "packageName": "merchandisingsmarteditcontainer",
+      "projectFolder": "../../cds-merchandising/merchandisingsmartedit/apps/merchandisingsmarteditContainer"
+    },
+    {
+      "packageName": "smarteditbootstrap",
+      "projectFolder": "../smartedit/apps/smartedit-bootstrap"
+    },
+    {
+      "packageName": "smarteditloader",
+      "projectFolder": "../smartedit/apps/smartedit-loader"
+    },
+    {
+      "packageName": "smartedit-e2e",
+      "projectFolder": "../smartedit/apps/smartedit-e2e"
+    },
+    {
+      "packageName": "webappinjector",
+      "projectFolder": "../smartedit/apps/web-app-injector"
+    },
+    {
+      "packageName": "personalizationsearchsmartedit",
+      "projectFolder": "../../personalization-search/personalizationsearchsmartedit/apps/personalizationsearchsmartedit"
+    },
+    {
+      "packageName": "personalizationsearchsmarteditcontainer",
+      "projectFolder": "../../personalization-search/personalizationsearchsmartedit/apps/personalizationsearchsmarteditContainer"
+    },
+    {
+      "packageName": "personalizationpromotionssmarteditcommons",
+      "projectFolder": "../../personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmarteditcommons"
+    },
+    {
+      "packageName": "personalizationpromotionssmartedit",
+      "projectFolder": "../../personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit"
+    },
+    {
+      "packageName": "personalizationpromotionssmarteditcontainer",
+      "projectFolder": "../../personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmarteditContainer"
+    },
+    {
+      "packageName": "cms-backend-mock",
+      "projectFolder": "../cmssmartedit/apps/cms-backend-mock"
+    },
+    {
+      "packageName": "cms-smartedit-e2e",
+      "projectFolder": "../cmssmartedit/apps/cms-smartedit-e2e"
+    },
+    {
+      "packageName": "smarteditmaster",
+      "projectFolder": "../smartedit/apps/smartedit-master"
+    }
+  ]
+}

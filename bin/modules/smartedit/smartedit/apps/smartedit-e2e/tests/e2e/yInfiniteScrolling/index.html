@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--3rd prty libs-->
+        <script src="../../../node_modules/ckeditor4/ckeditor.js"></script>
+        <script src="../base/smarteditcontainer/vendor.js"></script>
+
+        <!--libs-->
+        <script src="../base/smarteditcontainer/base-container-app.js"></script>
+        <script src="../base/smarteditcontainer/outer-app.js"></script>
+
+        <!--Mocks-->
+        <script src="outer-mocks.js"></script>
+
+        <style>
+            body {
+                height: 250px;
+            }
+
+            .infContainer {
+                overflow-y: scroll;
+                max-height: 240px;
+                width: 600px;
+                border-style: solid;
+            }
+
+            .repeaterTemplate {
+                height: 40px;
+                border-style: solid;
+                border-color: green;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body custom-app="yInfiniteScrollingApp" data-ng-controller="defaultController as ctrl">
+        <input
+            type="text"
+            name="srch-term"
+            ng-model="ctrl.searchTerm"
+            placeholder="Please enter text to filter"
+        />
+
+        <div class="infContainer">
+            <y-infinite-scrolling
+                data-drop-down-container-class="infContainer"
+                data-page-size="ctrl.pageSize"
+                data-mask="ctrl.searchTerm"
+                data-fetch-page="ctrl.loadItems"
+                data-context="ctrl"
+            >
+                <div class="repeaterTemplate" data-ng-repeat="item in ctrl.items">
+                    {{item.id}} : {{item.name}}
+                </div>
+            </y-infinite-scrolling>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+import { OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { IUrlService, ICatalogService, SystemEventService, IUriContext, Pagination, TypedMap, DynamicPagedListApi, DynamicPagedListConfig } from 'smarteditcommons';
+import { AddPageWizardService } from '../../../services/pages/AddPageWizardService';
+export declare class PageListComponent implements OnInit, OnDestroy {
+    private activatedRoute;
+    private urlService;
+    private catalogService;
+    private addPageWizardService;
+    private systemEventService;
+    private cdr;
+    isReady: boolean;
+    count: number;
+    catalogId: string;
+    catalogVersion: string;
+    siteUid: string;
+    query: string;
+    catalogName: TypedMap<string>;
+    dynamicPagedListApi: DynamicPagedListApi;
+    pageUriContext: IUriContext;
+    pageListConfig: DynamicPagedListConfig;
+    uriContext: IUriContext;
+    private eventUnsubscribe;
+    private querySubject$;
+    private querySubscription;
+    constructor(activatedRoute: ActivatedRoute, urlService: IUrlService, catalogService: ICatalogService, addPageWizardService: AddPageWizardService, systemEventService: SystemEventService, cdr: ChangeDetectorRef);
+    ngOnInit(): Promise<void>;
+    ngOnDestroy(): void;
+    onPageItemsUpdate(pagination: Pagination): void;
+    onContentCatalogUpdate(): void;
+    onQueryChange(value: string): void;
+    getApi(api: DynamicPagedListApi): void;
+    openAddPageWizard(): Promise<void>;
+    reset(): void;
+    private retrieveCatalogName;
+    private initialize;
+}

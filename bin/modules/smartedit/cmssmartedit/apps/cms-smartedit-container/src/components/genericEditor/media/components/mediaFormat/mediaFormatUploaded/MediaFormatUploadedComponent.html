@@ -1,0 +1,27 @@
+<div class="se-media--present">
+    <div class="se-media--present-img-container se-media-preview-container">
+        <se-media-preview [imageUrl]="media.url"></se-media-preview>
+        <div class="se-media-preview__image-wrapper">
+            <img class="se-media-preview__image-thumbnail" [src]="media.url" />
+        </div>
+    </div>
+
+    <se-media-advanced-properties
+        [code]="media.code"
+        [description]="media.description"
+        [altText]="media.altText"
+    ></se-media-advanced-properties>
+
+    <se-media-file-selector
+        [labelI18nKey]="replaceLabelI18nKey"
+        [acceptedFileTypes]="acceptedFileTypes"
+        [customClass]="'media-format-present-replace' + (isFieldDisabled ? ' file-selector-disabled' : '')"
+        [disabled]="isFieldDisabled"
+        (onFileSelect)="onFileSelectorFileSelect($event)"
+    ></se-media-file-selector>
+
+    <se-media-remove-button
+        [isDisabled]="isFieldDisabled"
+        (clickHandler)="onRemoveButtonClick()"
+    ></se-media-remove-button>
+</div>

@@ -1,0 +1,51 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved
+# -----------------------------------------------------------------------
+
+"#% impex.setValidationMode(""import_relaxed"");"
+
+
+$lang=ja
+$solrIndexedType=solrIndexedType(identifier)[unique=true,default='BackofficeProduct'];
+$typeCode=type(code)[default='Product'];
+$active=active[allownull=true,default=true];
+
+UPDATE SolrIndexedProperty;name[unique=true];$solrIndexedType;backofficeDisplayName[lang=$lang];
+"#%beforeEach:
+import de.hybris.platform.core.Registry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.apache.commons.lang3.StringUtils;
+import de.hybris.platform.util.Config;
+
+Logger LOGGER = LoggerFactory.getLogger(""ImpExImportReader"");
+extensionNames = Registry.getCurrentTenant().getTenantSpecificExtensionNames();
+if(!extensionNames.contains(""backofficesolrsearch""))
+{
+    LOGGER.info(""backofficeDisplayName [{}] was skipped because the extension [{}] is not be initialized now"", line.get(3), ""backofficesolrsearch"");
+    line.clear();
+}
+"
+;pcmCoreAttributesCoverageGroup;;コア属性;
+;pcmMarketingAttributesCoverageGroup;;マーケティング属性;
+
+INSERT_UPDATE AsFacet;uid[unique=true];name[lang=$lang];
+;b80fb32b-a9f7-4095-f1b0-f9296c98bd5e;コア属性;
+;2cf550a1-7749-0624-d8a8-c1fd37ad37b7;マーケティング属性;
+
+INSERT_UPDATE NotNullConstraint;id[unique=true];$typeCode;$active;message[lang=$lang];
+;ProductNameNotNullForAllLocalesConstraint;;;"""Identifier"" 属性には、すべての言語の値が必要です。";
+
+INSERT_UPDATE SizeConstraint;id[unique=true];$typeCode;$active;message[lang=$lang];
+;ProductEurope1PricesSizeConstraint;;;"""Prices"" 属性には少なくとも 1 つの要素が必要です。";
+;ProductSupercategoriesSizeConstraint;;;"""Supercategories"" 属性には少なくとも 1 つの要素が必要です。";
+;ProductGalleryImagesSizeConstraint;;;"""Gallery Images"" 属性には少なくとも 1 つの要素が必要です。";
+;ProductReferencesSizeConstraint;;;"""Product References"" 属性には少なくとも 1 つの要素が必要です。";
+
+INSERT_UPDATE NotEmptyConstraint;id[unique=true];$typeCode;$active;message[lang=$lang];
+;ProductCodeNotEmptyConstraint;;;"""Article Number"" 属性は空にできません。";
+;ProductDescriptionNotEmptyConstraint;;;"""Description"" 属性は空にできません。";
+;ProductEanNotEmptyConstraint;;;"""EAN"" 属性は空にできません。";
+
+INSERT_UPDATE HybrisEnumValueCodeConstraint;id[unique=true];$typeCode;$active;message[lang=$lang];
+;ProductApprovedHybrisEnumValueCodeConstraint;;;"""承認"" の属性値は ""承認済"" にしてください。";

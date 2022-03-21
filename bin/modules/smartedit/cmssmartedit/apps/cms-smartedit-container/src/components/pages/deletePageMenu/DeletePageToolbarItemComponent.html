@@ -1,0 +1,25 @@
+<div class="toolbar-action" *ngIf="isReady" [attr.data-item-key]="toolbarItem.key">
+    <button
+        type="button"
+        class="btn toolbar-action--button"
+        [disabled]="isDeletePageDisabled"
+        [ngClass]="{ 'toolbar-action__disabled' : isDeletePageDisabled }"
+        (click)="deletePage()"
+    >
+        <span class="icon-delete se-toolbar-menu-ddlb--button__icon"></span>
+        <div class="toolbar-action-button__txt" translate="se.cms.actionitem.page.trash"></div>
+    </button>
+
+    <se-tooltip
+        *ngIf="isDeletePageDisabled"
+        [appendTo]="'body'"
+        [isChevronVisible]="true"
+        [placement]="'bottom'"
+        [triggers]="['mouseenter', 'mouseleave']"
+        [additionalClasses]="['se-tooltip--stretched']"
+    >
+        <div se-tooltip-body>
+            <span [translate]="tooltipMessage"></span>
+        </div>
+    </se-tooltip>
+</div>
