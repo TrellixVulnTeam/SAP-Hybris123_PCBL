@@ -1,3 +1,0 @@
-$distanceUnit=km
-$pickupInStoreMode=BUY_AND_COLLECT
-$code=CA

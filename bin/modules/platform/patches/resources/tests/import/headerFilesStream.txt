@@ -1,8 +1,0 @@
-$hubCode=TEST_$code
-$lowercaseHubCode=test_hub
-$languages=en_US,fr_FR
-
-$countryCode=CA
-$defaultCurrency=CAD
-$storeUid=$hubCode_Store
-

@@ -1,1 +1,0 @@
-export { ClientPagedListModule } from './LegacyClientPagedListModule';

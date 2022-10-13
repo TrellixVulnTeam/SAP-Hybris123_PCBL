@@ -1,3 +1,0 @@
-# Media formats
-INSERT_UPDATE MediaFormat;qualifier[unique=true]
-;192Wx96H

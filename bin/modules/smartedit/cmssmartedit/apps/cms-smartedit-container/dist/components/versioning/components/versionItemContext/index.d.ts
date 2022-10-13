@@ -1,1 +1,0 @@
-export { VersionItemContextComponent } from './VersionItemContextComponent';

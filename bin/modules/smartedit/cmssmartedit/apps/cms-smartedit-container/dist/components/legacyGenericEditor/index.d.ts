@@ -1,1 +1,0 @@
-export { GenericEditorWidgetsModule } from './genericEditorWidgetsModule';

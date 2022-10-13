@@ -1,1 +1,0 @@
-// FCK editor config file

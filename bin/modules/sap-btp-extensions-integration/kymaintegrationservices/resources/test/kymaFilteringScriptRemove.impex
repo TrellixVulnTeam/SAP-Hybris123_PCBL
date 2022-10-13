@@ -1,5 +1,0 @@
-Remove Script; code[unique = true];
-             ; KymaFilterScript_ReturnsTrue
-             ; KymaFilterScript_ReturnsFalse
-             ; KymaFilterScript_ThrowsException
-

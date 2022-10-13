@@ -1,2 +1,0 @@
-import "./legacymerchandisingsmartedit";
-import "./merchandisingsmartedit";

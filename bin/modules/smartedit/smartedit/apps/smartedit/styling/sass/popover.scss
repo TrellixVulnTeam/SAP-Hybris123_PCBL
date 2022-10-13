@@ -1,9 +1,0 @@
-// additional styles for popover in Iframe
-.popover {
-    z-index: 9999;
-    font-family: $font-sap !important;
-
-    .popover-content {
-        padding: fd-space('base');
-    }
-}

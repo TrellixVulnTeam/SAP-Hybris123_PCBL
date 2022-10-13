@@ -1,1 +1,0 @@
-## ysmartedit Inner Library

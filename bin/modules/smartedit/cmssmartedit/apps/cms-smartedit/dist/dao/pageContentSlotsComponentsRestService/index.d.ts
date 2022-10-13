@@ -1,1 +1,0 @@
-export { PageContentSlotsComponentsRestService } from './PageContentSlotsComponentsRestServiceInner';

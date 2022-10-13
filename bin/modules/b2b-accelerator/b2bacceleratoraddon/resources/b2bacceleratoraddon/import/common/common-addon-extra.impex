@@ -1,6 +1,0 @@
-# -----------------------------------------------------------------------
-# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
-# -----------------------------------------------------------------------
-INSERT_UPDATE ApplicableCmsActionsTypeForCmsComponent;target(code)[unique=true];source(code)[unique=true];
-;JspIncludeComponent;ReorderAction;
-;JspIncludeComponent;ApproveOrderAction;
